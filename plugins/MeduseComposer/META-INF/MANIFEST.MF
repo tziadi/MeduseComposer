@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Meduse Composer
+Bundle-SymbolicName: MeduseComposer;singleton:=true
+Bundle-Version: 3.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: de.ovgu.featureide.core,
+ de.ovgu.featureide.fm.core,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Tewfik Ziadi
+Bundle-Activator: fr.lip6.move.meduse.core.activator.MeduseCorePlugin

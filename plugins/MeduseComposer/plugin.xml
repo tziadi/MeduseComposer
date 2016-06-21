@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="de.ovgu.featureide.core.composers">
+      <composer
+            class="fr.lip6.move.meduse.core.MeduseComposer"
+            description="Process Line Engineering"
+            id="fr.lip6.move.meduse.core.composer"
+            name="Meduse Composer"
+            nature="fr.lip6.move.meduse.core.composer">
+      </composer>
+   </extension>
+   <extension
+         point="de.ovgu.featureide.core.wizard">
+      <newProjectWizard
+            class="de.ovgu.featureide.core.wizardextension.DefaultNewFeatureProjectWizardExtension"
+            composerid="fr.lip6.move.meduse.core.composer"
+            id="fr.lip6.move.core.meduse.newProjectWizard"
+            name="MeduseNewProjectWizard">
+      </newProjectWizard>
+   </extension>
+
+</plugin>
