@@ -40,18 +40,23 @@ public class MeduseComposer extends ComposerExtensionClass {
 		List<String> selecteddelta = getSelectedDeltas(selectedFeatures);
 
 		MeduseProcessVariantGenerator generator = new MeduseProcessVariantGenerator();
-		IFolder deltasF = featureProject.getSourceFolder().getFolder("DeltaProcesses");
+		IFolder deltasF = featureProject.getProject().getFolder("DeltaProcesses");
+				
 		File deltasFolder = deltasF.getRawLocation().makeAbsolute().toFile();
 		String deltasFolderPath = deltasFolder.getAbsolutePath();
 		
-		IFolder processesF = featureProject.getSourceFolder().getFolder("ProcessFragments");
-		File processesFolder = deltasF.getRawLocation().makeAbsolute().toFile();
+		IFolder processesF = featureProject.getProject().getFolder("ProcessFragments");
+		File processesFolder = processesF.getRawLocation().makeAbsolute().toFile();
 		String processesFolderPath = processesFolder.getAbsolutePath();
+		
+		IFolder variantF = featureProject.getProject().getFolder("DerivedProduct");
+		File variantFolder = variantF.getRawLocation().makeAbsolute().toFile();
+		String variantFolderPath = variantFolder.getAbsolutePath();
 		
 		if (deltasFolderPath!=null && processesFolderPath !=null){
 			
 			try {
-				generator.generate(selecteddelta, deltasFolderPath,processesFolderPath  );
+				generator.generate(selecteddelta, deltasFolderPath,processesFolderPath, variantFolderPath  );
 			} catch (ParserConfigurationException | SAXException | IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

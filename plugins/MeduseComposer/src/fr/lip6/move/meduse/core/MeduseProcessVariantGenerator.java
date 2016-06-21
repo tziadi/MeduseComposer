@@ -7,19 +7,19 @@ import java.util.Hashtable;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
-	import javax.xml.parsers.DocumentBuilderFactory;
-	import javax.xml.parsers.ParserConfigurationException;
-	import javax.xml.transform.OutputKeys;
-	import javax.xml.transform.Transformer;
-	import javax.xml.transform.TransformerConfigurationException;
-	import javax.xml.transform.TransformerException;
-	import javax.xml.transform.TransformerFactory;
-	import javax.xml.transform.dom.DOMSource;
-	import javax.xml.transform.stream.StreamResult;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 	import org.w3c.dom.Comment;
-	import org.w3c.dom.Document;
-	import org.w3c.dom.Element;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -44,7 +44,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 			
 		}
 		
-	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath) throws ParserConfigurationException, SAXException, IOException {
+	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath, String variantFolderPath) throws ParserConfigurationException, SAXException, IOException {
 	        /*
 		 * Etape 1 : r��cup��ration d'une instance de la classe "DocumentBuilderFactory"
 		 */
@@ -63,10 +63,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 	    		       selectedPC.add(allDeltas.get(delta).get(0));
 	    	
 	    	
-	    	//String pcName = ParserInitialisation.processComponentNames.get(deltas.get(1).get(0));
-	    	//String pcName = "Write Code";
 	    	
-	    	//ParserInitialisation.parseProcessesFRagments("Write Code");
 	    
 		final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			
@@ -141,6 +138,9 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		    //INSERT PROCESS FRAGMENT
 		    //1. Create ChildPackage node
 		    // 
+		    
+		    
+		  //  System.out.println("FOLDER "+processesFolderPath);
 		    for (String pcName: selectedPC){
 		    	
 		    	//fin directory
@@ -148,7 +148,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		    	String dirPC = MeduseComposerUtils.processComponentDirectories.get(pcName);
 		    	
 		    	System.out.println("Handling ===="+dirPC);
-		    	 handleFragments(dirPC, childPackageRoot); 	
+		    	 handleFragments(dirPC, childPackageRoot, processesFolderPath); 	
 		    }
 		   
 		    processC.appendChild(childPackageRoot);
@@ -191,7 +191,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		    String srep="./Results/";
 			File out_rep=new File(srep);
 			out_rep.mkdirs();
-		    final StreamResult sortie = new StreamResult(new File("./Results/model.xml"));
+		    final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/variant.xml"));
 		    //final StreamResult result = new StreamResult(System.out);
 				
 		    //prologue
@@ -218,7 +218,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 	    }
 	    
 	    
-	    private void handleFragments(String pcName, Element owner) throws ParserConfigurationException, SAXException, IOException {
+	    private void handleFragments(String pcName, Element owner, String processesFolderPath) throws ParserConfigurationException, SAXException, IOException {
 			// TODO Auto-generated method stub
 	    	
 
@@ -230,7 +230,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 
 			// Load the input XML document, parse it and return an instance of the
 			// Document class.
-			Document documentVariants = builder.parse(new File("ProcessFragments/"+pcName+"/model.xmi"));
+			Document documentVariants = builder.parse(new File(processesFolderPath+"/"+pcName+"/model.xmi"));
 
 			List<String> deltas = new ArrayList<String>();
 			NodeList nodeList = documentVariants.getDocumentElement().getChildNodes();

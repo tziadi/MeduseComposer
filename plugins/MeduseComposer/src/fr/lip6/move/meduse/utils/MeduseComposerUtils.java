@@ -26,15 +26,17 @@ public class MeduseComposerUtils {
 
     public static Hashtable<String, String> processComponentDirectories = new Hashtable<String, String>();
 
-	public static List<String> readProcessFragmentDirectories(){
+	public static List<String> readProcessFragmentDirectories(String processesFolderPath){
 		
 		List<String> result = new ArrayList<String>(); 
-		File file = new File("ProcessFragments");
+		File file = new File(processesFolderPath);
         File[] files = file.listFiles();
       
         	 if (files != null) {
                  for (int i = 0; i < files.length; i++) {
                      if (files[i].isDirectory() == true) {
+                    	 
+                    	 System.out.println("Find process :"+files[i].getName());
                     	 
                     	 result.add(files[i].getName());
                      }
@@ -46,7 +48,9 @@ public class MeduseComposerUtils {
 	
 	public static void initialiseProcessFragments(String processesFolderPath ) throws ParserConfigurationException, SAXException, IOException{
 		
-		List<String> dirs = readProcessFragmentDirectories();
+		List<String> dirs = readProcessFragmentDirectories(processesFolderPath);
+		
+		
 		
 		for (String d: dirs){
 			
