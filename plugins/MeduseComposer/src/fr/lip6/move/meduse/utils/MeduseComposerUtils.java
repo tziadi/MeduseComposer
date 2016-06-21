@@ -44,7 +44,7 @@ public class MeduseComposerUtils {
 	}
 	
 	
-	public static void initialiseProcessFragments() throws ParserConfigurationException, SAXException, IOException{
+	public static void initialiseProcessFragments(String processesFolderPath ) throws ParserConfigurationException, SAXException, IOException{
 		
 		List<String> dirs = readProcessFragmentDirectories();
 		
@@ -56,7 +56,7 @@ public class MeduseComposerUtils {
 
 			// Load the input XML document, parse it and return an instance of the
 			// Document class.
-			Document document = builder.parse(new File("ProcessFragments/"+d+"/model.xmi"));
+			Document document = builder.parse(new File(processesFolderPath+"/"+d+"/model.xmi"));
 
 			List<String> deltas = new ArrayList<String>();
 			NodeList nodeList = document.getDocumentElement().getChildNodes();
@@ -89,7 +89,7 @@ public class MeduseComposerUtils {
 	
 	
 
-	public static Hashtable<String,List<String>> parseDelaProcesses() throws ParserConfigurationException,
+	public static Hashtable<String,List<String>> parseDelaProcesses(String deltasFolderPath) throws ParserConfigurationException,
 	SAXException, IOException {
 
 		Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
@@ -99,7 +99,7 @@ public class MeduseComposerUtils {
 
 		// Load the input XML document, parse it and return an instance of the
 		// Document class.
-		Document document = builder.parse(new File("DeltaProcesses/plugin.xmi"));
+		Document document = builder.parse(new File(deltasFolderPath+"/plugin.xmi"));
 
 		List<String> deltas = new ArrayList<String>();
 		NodeList nodeList = document.getDocumentElement().getChildNodes();

@@ -44,17 +44,17 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 			
 		}
 		
-	    public  void generate(List<String> deltas) throws ParserConfigurationException, SAXException, IOException {
+	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath) throws ParserConfigurationException, SAXException, IOException {
 	        /*
 		 * Etape 1 : r��cup��ration d'une instance de la classe "DocumentBuilderFactory"
 		 */
 	    	
 	    	
 	    	
-	    	MeduseComposerUtils.initialiseProcessFragments();
+	    	MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
 	    	
 	    	Hashtable<String,List<String>> allDeltas =
-	    								MeduseComposerUtils.parseDelaProcesses();
+	    								MeduseComposerUtils.parseDelaProcesses(deltasFolderPath);
 	    	
 	    	
 	    	ArrayList<String> selectedPC = new ArrayList<String>();
