@@ -1,6 +1,7 @@
 package fr.lip6.move.meduse.core;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,14 +10,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
+import org.xml.sax.SAXException;
 
 import de.ovgu.featureide.core.builder.ComposerExtensionClass;
 import de.ovgu.featureide.fm.core.base.IFeature;
 import de.ovgu.featureide.fm.core.configuration.Configuration;
 import de.ovgu.featureide.fm.core.io.manager.ConfigurationManager;
 import de.ovgu.featureide.fm.core.io.manager.FileHandler;
+import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 
 /**
  * Meduse composer
@@ -32,40 +37,20 @@ public class MeduseComposer extends ComposerExtensionClass {
 
 		// Get the selected features and order them
 		List<String> selectedFeatures = getSelectedNonAbstractFeatures(config);
-		List<String> orderedFeatures = orderSelectedFeatures(selectedFeatures);
+		List<String> selecteddelta = getSelectedDeltas(selectedFeatures);
 
-		// Create imagesMap, the key is the relative path from the feature
-		// folder to the image file
-		Map<String, List<File>> imagesMap = new LinkedHashMap<String, List<File>>();
-		for (int i = 0; i < orderedFeatures.size(); i++) {
-			IFolder f = featureProject.getSourceFolder().getFolder(orderedFeatures.get(i));
-			File folder = f.getRawLocation().makeAbsolute().toFile();
-			List<File> files = MeduseComposerUtils.getAllFiles(folder);
-			for (File file : files) {
-				if (MeduseComposerUtils.getImageFormat(file.getName()) != null) {
-					String relative = folder.toURI().relativize(file.toURI()).getPath();
-					List<File> currentList = imagesMap.get(relative);
-					if (currentList == null) {
-						currentList = new ArrayList<File>();
-					}
-					currentList.add(file);
-					imagesMap.put(relative, currentList);
-				}
-			}
+		MeduseProcessVariantGenerator generator = new MeduseProcessVariantGenerator();
+		
+		try {
+			generator.generate(selecteddelta);
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		}
 
-		// For each image, combine the related image files
-		for (Entry<String, List<File>> entry : imagesMap.entrySet()) {
-			File output = featureProject.getBuildFolder().getRawLocation().makeAbsolute().toFile();
-			File outputImageFile = new File(output, entry.getKey());
-			try {
-				MeduseComposerUtils.overlapImages(entry.getValue(), outputImageFile);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
-
+		
 	/**
 	 * Get selected non abstract features
 	 * 
