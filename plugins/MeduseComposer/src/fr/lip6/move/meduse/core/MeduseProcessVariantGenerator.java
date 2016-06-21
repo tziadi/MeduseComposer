@@ -98,7 +98,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		     */
 			
 			
-		    final Element resourcemanager = document.createElement("org.eclipse.epf.uma.resourcemanager.ResourceManager");
+		    final Element resourcemanager = document.createElement("org.eclipse.epf.uma.resourcemanager:ResourceManager");
 		    resourcemanager.setAttribute("xmi:id", "_1a6lEC2NEeadNdxfTHAycw" );
 		    resourcemanager.setAttribute("guid", "_1a6lEC2NEeadNdxfTHAycw" );
 		    resourcemanager.setAttribute("uri", "content.xmi" );
