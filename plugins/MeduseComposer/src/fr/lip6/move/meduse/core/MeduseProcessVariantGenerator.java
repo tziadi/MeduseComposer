@@ -68,14 +68,12 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 			try {
 				builder = factoryContent.newDocumentBuilder();
 				Document content= builder.newDocument();
-				final Element contentRoot = document.createElement("xml:XMI");
+				final Element contentRoot = content.createElement("org.eclipse.emf.uma:DeliveryProcessDescription");
 			    content.appendChild(contentRoot);			
 			    contentRoot.setAttribute("xmi:version", "2.0");
 			    contentRoot.setAttribute("xmlns:xmi", "http://www.omg.org/XMI");
-			    contentRoot.setAttribute("xmlns:xsi","http://www.w3.org/2001/XMLSchema-instance");
 			    contentRoot.setAttribute("xmlns:org.eclipse.epf.uma","http://www.eclipse.org/epf/uma/1.0.6/uma.ecore");
-			    contentRoot.setAttribute("xmlns:org.eclipse.epf.uma.resourcemanager","http:///org/eclipse/epf/uma/resourcemanager.ecore");
-			    contentRoot.setAttribute("xmlns:epf","http://www.eclipse.org/epf");
+			     contentRoot.setAttribute("xmlns:epf","http://www.eclipse.org/epf");
 			    contentRoot.setAttribute("epf:version","1.5.1");
 			    contentRoot.setAttribute("xmi:id", idModel);
 			    contentRoot.setAttribute("xmi:name", nameModel);
