@@ -14,10 +14,12 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 	import org.w3c.dom.Comment;
+import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -30,7 +32,8 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 	public class MeduseProcessVariantGenerator {
 		
 		 Document document;
-		 
+		 String idModel = "";
+		 String nameModel="";
 		 
 		
 		
@@ -45,16 +48,89 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		}
 		
 	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath, String variantFolderPath) throws ParserConfigurationException, SAXException, IOException {
-	        /*
-		 * Etape 1 : r��cup��ration d'une instance de la classe "DocumentBuilderFactory"
-		 */
+	        	
 	    	
+	    	generateModelFile(deltas, deltasFolderPath, processesFolderPath,
+					variantFolderPath);	
+	    	generateContentFile(variantFolderPath);
+	    	updatePluginFile(deltas, deltasFolderPath, processesFolderPath,
+					variantFolderPath);
+	    }
+
+		private void generateContentFile(String variantFolderPath) {
+			
+			final DocumentBuilderFactory factoryContent = DocumentBuilderFactory.newInstance();
+			
+			
+			  
+			
+			DocumentBuilder builder;
+			try {
+				builder = factoryContent.newDocumentBuilder();
+				Document content= builder.newDocument();
+				final Element contentRoot = document.createElement("xml:XMI");
+			    content.appendChild(contentRoot);			
+			    contentRoot.setAttribute("xmi:version", "2.0");
+			    contentRoot.setAttribute("xmlns:xmi", "http://www.omg.org/XMI");
+			    contentRoot.setAttribute("xmlns:xsi","http://www.w3.org/2001/XMLSchema-instance");
+			    contentRoot.setAttribute("xmlns:org.eclipse.epf.uma","http://www.eclipse.org/epf/uma/1.0.6/uma.ecore");
+			    contentRoot.setAttribute("xmlns:org.eclipse.epf.uma.resourcemanager","http:///org/eclipse/epf/uma/resourcemanager.ecore");
+			    contentRoot.setAttribute("xmlns:epf","http://www.eclipse.org/epf");
+			    contentRoot.setAttribute("epf:version","1.5.1");
+			    contentRoot.setAttribute("xmi:id", idModel);
+			    contentRoot.setAttribute("xmi:name", nameModel);
+			    contentRoot.setAttribute("guid", nameModel+","+idModel);
+			    
+			    final TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			    final Transformer transformer = transformerFactory.newTransformer();
+			    final DOMSource source = new DOMSource(content);
+			    
+			    transformer.setOutputProperty(OutputKeys.VERSION, "1.0");
+			    transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+			    transformer.setOutputProperty(OutputKeys.STANDALONE, "yes");			
+			    		
+			    //formatage
+			    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			    transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+					
+			    //sortie
+			    final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/content.xml"));
+			    transformer.transform(source, sortie);
+			    
+			    
+
+			
+			} catch (ParserConfigurationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TransformerConfigurationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TransformerException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	    	
-	    	
-	    	MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
+			
+			
+			
+		}
+
+		private void updatePluginFile(List<String> deltas,
+				String deltasFolderPath, String processesFolderPath,
+				String variantFolderPath) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		private void generateModelFile(List<String> deltas,
+				String deltasFolderPath, String processesFolderPath,
+				String variantFolderPath) throws ParserConfigurationException,
+				SAXException, IOException, TransformerFactoryConfigurationError {
+			MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
 	    	
 	    	Hashtable<String,List<String>> allDeltas =
-	    								MeduseComposerUtils.parseDelaProcesses(deltasFolderPath);
+	    								MeduseComposerUtils.parseDeltaProcesses(deltasFolderPath);
 	    	
 	    	
 	    	ArrayList<String> selectedPC = new ArrayList<String>();
@@ -97,9 +173,11 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		     * Etape 5 : cr��ation de l'Element org.eclipse.epf.uma.resourcemanager.ResourceManager
 		     */
 			
+			idModel="_1a6lEC2NEeadNdxfTHAycwP";
+			nameModel = "Variant";
 			
 		    final Element resourcemanager = document.createElement("org.eclipse.epf.uma.resourcemanager:ResourceManager");
-		    resourcemanager.setAttribute("xmi:id", "_1a6lEC2NEeadNdxfTHAycw" );
+		    resourcemanager.setAttribute("xmi:id", idModel);
 		    resourcemanager.setAttribute("guid", "_1a6lEC2NEeadNdxfTHAycw" );
 		    resourcemanager.setAttribute("uri", "content.xmi" );
 		    
@@ -113,7 +191,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		    
 		    final Element processC = document.createElement("org.eclipse.epf.uma.ProcessComponent");
 		    processC.setAttribute("xmi:id", "_1ZbXUC2NEeadNdxfTHAycw" );
-		    processC.setAttribute("name", "variant" );
+		    processC.setAttribute("name", nameModel );
 		    processC.setAttribute("guid", "_1ZbXUC2NEeadNdxfTHAycw" );
 		    
 		    final Element methodeEP1 = document.createElement("methodElementProperty");
@@ -214,8 +292,8 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		}
 		catch (TransformerException e) {
 		    e.printStackTrace();
-		}			
-	    }
+		}
+		}
 	    
 	    
 	    private void handleFragments(String pcName, Element owner, String processesFolderPath) throws ParserConfigurationException, SAXException, IOException {

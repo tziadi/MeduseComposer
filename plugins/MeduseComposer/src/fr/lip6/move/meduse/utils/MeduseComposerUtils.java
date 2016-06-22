@@ -93,7 +93,7 @@ public class MeduseComposerUtils {
 	
 	
 
-	public static Hashtable<String,List<String>> parseDelaProcesses(String deltasFolderPath) throws ParserConfigurationException,
+	public static Hashtable<String,List<String>> parseDeltaProcesses(String deltasFolderPath) throws ParserConfigurationException,
 	SAXException, IOException {
 
 		Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
