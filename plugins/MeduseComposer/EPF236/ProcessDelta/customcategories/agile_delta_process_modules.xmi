@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ez2kPRAbbq8yqrgb8B77rw" name="new_custom_category,_ZxTOEB6BEeauwPzXxc7Y9Q" guid="-ez2kPRAbbq8yqrgb8B77rw" changeDate="2016-06-10T12:32:40.230+0200">
+  <mainDescription>&lt;p>&#xD;
+    &lt;strong>List of Agile Process Delta Mod. &amp;amp;&lt;/strong>&lt;strong>&amp;nbsp;Appl. Cond.&lt;/strong>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;&amp;nbsp;&amp;nbsp;PD_ManageProject when&amp;nbsp;Managing ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta PD_RequirementPhase&amp;nbsp;&amp;nbsp;when Requirement ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_WriteUserVision&amp;nbsp; when UserVision ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta PD_WriteStore&amp;nbsp; when UserStory ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta PD_DefineReleasePhase&amp;nbsp;&amp;nbsp;when ReleasePlanning ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_DefineIterationPhase&amp;nbsp; when IterationPlanning ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_WriteCodePhase when Code ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [&amp;nbsp;Process Delta&amp;nbsp;PD_DefineCodeStandard when CodeStandard&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &amp;nbsp;&amp;nbsp; Process Delta&amp;nbsp;PD_PairProgramming when PairProgramming ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_ImplementSpike when ArchitecturalSpike ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_WriteCodeUnitTest &amp;nbsp;when&amp;nbsp;Code ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_RefactorCode&amp;nbsp;when&amp;nbsp;Refactoring ]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;PD_IntegrationTestPhase &amp;nbsp;when&amp;nbsp;Testing]&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    [ Process Delta&amp;nbsp;&amp;nbsp;PD_CustomerTestPhase&amp;nbsp;when&amp;nbsp;CustomerTest]&#xD;
+&lt;/p>&#xD;
+&lt;br />&#xD;
+&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_D6G6kR3MEeakwMHbkQwdXQ" guid="_D6G6kR3MEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_D6G6kh3MEeakwMHbkQwdXQ" id="-LbJn5hXe7oJAAqJAvzq1qg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_D5XTsB3MEeakwMHbkQwdXQ" name="BreakDown Uer Story" guid="_D5XTsB3MEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_D5XTsh3MEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_JfvtYB3MEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Fdy64B3MEeakwMHbkQwdXQ" name="Breakdown User Story" guid="_Fdy64B3MEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_Fdy64R3MEeakwMHbkQwdXQ" name="Breakdown User Story" guid="_Fdy64R3MEeakwMHbkQwdXQ" presentationName="Breakdown User Story Activity" superActivities="_D5XTsR3MEeakwMHbkQwdXQ" breakdownElements="_IloOgB3MEeakwMHbkQwdXQ _IloOgR3MEeakwMHbkQwdXQ _IloOgh3MEeakwMHbkQwdXQ _I8a94B3MEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_IloOgB3MEeakwMHbkQwdXQ" name="breakdown_story" guid="_IloOgB3MEeakwMHbkQwdXQ" presentationName="Break down Story" superActivities="_Fdy64R3MEeakwMHbkQwdXQ" optionalInput="_IloOgh3MEeakwMHbkQwdXQ" performedPrimarilyBy="_IloOgR3MEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{90DBD758-58B8-4383-94DD-312D349512BC}"/>
+        <selectedSteps href="uma://-umDp1nFYrMetgnJ-kUMhHw#_oEkOoGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-umDp1nFYrMetgnJ-kUMhHw#_oEkOoWE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-umDp1nFYrMetgnJ-kUMhHw#_oEkOomE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_IloOgR3MEeakwMHbkQwdXQ" name="xp_programmer" guid="_IloOgR3MEeakwMHbkQwdXQ" presentationName="XP Programmer" isPlanned="false" superActivities="_Fdy64R3MEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{08A6AF28-69B1-42DC-A957-2E6CDCB436C1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_IloOgh3MEeakwMHbkQwdXQ" name="xp_user_story" guid="_IloOgh3MEeakwMHbkQwdXQ" presentationName="User Story" isPlanned="false" superActivities="_Fdy64R3MEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_I8a94B3MEeakwMHbkQwdXQ" name="estimate_user_story" guid="_I8a94B3MEeakwMHbkQwdXQ" presentationName="Estimate User Story" superActivities="_Fdy64R3MEeakwMHbkQwdXQ" optionalInput="_IloOgh3MEeakwMHbkQwdXQ" performedPrimarilyBy="_IloOgR3MEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{23A924D3-5989-40DD-86A9-9D8FCFB8AE52}"/>
+        <selectedSteps href="uma://-Z9xFd9JTnJuNN5S27p06UQ#_oEqVQGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-Z9xFd9JTnJuNN5S27p06UQ#_oEqVQWE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-Z9xFd9JTnJuNN5S27p06UQ#_oEqVQmE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-Z9xFd9JTnJuNN5S27p06UQ#_oEqVQ2E-EdqnIZeW8YpHcA"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_D5XTsR3MEeakwMHbkQwdXQ" name="BreakDown Uer Story" guid="_D5XTsR3MEeakwMHbkQwdXQ" presentationName="BreakDown User Story" breakdownElements="_Fdy64R3MEeakwMHbkQwdXQ">
+      <presentation xmi:id="-LbJn5hXe7oJAAqJAvzq1qg" href="uma://-LbJn5hXe7oJAAqJAvzq1qg#-LbJn5hXe7oJAAqJAvzq1qg"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

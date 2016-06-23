@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="--LSAzlt7MTvIaqeDutFmbA" name="write_test_and_code,_SiM2QB3VEeakwMHbkQwdXQ" guid="--LSAzlt7MTvIaqeDutFmbA" version="1.0.0">
+  <sections xmi:id="_SiM2RB3VEeakwMHbkQwdXQ" name=" Write Failing Test Case " guid="_SiM2RB3VEeakwMHbkQwdXQ">
+    <sectionDescription>&lt;a id=&quot;Step2&quot; name=&quot;Step2&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    When looking at an Engineering Task, you should consider how to add the capability to the system. Does the system&#xD;
+    require new classes? Are there classes that would be useful? Regardless of how these decisions come out, the addition&#xD;
+    of functionality requires the creation of a test case. You write the test case to demonstrate that a portion of the&#xD;
+    functionality you need isn't in the system. This test case should fail.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <sections xmi:id="_SiM2QR3VEeakwMHbkQwdXQ" name=" Write Code to Make Tests Pass " guid="_SiM2QR3VEeakwMHbkQwdXQ">
+    <sectionDescription>&lt;a id=&quot;Step3&quot; name=&quot;Step3&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    When you have a failing test case, you then write only the code that is necessary to satisfy the test case. Test cases&#xD;
+    should have a very narrow focus. A failing test case may trigger the creation of a new class or method named in the&#xD;
+    test case, or it may simply require you to add more code to existing classes and methods.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;a id=&quot;XE_write_code__activity_definition&quot; name=&quot;XE_write_code__activity_definition&quot;>&lt;/a> &#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        To specify the design of the system in a way which is precise enough to allow computers to generate efficient&#xD;
+        processes automatically and clear enough for people to understand during ongoing work and maintenance.&#xD;
+    &lt;/li>&#xD;
+&lt;/ul></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -34,6 +34,14 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		 Document document;
 		 String idModel = "";
 		 String nameModel="";
+		 String idPComponent ;
+		 String superActiviteDeliveryProcess="_1ZbXUS2NEeadNdxfTHAycw";
+		 String superActivitePhase= "";
+		 String superActiviteOther="_1ZbXUS2NEeadNdxfTHAycw";
+		 
+		 String breakDowns="";
+		 
+	
 		 
 		
 		
@@ -47,28 +55,26 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 			
 		}
 		
-	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath, String variantFolderPath) throws ParserConfigurationException, SAXException, IOException {
+	    public  void generate(List<String> deltas, String deltasFolderPath, String processesFolderPath, 
+	    		String variantFolderPath, String deliveryProcessPluginPath) throws ParserConfigurationException, SAXException, IOException {
 	        	
 	    	
 	    	generateModelFile(deltas, deltasFolderPath, processesFolderPath,
 					variantFolderPath);	
 	    	generateContentFile(variantFolderPath);
-	    	updatePluginFile(deltas, deltasFolderPath, processesFolderPath,
-					variantFolderPath);
+	    	//updatePluginFile(deltas, deltasFolderPath, processesFolderPath,
+				//	variantFolderPath, deliveryProcessPluginPath);
 	    }
 
 		private void generateContentFile(String variantFolderPath) {
 			
 			final DocumentBuilderFactory factoryContent = DocumentBuilderFactory.newInstance();
 			
-			
-			  
-			
 			DocumentBuilder builder;
 			try {
 				builder = factoryContent.newDocumentBuilder();
 				Document content= builder.newDocument();
-				final Element contentRoot = content.createElement("org.eclipse.emf.uma:DeliveryProcessDescription");
+				final Element contentRoot = content.createElement("org.eclipse.epf.uma:DeliveryProcessDescription");
 			    content.appendChild(contentRoot);			
 			    contentRoot.setAttribute("xmi:version", "2.0");
 			    contentRoot.setAttribute("xmlns:xmi", "http://www.omg.org/XMI");
@@ -114,12 +120,82 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 			
 		}
 
-		private void updatePluginFile(List<String> deltas,
-				String deltasFolderPath, String processesFolderPath,
-				String variantFolderPath) {
-			// TODO Auto-generated method stub
-			
-		}
+//		private void updatePluginFile(List<String> deltas,
+//				String deltasFolderPath, String processesFolderPath,
+//				String variantFolderPath, String deliveryProcessPluginPath) {
+//			// TODO Auto-generated method stub
+//			
+//			
+//			//1. open the pluginf file
+//			//upade it.
+//			
+//			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//			DocumentBuilder builder = factory.newDocumentBuilder();
+//
+//			// Load the input XML document, parse it and return an instance of the
+//			// Document class.
+//			Document documentPlugin = builder.parse(new File(deliveryProcessPluginPath+"/plugin.xmi"));
+//
+//			
+//			NodeList nodeList = documentPlugin.getDocumentElement().getChildNodes();
+//			for (int i = 0; i < nodeList.getLength(); i++) {
+//				Node node = nodeList.item(i);
+//				// System.out.println(node.getNodeName());
+//
+//
+//				if (node.getNodeName().contains(":ResourceManager")) {
+//					Element elem = (Element) node;
+//					
+//					//Step1. Create subMangers element
+//					
+//					final Element subManager = documentPlugin.createElement("subManagers");
+//					subManager.setAttribute("xmi:id", idModel);// ID of the ResourceManager Element in model.xmi. 
+//					subManager.setAttribute("href", idModel);//uma://ID of ProcessComponent Element in model.xmi#ID of the ResourceManager Element in model.xmi
+//					elem.appendChild(subManager);
+//				    
+//					//Step 2. Create resourceDescriptors
+//					
+//					final Element resourceDesc = documentPlugin.createElement("resourceDescriptors");
+//					resourceDesc.setAttribute("xmi:id", idModel);//ID of the Process Element in model.xmi
+//					resourceDesc.setAttribute("id", idModel);//ID of ProcessComponent Element in model.xmi
+//					resourceDesc.setAttribute("uri", idModel);//Path + nam/model.xmi
+//					elem.appendChild(resourceDesc);
+//					
+//				
+//
+//					//TO DO
+//					//Step 3. ajouter childPackage.
+//					
+//					//FIND childPackage with name CustomCategories
+//					//ADD a new Element contentElements.
+//					
+//			    if (node.getNodeName().contains("MethodPlugin")) {
+//						Element method = (Element) node;
+//					
+//					final NodeList methodNodes = method.getChildNodes();
+//					for (int j = 0; j < methodNodes.getLength(); j++) {
+//
+//						{
+//							Node test = methodNodes.item(j);
+//			
+//							
+//							
+//							final Element contentElement = documentPlugin.createElement("contentElement");
+//							contentElement.setAttribute("xmi:type", "org.eclipse.epf.uma.CustomCategory");
+//							contentElement.setAttribute("xmi:id", idModel);//ID of the Process Element in model.xmi
+//							contentElement.setAttribute("id", idModel);//ID of ProcessComponent Element in model.xmi
+//							contentElement.setAttribute("uri", idModel);//Path + nam/model.xmi
+//							
+//							
+//							elem.appendChild(resourceDesc);
+//							
+//						}
+//					}
+//					
+//				}
+//			
+//			
+		
 
 		private void generateModelFile(List<String> deltas,
 				String deltasFolderPath, String processesFolderPath,
@@ -188,6 +264,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		    racine.appendChild(resourcemanager);
 		    
 		    final Element processC = document.createElement("org.eclipse.epf.uma.ProcessComponent");
+		    idPComponent = "_1ZbXUC2NEeadNdxfTHAycwUUUU";
 		    processC.setAttribute("xmi:id", "_1ZbXUC2NEeadNdxfTHAycw" );
 		    processC.setAttribute("name", nameModel );
 		    processC.setAttribute("guid", "_1ZbXUC2NEeadNdxfTHAycw" );
@@ -236,12 +313,13 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 
 		    final Element process = document.createElement("process");
 		    process.setAttribute("xsi:type", "org.eclipse.epf.uma:DeliveryProcess" );
-		    process.setAttribute("xmi:id", "_1ZbXUS2NEeadNdxfTHAycw" );
+		    
+		    process.setAttribute("xmi:id",superActiviteDeliveryProcess  );
 		    process.setAttribute("name", "Variant" );
 		    process.setAttribute("guid", "_1ZbXUS2NEeadNdxfTHAycw" );
 		    
 		    process.setAttribute("presentationName", "Mininal Agile Process" );
-		    process.setAttribute("breakdownElements", "_G8K1UC2OEeadNdxfTHAycw _I_wdsS2OEeadNdxfTHAycw _RZ_fEC2OEeadNdxfTHAycw" );
+		    process.setAttribute("breakdownElements", breakDowns );
 		    
 		    final Element presentation = document.createElement("presentation");
 		    
@@ -357,12 +435,38 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 										// System.out.println("Create Process Elements");
 										 final Element process = document.createElement("processElements");
 										 process.setAttribute("xsi:type", pr.getAttribute("xsi:type") );
+										
+										 if (pr.getAttribute("xsi:type").contains("Phase)") ){
+											 
+											 process.setAttribute("superActivities", superActiviteDeliveryProcess);
+											 breakDowns=breakDowns+" "+ e.getAttribute("xmi:id")+" ";
+										 
+											 superActivitePhase= e.getAttribute("xmi:id") ;
+										 }
+										 
+										 if (pr.getAttribute("xsi:type").contains("Activity)") ){
+											 
+											 if (superActivitePhase=="") {
+												 process.setAttribute("superActivities", superActiviteDeliveryProcess);
+											 breakDowns=breakDowns+" "+ e.getAttribute("xmi:id")+" ";
+													 
+											 }
+											 else 
+												 process.setAttribute("superActivities", superActivitePhase);
+										 }
+											 
+											
+										 
+										 
+											 
 										 process.setAttribute("xmi:id", pr.getAttribute("xmi:id") );
 										 process.setAttribute("name", pr.getAttribute("name") );
 										 process.setAttribute("guid", pr.getAttribute("guid") );
 										 process.setAttribute("presentarionName", pr.getAttribute("presentarionName") );
 										 process.setAttribute("isPlanned", pr.getAttribute("isPlanned") );
-										 process.setAttribute("superActivities", pr.getAttribute("superActivities") );
+										 
+										 
+										
 										 								 
 										 NodeList elements = pr.getChildNodes();
 										 

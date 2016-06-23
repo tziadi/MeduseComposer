@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-U1NDyQ__yd_sq4IAXMdGsg" name="pair_programming,_RMJXYB3XEear7OvqOQNzmw" guid="-U1NDyQ__yd_sq4IAXMdGsg" changeDate="2016-05-19T17:36:28.498+0200" version="1.0.0">
+  <mainDescription>&lt;p>&#xD;
+    Pair Programming is an Extreme Programming best practice. The basic rule regarding pair programming in XP is that all&#xD;
+    production code is developed in pairs. One programmer has the responsibility to complete a task. That programmer asks&#xD;
+    other programmers to pair with him to complete the task. The pairings are short term, usually less than half a day.&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_RMJXYR3XEear7OvqOQNzmw" name=" Get a Pair Programming Partner " guid="_RMJXYR3XEear7OvqOQNzmw">
+    <sectionDescription>&lt;a id=&quot;Step1&quot; name=&quot;Step1&quot;>&lt;/a> &#xD;
+&lt;p>&#xD;
+    Find a partner who has experience or skill you need to complete your task. Your task may include modifying a database&#xD;
+    table. Ask the person on the team most knowledgeable to help you effectively use the database API. Later, you might&#xD;
+    need to display the data in a GUI window, but you have not seen that part of the GUI. Get someone who knows about it to&#xD;
+    help.&#xD;
+&lt;/p></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    To produce code through pair programming&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

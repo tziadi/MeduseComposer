@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_ZtmcEB3MEeakwMHbkQwdXQ" guid="_ZtmcEB3MEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_ZtmcER3MEeakwMHbkQwdXQ" id="-q3x1ij0naPaEgGJYOIAMRQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_ZtAmMB3MEeakwMHbkQwdXQ" name="Define Vision" guid="_ZtAmMB3MEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_ZtAmMh3MEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_f4R1oB3MEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_atiPEB3MEeakwMHbkQwdXQ" name="Define Vision " guid="_atiPEB3MEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_atiPER3MEeakwMHbkQwdXQ" name="Define Vision " guid="_atiPER3MEeakwMHbkQwdXQ" presentationName="Define Vision Activity" superActivities="_ZtAmMR3MEeakwMHbkQwdXQ" breakdownElements="_fdJ_4B3MEeakwMHbkQwdXQ _fdJ_4R3MEeakwMHbkQwdXQ _fdTw4B3MEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_fdJ_4B3MEeakwMHbkQwdXQ" name="develop_xp_vision" guid="_fdJ_4B3MEeakwMHbkQwdXQ" presentationName="Define Vision" superActivities="_atiPER3MEeakwMHbkQwdXQ" output="_fdTw4B3MEeakwMHbkQwdXQ" performedPrimarilyBy="_fdJ_4R3MEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{A8708FFB-BB20-40AF-BEF2-7A8A814FF74D}"/>
+        <selectedSteps href="uma://-W67fNE0rT1c2PM-20yXbrw#_oB58MGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-W67fNE0rT1c2PM-20yXbrw#_oB58MWE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-W67fNE0rT1c2PM-20yXbrw#_oB58MmE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-W67fNE0rT1c2PM-20yXbrw#_oB58M2E-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_fdJ_4R3MEeakwMHbkQwdXQ" name="xp_customer" guid="_fdJ_4R3MEeakwMHbkQwdXQ" presentationName="XP Customer" isPlanned="false" superActivities="_atiPER3MEeakwMHbkQwdXQ" modifies="_fdTw4B3MEeakwMHbkQwdXQ" responsibleFor="_fdTw4B3MEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_fdTw4B3MEeakwMHbkQwdXQ" name="xp_vision" guid="_fdTw4B3MEeakwMHbkQwdXQ" presentationName="XP Vision" isPlanned="false" superActivities="_atiPER3MEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{2300FB25-7249-4481-A1BD-978240906832}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_ZtAmMR3MEeakwMHbkQwdXQ" name="Define Vision" guid="_ZtAmMR3MEeakwMHbkQwdXQ" presentationName="Define Vision " breakdownElements="_atiPER3MEeakwMHbkQwdXQ">
+      <presentation xmi:id="-q3x1ij0naPaEgGJYOIAMRQ" href="uma://-q3x1ij0naPaEgGJYOIAMRQ#-q3x1ij0naPaEgGJYOIAMRQ"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

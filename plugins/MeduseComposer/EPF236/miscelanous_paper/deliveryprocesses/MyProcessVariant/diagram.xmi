@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.eclipse.epf.diagram.model="http://www.eclipse.org/epf/diagram/1.0.0/diagram.ecore" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_rkq3IDR8Eeatk4wwg-jrJg" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:DeliveryProcess" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_sbvr4SgBEeaAgKvJlokz4A"/>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_rkq3ITR8Eeatk4wwg-jrJg" type="ADD" element="_rkq3IDR8Eeatk4wwg-jrJg" name="MyProcessVariant" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_rkq3IjR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_rkq3IzR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rkq3JDR8Eeatk4wwg-jrJg"/>
+  </notation:Diagram>
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_rltY8DR8Eeatk4wwg-jrJg" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:Activity" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_F0fPcTR8Eeatk4wwg-jrJg"/>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_rltY8TR8Eeatk4wwg-jrJg" type="ADD" element="_rltY8DR8Eeatk4wwg-jrJg" name="Set Environment Test" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_rltY8jR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_rltY8zR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rltY9DR8Eeatk4wwg-jrJg"/>
+  </notation:Diagram>
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_rmc_0DR8Eeatk4wwg-jrJg" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:Phase" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_192UQSgBEeaAgKvJlokz4A"/>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_rmc_0TR8Eeatk4wwg-jrJg" type="ADD" element="_rmc_0DR8Eeatk4wwg-jrJg" name="Implementation Phase" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_rmc_0jR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_rmc_0zR8Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rmc_1DR8Eeatk4wwg-jrJg"/>
+  </notation:Diagram>
+  <uml:Activity xmi:id="_HUD54DR-Eeatk4wwg-jrJg" name="Execute Unit Test">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HUD54TR-Eeatk4wwg-jrJg" source="uma_element">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HUD54jR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_DnARkCgCEeaAgKvJlokz4A"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HUD54zR-Eeatk4wwg-jrJg" key="type" value="Activity"/>
+    </eAnnotations>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_HZ3m8DR-Eeatk4wwg-jrJg" name="Create Unit Test Case Task">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HZ3m8TR-Eeatk4wwg-jrJg" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HZ3m8jR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_DnARkSgCEeaAgKvJlokz4A"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HZ3m8zR-Eeatk4wwg-jrJg" key="type" value="Task"/>
+      </eAnnotations>
+    </node>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_HZ3m9DR-Eeatk4wwg-jrJg" name="Run Unit Test Task">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HZ3m9TR-Eeatk4wwg-jrJg" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HZ3m9jR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_DnARkigCEeaAgKvJlokz4A"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HZ3m9zR-Eeatk4wwg-jrJg" key="type" value="Task"/>
+      </eAnnotations>
+    </node>
+  </uml:Activity>
+  <notation:Diagram xmi:id="_HUD55DR-Eeatk4wwg-jrJg" type="AD" element="_HUD54DR-Eeatk4wwg-jrJg" name="Execute Unit Test" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_HUD55TR-Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_HUD55jR-Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HUD55zR-Eeatk4wwg-jrJg"/>
+  </notation:Diagram>
+  <uml:Activity xmi:id="_I19KcDR-Eeatk4wwg-jrJg" name="Implementation Phase">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I19KcTR-Eeatk4wwg-jrJg" source="uma_element">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I19KcjR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_192UQSgBEeaAgKvJlokz4A"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I19KczR-Eeatk4wwg-jrJg" key="type" value="Phase"/>
+    </eAnnotations>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_I2QscDR-Eeatk4wwg-jrJg" name="Develop Source Code Activity">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2QscTR-Eeatk4wwg-jrJg" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QscjR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_-1JFESgBEeaAgKvJlokz4A"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QsczR-Eeatk4wwg-jrJg" key="type" value="Activity"/>
+      </eAnnotations>
+    </node>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_I2QsdDR-Eeatk4wwg-jrJg" name="Set Environment Test Activity">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2QsdTR-Eeatk4wwg-jrJg" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QsdjR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_F0fPcTR8Eeatk4wwg-jrJg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QsdzR-Eeatk4wwg-jrJg" key="type" value="Activity"/>
+      </eAnnotations>
+    </node>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_I2QseDR-Eeatk4wwg-jrJg" name="Execute Unit Test Activity">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2QseTR-Eeatk4wwg-jrJg" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QsejR-Eeatk4wwg-jrJg" key="uri" value="uma://_sbvr4CgBEeaAgKvJlokz4A#_DnARkCgCEeaAgKvJlokz4A"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I2QsezR-Eeatk4wwg-jrJg" key="type" value="Activity"/>
+      </eAnnotations>
+    </node>
+  </uml:Activity>
+  <notation:Diagram xmi:id="_I19KdDR-Eeatk4wwg-jrJg" type="AD" element="_I19KcDR-Eeatk4wwg-jrJg" name="Implementation Phase" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_I19KdTR-Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_I19KdjR-Eeatk4wwg-jrJg"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_I19KdzR-Eeatk4wwg-jrJg"/>
+  </notation:Diagram>
+</xmi:XMI>

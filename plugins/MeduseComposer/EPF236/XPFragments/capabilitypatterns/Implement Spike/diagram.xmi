@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.eclipse.epf.diagram.model="http://www.eclipse.org/epf/diagram/1.0.0/diagram.ecore" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Activity xmi:id="_iw9oEB3OEeakwMHbkQwdXQ" name="Implement Spike">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iw9oER3OEeakwMHbkQwdXQ" source="uma_element">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iw9oEh3OEeakwMHbkQwdXQ" key="uri" value="uma://_esCaEB3OEeakwMHbkQwdXQ#_fuNBsR3OEeakwMHbkQwdXQ"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iw9oEx3OEeakwMHbkQwdXQ" key="type" value="Activity"/>
+    </eAnnotations>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_i0YvgB3OEeakwMHbkQwdXQ" name="Implement Spike">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i0YvgR3OEeakwMHbkQwdXQ" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i0Yvgh3OEeakwMHbkQwdXQ" key="uri" value="uma://_esCaEB3OEeakwMHbkQwdXQ#_hw4rIB3OEeakwMHbkQwdXQ"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i0Yvgx3OEeakwMHbkQwdXQ" key="type" value="Task"/>
+      </eAnnotations>
+    </node>
+  </uml:Activity>
+  <notation:Diagram xmi:id="_ixGyAB3OEeakwMHbkQwdXQ" type="AD" element="_iw9oEB3OEeakwMHbkQwdXQ" name="Implement Spike" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_ixGyAR3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_ixGyAh3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ixGyAx3OEeakwMHbkQwdXQ"/>
+  </notation:Diagram>
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_jxClAB3OEeakwMHbkQwdXQ" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:Activity" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_fuNBsR3OEeakwMHbkQwdXQ"/>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_jxoa4B3OEeakwMHbkQwdXQ">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hw4rIR3OEeakwMHbkQwdXQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_jxoa4R3OEeakwMHbkQwdXQ" name="XP Programmer">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hw4rIR3OEeakwMHbkQwdXQ"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_jxoa4h3OEeakwMHbkQwdXQ" name="Implement Spike" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hw4rIB3OEeakwMHbkQwdXQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_jxoa5h3OEeakwMHbkQwdXQ" target="_jxoa4x3OEeakwMHbkQwdXQ"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_jxoa4x3OEeakwMHbkQwdXQ" incomingConnections="_jxoa5h3OEeakwMHbkQwdXQ" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hw4rIB3OEeakwMHbkQwdXQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_jxoa5B3OEeakwMHbkQwdXQ" name="Production Code" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hxB1Eh3OEeakwMHbkQwdXQ"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_jxoa5R3OEeakwMHbkQwdXQ" name="XP Unit Test" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_esCaEB3OEeakwMHbkQwdXQ#_hxB1Ex3OEeakwMHbkQwdXQ"/>
+      </nodes>
+    </nodes>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_jxClAR3OEeakwMHbkQwdXQ" type="ADD" element="_jxClAB3OEeakwMHbkQwdXQ" name="Implement Spike" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_jxyL4B3OEeakwMHbkQwdXQ" type="1001" element="_jxoa4B3OEeakwMHbkQwdXQ">
+      <children xmi:type="notation:Node" xmi:id="_jxyL7B3OEeakwMHbkQwdXQ" type="2001" element="_jxoa4R3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_jxyL8h3OEeakwMHbkQwdXQ" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_jxyL7R3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyL7h3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_jxyL7x3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_jxyL8B3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyL8R3OEeakwMHbkQwdXQ" x="40" y="11" width="74"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_jxyL8x3OEeakwMHbkQwdXQ" type="2002" element="_jxoa4h3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_jxyL-R3OEeakwMHbkQwdXQ" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_jxyL9B3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyL9R3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_jxyL9h3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_jxyL9x3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyL-B3OEeakwMHbkQwdXQ" x="134" y="11" width="77"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_jxyL4R3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyL4h3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_jxyL4x3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_jxyL5B3OEeakwMHbkQwdXQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyL5R3OEeakwMHbkQwdXQ" x="30" y="1" width="211" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_jxyL5h3OEeakwMHbkQwdXQ" type="1002" element="_jxoa4x3OEeakwMHbkQwdXQ">
+      <children xmi:type="notation:Node" xmi:id="_jxyL-h3OEeakwMHbkQwdXQ" type="2003" element="_jxoa5B3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_jxyMAB3OEeakwMHbkQwdXQ" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_jxyL-x3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyL_B3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_jxyL_R3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_jxyL_h3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyL_x3OEeakwMHbkQwdXQ" x="140" y="91" width="65"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_jxyMAR3OEeakwMHbkQwdXQ" type="2003" element="_jxoa5R3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_jxyMBx3OEeakwMHbkQwdXQ" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_jxyMAh3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyMAx3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_jxyMBB3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_jxyMBR3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyMBh3OEeakwMHbkQwdXQ" x="140" y="143" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_jxyL5x3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxyL6B3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_jxyL6R3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_jxyL6h3OEeakwMHbkQwdXQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jxyL6x3OEeakwMHbkQwdXQ" x="130" y="81" width="85" height="119"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_jxClAh3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_jxClAx3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_jxClBB3OEeakwMHbkQwdXQ"/>
+  </notation:Diagram>
+</xmi:XMI>

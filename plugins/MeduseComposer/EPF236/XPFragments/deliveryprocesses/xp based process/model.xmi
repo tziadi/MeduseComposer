@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_3PcuIR6BEeauwPzXxc7Y9Q" guid="_3PcuIR6BEeauwPzXxc7Y9Q">
+    <resourceDescriptors xmi:id="_3PcuIh6BEeauwPzXxc7Y9Q" id="-nT1FvOtEUAQzJKaAFA2uJw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_3PACMB6BEeauwPzXxc7Y9Q" name="xp based process" guid="_3PACMB6BEeauwPzXxc7Y9Q">
+    <methodElementProperty xmi:id="_3PACMh6BEeauwPzXxc7Y9Q" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_ErHCAB6CEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_JjH50B6CEeauwPzXxc7Y9Q" name="XP Iteration" guid="_JjH50B6CEeauwPzXxc7Y9Q">
+      <processElements xsi:type="org.eclipse.epf.uma:Iteration" xmi:id="_JjH50R6CEeauwPzXxc7Y9Q" name="XP Iteration" guid="_JjH50R6CEeauwPzXxc7Y9Q" presentationName="XP Iteration 1..n" superActivities="_3PACMR6BEeauwPzXxc7Y9Q" isRepeatable="true"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_3PACMR6BEeauwPzXxc7Y9Q" name="xp based process" guid="_3PACMR6BEeauwPzXxc7Y9Q" presentationName="XP based Process" breakdownElements="_JjH50R6CEeauwPzXxc7Y9Q">
+      <presentation xmi:id="-nT1FvOtEUAQzJKaAFA2uJw" href="uma://-nT1FvOtEUAQzJKaAFA2uJw#-nT1FvOtEUAQzJKaAFA2uJw"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

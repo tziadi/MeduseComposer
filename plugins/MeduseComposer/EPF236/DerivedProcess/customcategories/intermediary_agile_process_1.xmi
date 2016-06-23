@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-BRykRkLf2V3ZFXUozuNGDA" name="new_custom_category,_Usj8YC7pEeaIyrspelW6Sw" guid="-BRykRkLf2V3ZFXUozuNGDA" changeDate="2016-06-10T10:58:25.989+0200">
+  <mainDescription>&lt;p>&#xD;
+    This agile process variant was derivated from the feature configuration depicted in the figure bellow. Furthermore, the&#xD;
+    figure depicts the selected process delta modules for this previous feature configuration.&#xD;
+&lt;/p>&#xD;
+&lt;img alt=&quot;&quot; src=&quot;resources/XPIntermedlFeatureConfiguration1_and_deltas.png&quot; width=&quot;600&quot; height=&quot;547&quot; />&lt;br />&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>
