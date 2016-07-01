@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-FCSstEc0MqePsWmv7PxKFA" name="new_artifact,_p_CwYB5zEeafpuecKFyt3w" guid="-FCSstEc0MqePsWmv7PxKFA" changeDate="2016-05-20T12:14:52.980+0200">
+  <purpose>To create a CRC card, you can begin by writing out a scenario which identifies the major actors and actions which the&#xD;
+actors do. Only write out actions and actors specific to that particular scenario. Nouns should turn into the&#xD;
+&lt;i>classes&lt;/i> of the card, verbs typically turn into the &lt;i>responsibilities&lt;/i> of the &lt;i>card&lt;/i>, and&#xD;
+&lt;i>collaborators&lt;/i> are the other cards with which the card will be interacting with.</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

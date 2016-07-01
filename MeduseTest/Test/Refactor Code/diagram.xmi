@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.eclipse.epf.diagram.model="http://www.eclipse.org/epf/diagram/1.0.0/diagram.ecore" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore">
+  <org.eclipse.epf.diagram.model:ActivityDetailDiagram xmi:id="_YV1F8B3OEeakwMHbkQwdXQ" autoLayout="true">
+    <linkedElement xmi:type="org.eclipse.epf.uma:Activity" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_UeKQ0R3OEeakwMHbkQwdXQ"/>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:RoleTaskComposite" xmi:id="_YfXccB3OEeakwMHbkQwdXQ">
+      <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAR3OEeakwMHbkQwdXQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:RoleNode" xmi:id="_YfXccR3OEeakwMHbkQwdXQ" name="XP Programmer">
+        <linkedElement xmi:type="org.eclipse.epf.uma:RoleDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAR3OEeakwMHbkQwdXQ"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:TaskNode" xmi:id="_YfXcch3OEeakwMHbkQwdXQ" incomingConnections="_YfXceB3OEeakwMHbkQwdXQ" name="Refactor Code" index="0">
+        <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAB3OEeakwMHbkQwdXQ"/>
+        <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_YfXceR3OEeakwMHbkQwdXQ" target="_YfXcdR3OEeakwMHbkQwdXQ"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_YfXccx3OEeakwMHbkQwdXQ" type="1">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAB3OEeakwMHbkQwdXQ"/>
+      <outgoingConnections xmi:type="org.eclipse.epf.diagram.model:Link" xmi:id="_YfXceB3OEeakwMHbkQwdXQ" target="_YfXcch3OEeakwMHbkQwdXQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_YfXcdB3OEeakwMHbkQwdXQ" name="Production Code" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAh3OEeakwMHbkQwdXQ"/>
+      </nodes>
+    </nodes>
+    <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductComposite" xmi:id="_YfXcdR3OEeakwMHbkQwdXQ" incomingConnections="_YfXceR3OEeakwMHbkQwdXQ" type="2">
+      <linkedElement xmi:type="org.eclipse.epf.uma:TaskDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAB3OEeakwMHbkQwdXQ"/>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_YfXcdh3OEeakwMHbkQwdXQ" name="Production Code" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xAh3OEeakwMHbkQwdXQ"/>
+      </nodes>
+      <nodes xmi:type="org.eclipse.epf.diagram.model:WorkProductDescriptorNode" xmi:id="_YfXcdx3OEeakwMHbkQwdXQ" name="XP Unit Test" state="">
+        <linkedElement xmi:type="org.eclipse.epf.uma:WorkProductDescriptor" href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Xb2xBB3OEeakwMHbkQwdXQ"/>
+      </nodes>
+    </nodes>
+  </org.eclipse.epf.diagram.model:ActivityDetailDiagram>
+  <notation:Diagram xmi:id="_YV-P4B3OEeakwMHbkQwdXQ" type="ADD" element="_YV1F8B3OEeakwMHbkQwdXQ" name="Refactor Code" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_Yf9SUB3OEeakwMHbkQwdXQ" type="1001" element="_YfXccB3OEeakwMHbkQwdXQ">
+      <children xmi:type="notation:Node" xmi:id="_YgjvQB3OEeakwMHbkQwdXQ" type="2001" element="_YfXccR3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_YgjvRh3OEeakwMHbkQwdXQ" type="4001"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_YgjvQR3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_YgjvQh3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_YgjvQx3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_YgjvRB3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YgjvRR3OEeakwMHbkQwdXQ" x="40" y="98" width="74"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_YgjvRx3OEeakwMHbkQwdXQ" type="2002" element="_YfXcch3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_YgjvTR3OEeakwMHbkQwdXQ" type="4002"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_YgjvSB3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_YgjvSR3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_YgjvSh3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_YgjvSx3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YgjvTB3OEeakwMHbkQwdXQ" x="134" y="98" width="77"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Yf9SUR3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yf9SUh3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Yf9SUx3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Yf9SVB3OEeakwMHbkQwdXQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yf9SVR3OEeakwMHbkQwdXQ" x="30" y="88" width="211" height="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Yf9SVh3OEeakwMHbkQwdXQ" type="1002" element="_YfXccx3OEeakwMHbkQwdXQ">
+      <children xmi:type="notation:Node" xmi:id="_Yh5MAB3OEeakwMHbkQwdXQ" type="2003" element="_YfXcdB3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_Yh5MBh3OEeakwMHbkQwdXQ" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Yh5MAR3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yh5MAh3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Yh5MAx3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Yh5MBB3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yh5MBR3OEeakwMHbkQwdXQ" x="140" y="11" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Yf9SVx3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yf9SWB3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Yf9SWR3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Yf9SWh3OEeakwMHbkQwdXQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yf9SWx3OEeakwMHbkQwdXQ" x="130" y="1" width="85" height="67"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Yf9SXB3OEeakwMHbkQwdXQ" type="1002" element="_YfXcdR3OEeakwMHbkQwdXQ">
+      <children xmi:type="notation:Node" xmi:id="_Yh5MBx3OEeakwMHbkQwdXQ" type="2003" element="_YfXcdh3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_YiC9AB3OEeakwMHbkQwdXQ" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Yh5MCB3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yh5MCR3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Yh5MCh3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_Yh5MCx3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yh5MDB3OEeakwMHbkQwdXQ" x="140" y="178" width="65"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_YiC9AR3OEeakwMHbkQwdXQ" type="2003" element="_YfXcdx3OEeakwMHbkQwdXQ">
+        <children xmi:type="notation:Node" xmi:id="_YiC9Bx3OEeakwMHbkQwdXQ" type="4003"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_YiC9Ah3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_YiC9Ax3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_YiC9BB3OEeakwMHbkQwdXQ"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_YiC9BR3OEeakwMHbkQwdXQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YiC9Bh3OEeakwMHbkQwdXQ" x="140" y="230" width="65"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Yf9SXR3OEeakwMHbkQwdXQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yf9SXh3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Yf9SXx3OEeakwMHbkQwdXQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Yf9SYB3OEeakwMHbkQwdXQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yf9SYR3OEeakwMHbkQwdXQ" x="130" y="168" width="85" height="119"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_YV-P4R3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_YV-P4h3OEeakwMHbkQwdXQ"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_YV-P4x3OEeakwMHbkQwdXQ"/>
+  </notation:Diagram>
+</xmi:XMI>

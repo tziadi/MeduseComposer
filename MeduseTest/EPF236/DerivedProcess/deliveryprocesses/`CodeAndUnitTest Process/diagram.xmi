@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Activity xmi:id="_tI1lICNQEeanCJDacJ_BNw" name="Implementation Phase">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tI1lISNQEeanCJDacJ_BNw" source="uma_element">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tI1lIiNQEeanCJDacJ_BNw" key="uri" value="uma://_wJSRoCNAEeanCJDacJ_BNw#_adYT8SNCEeanCJDacJ_BNw"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tI1lIyNQEeanCJDacJ_BNw" key="type" value="Phase"/>
+    </eAnnotations>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_tLOKwCNQEeanCJDacJ_BNw" name="Develop Source Code">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tLOKwSNQEeanCJDacJ_BNw" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tLOKwiNQEeanCJDacJ_BNw" key="uri" value="uma://_wJSRoCNAEeanCJDacJ_BNw#_qpxqESNCEeanCJDacJ_BNw"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tLOKwyNQEeanCJDacJ_BNw" key="type" value="Activity"/>
+      </eAnnotations>
+    </node>
+  </uml:Activity>
+  <notation:Diagram xmi:id="_tI1lJCNQEeanCJDacJ_BNw" type="AD" element="_tI1lICNQEeanCJDacJ_BNw" name="Implementation Phase" measurementUnit="Pixel">
+    <styles xmi:type="notation:PageStyle" xmi:id="_tI1lJSNQEeanCJDacJ_BNw"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_tI1lJiNQEeanCJDacJ_BNw"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_tI1lJyNQEeanCJDacJ_BNw"/>
+  </notation:Diagram>
+  <uml:Activity xmi:id="_uG03YCNQEeanCJDacJ_BNw" name="`CodeAndUnitTest Process">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uG03YSNQEeanCJDacJ_BNw" source="uma_element">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uG03YiNQEeanCJDacJ_BNw" key="uri" value="uma://_wJSRoCNAEeanCJDacJ_BNw#_wJlzoCNAEeanCJDacJ_BNw"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uG03YyNQEeanCJDacJ_BNw" key="type" value="Activity"/>
+    </eAnnotations>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_uHRjUCNQEeanCJDacJ_BNw" name="Implementation Phase" outgoing="_wbPxECNQEeanCJDacJ_BNw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uHRjUSNQEeanCJDacJ_BNw" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uHRjUiNQEeanCJDacJ_BNw" key="uri" value="uma://_wJSRoCNAEeanCJDacJ_BNw#_adYT8SNCEeanCJDacJ_BNw"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uHRjUyNQEeanCJDacJ_BNw" key="type" value="Phase"/>
+      </eAnnotations>
+    </node>
+    <node xmi:type="uml:StructuredActivityNode" xmi:id="_uHRjVCNQEeanCJDacJ_BNw" name="Test Phase" incoming="_wbPxECNQEeanCJDacJ_BNw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uHRjVSNQEeanCJDacJ_BNw" source="uma_element">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uHRjViNQEeanCJDacJ_BNw" key="uri" value="uma://_wJSRoCNAEeanCJDacJ_BNw#_dulTESNPEeanCJDacJ_BNw"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uHRjVyNQEeanCJDacJ_BNw" key="type" value="Phase"/>
+      </eAnnotations>
+    </node>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wbPxECNQEeanCJDacJ_BNw" source="_uHRjUCNQEeanCJDacJ_BNw" target="_uHRjVCNQEeanCJDacJ_BNw"/>
+  </uml:Activity>
+  <notation:Diagram xmi:id="_uG03ZCNQEeanCJDacJ_BNw" type="AD" element="_uG03YCNQEeanCJDacJ_BNw" name="`CodeAndUnitTest Process" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_uHuPQCNQEeanCJDacJ_BNw" type="1010" element="_uHRjUCNQEeanCJDacJ_BNw">
+      <children xmi:type="notation:Node" xmi:id="_uHuPRiNQEeanCJDacJ_BNw" type="4009"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uHuPQSNQEeanCJDacJ_BNw" fontName="Arial" fontHeight="8"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uHuPQiNQEeanCJDacJ_BNw"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uHuPQyNQEeanCJDacJ_BNw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_uHuPRCNQEeanCJDacJ_BNw" lineColor="0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uHuPRSNQEeanCJDacJ_BNw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uHuPRyNQEeanCJDacJ_BNw" type="1010" element="_uHRjVCNQEeanCJDacJ_BNw">
+      <children xmi:type="notation:Node" xmi:id="_uHuPTSNQEeanCJDacJ_BNw" type="4009"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uHuPSCNQEeanCJDacJ_BNw" fontName="Arial" fontHeight="8"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uHuPSSNQEeanCJDacJ_BNw"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uHuPSiNQEeanCJDacJ_BNw"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_uHuPSyNQEeanCJDacJ_BNw" lineColor="0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uHuPTCNQEeanCJDacJ_BNw" x="164"/>
+    </children>
+    <styles xmi:type="notation:PageStyle" xmi:id="_uG03ZSNQEeanCJDacJ_BNw"/>
+    <styles xmi:type="notation:GuideStyle" xmi:id="_uG03ZiNQEeanCJDacJ_BNw"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uG03ZyNQEeanCJDacJ_BNw"/>
+    <edges xmi:type="notation:Edge" xmi:id="_wbY7ACNQEeanCJDacJ_BNw" type="3001" element="_wbPxECNQEeanCJDacJ_BNw" source="_uHuPQCNQEeanCJDacJ_BNw" target="_uHuPRyNQEeanCJDacJ_BNw">
+      <children xmi:type="notation:Node" xmi:id="_wbY7BSNQEeanCJDacJ_BNw" type="4012">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wbY7BiNQEeanCJDacJ_BNw" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_wbY7ASNQEeanCJDacJ_BNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_wbY7AiNQEeanCJDacJ_BNw" fontName="Arial" fontHeight="8"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_wbY7AyNQEeanCJDacJ_BNw" lineColor="0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wbY7BCNQEeanCJDacJ_BNw" points="[53, 7, -63, 0]$[113, 6, -3, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wcJI8CNQEeanCJDacJ_BNw" id="(0.49038461538461536,0.20408163265306123)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wcJI8SNQEeanCJDacJ_BNw" id="(0.05555555555555555,0.3469387755102041)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

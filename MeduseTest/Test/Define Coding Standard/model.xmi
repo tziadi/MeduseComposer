@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_5VwgIR3NEeakwMHbkQwdXQ" guid="_5VwgIR3NEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_5VwgIh3NEeakwMHbkQwdXQ" id="-Flc_aboTJqHOdX8tXJ6QOQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_5VKDMB3NEeakwMHbkQwdXQ" name="Define Coding Standard" guid="_5VKDMB3NEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_5VKDMh3NEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_7OoGQB3NEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9UveMB3NEeakwMHbkQwdXQ" name="Define Coding Standard" guid="_9UveMB3NEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_9UveMR3NEeakwMHbkQwdXQ" name="Define Coding Standard" guid="_9UveMR3NEeakwMHbkQwdXQ" presentationName="Define Coding Standard Activity" superActivities="_5VKDMR3NEeakwMHbkQwdXQ" breakdownElements="_-dwUsB3NEeakwMHbkQwdXQ _-dwUsR3NEeakwMHbkQwdXQ _-dwUsh3NEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_-dwUsB3NEeakwMHbkQwdXQ" name="define_coding_standard" guid="_-dwUsB3NEeakwMHbkQwdXQ" presentationName="Define Coding Standard" superActivities="_9UveMR3NEeakwMHbkQwdXQ" optionalInput="_-dwUsh3NEeakwMHbkQwdXQ" output="_-dwUsh3NEeakwMHbkQwdXQ" performedPrimarilyBy="_-dwUsR3NEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{C88D5B0A-1A59-4575-ADDF-8ECBBAB83410}"/>
+        <selectedSteps href="uma://-qIbMRqe8wqKN2-HLtNUcLw#_oCfyEGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-qIbMRqe8wqKN2-HLtNUcLw#_oCfyEWE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_-dwUsR3NEeakwMHbkQwdXQ" name="xp_programmer" guid="_-dwUsR3NEeakwMHbkQwdXQ" presentationName="XP Programmer" isPlanned="false" superActivities="_9UveMR3NEeakwMHbkQwdXQ" modifies="_-dwUsh3NEeakwMHbkQwdXQ" responsibleFor="_-dwUsh3NEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{08A6AF28-69B1-42DC-A957-2E6CDCB436C1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_-dwUsh3NEeakwMHbkQwdXQ" name="xp_coding_standard" guid="_-dwUsh3NEeakwMHbkQwdXQ" presentationName="Coding Standard" isPlanned="false" superActivities="_9UveMR3NEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{1D7E042C-B29E-4169-8DF3-37DE0A5F64ED}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_5VKDMR3NEeakwMHbkQwdXQ" name="Define Coding Standard" guid="_5VKDMR3NEeakwMHbkQwdXQ" presentationName="Define Coding Standard" breakdownElements="_9UveMR3NEeakwMHbkQwdXQ">
+      <presentation xmi:id="-Flc_aboTJqHOdX8tXJ6QOQ" href="uma://-Flc_aboTJqHOdX8tXJ6QOQ#-Flc_aboTJqHOdX8tXJ6QOQ"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

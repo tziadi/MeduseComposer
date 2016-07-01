@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-roxa8-KSLFSJqCQpu7AdAg" name=",_dd-cgB5zEeafpuecKFyt3w" guid="-roxa8-KSLFSJqCQpu7AdAg" changeDate="2016-05-20T12:20:01.332+0200">
+  <mainDescription>&lt;p>&#xD;
+    The biggest value of CRC cards is to allow people to break away from the procedural mode of thought and more fully&#xD;
+    appreciate object technology. CRC Cards allow entire project teams to contribute to the design. The more people who can&#xD;
+    help design the system&amp;nbsp;the greater the number of good ideas incorporated.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Source: &lt;a&#xD;
+    href=&quot;http://www.extremeprogramming.org/rules/crccards.html&quot;>http://www.extremeprogramming.org/rules/crccards.html&lt;/a>&#xD;
+&lt;/p></mainDescription>
+  <sections xmi:id="_h7RRwB50EeafpuecKFyt3w" name="New Step" guid="_h7RRwB50EeafpuecKFyt3w"/>
+  <purpose>This task consists of using&amp;nbsp; CRC&amp;nbsp; (Class Responsibilities, and Collaboration)&amp;nbsp; Cards to design the system as&#xD;
+a team.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_KXCsUB3NEeakwMHbkQwdXQ" guid="_KXCsUB3NEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_KXCsUR3NEeakwMHbkQwdXQ" id="-uaVPFq-MQT2YRkSwXmpQlg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_KWTFcB3NEeakwMHbkQwdXQ" name="Write User Story" guid="_KWTFcB3NEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_KWTFch3NEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_P1X9QB3NEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_LXjuIB3NEeakwMHbkQwdXQ" name="Write User Story" guid="_LXjuIB3NEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_LXjuIR3NEeakwMHbkQwdXQ" name="Write User Story" guid="_LXjuIR3NEeakwMHbkQwdXQ" presentationName="Write User Story Activity" superActivities="_KWTFcR3NEeakwMHbkQwdXQ" breakdownElements="_OT6xkB3NEeakwMHbkQwdXQ _OT6xkR3NEeakwMHbkQwdXQ _OUD7gB3NEeakwMHbkQwdXQ _OUD7gR3NEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_OT6xkB3NEeakwMHbkQwdXQ" name="write_user_story" guid="_OT6xkB3NEeakwMHbkQwdXQ" presentationName="Write User Story" superActivities="_LXjuIR3NEeakwMHbkQwdXQ" optionalInput="_OUD7gB3NEeakwMHbkQwdXQ" output="_OUD7gR3NEeakwMHbkQwdXQ" performedPrimarilyBy="_OT6xkR3NEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{62CFC55C-3151-46CB-8886-F3DBD552ABC4}"/>
+        <selectedSteps href="uma://-cqTu_uwmZrF3sFspx465XQ#_oQZEIGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-cqTu_uwmZrF3sFspx465XQ#_oQZEIWE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_OT6xkR3NEeakwMHbkQwdXQ" name="xp_customer" guid="_OT6xkR3NEeakwMHbkQwdXQ" presentationName="XP Customer" isPlanned="false" superActivities="_LXjuIR3NEeakwMHbkQwdXQ" modifies="_OUD7gR3NEeakwMHbkQwdXQ" responsibleFor="_OUD7gR3NEeakwMHbkQwdXQ _OUD7gB3NEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_OUD7gB3NEeakwMHbkQwdXQ" name="xp_vision" guid="_OUD7gB3NEeakwMHbkQwdXQ" presentationName="XP Vision" isPlanned="false" superActivities="_LXjuIR3NEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{2300FB25-7249-4481-A1BD-978240906832}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_OUD7gR3NEeakwMHbkQwdXQ" name="xp_user_story" guid="_OUD7gR3NEeakwMHbkQwdXQ" presentationName="User Story" isPlanned="false" superActivities="_LXjuIR3NEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_KWTFcR3NEeakwMHbkQwdXQ" name="Write User Story" guid="_KWTFcR3NEeakwMHbkQwdXQ" presentationName="Write User Story" breakdownElements="_LXjuIR3NEeakwMHbkQwdXQ">
+      <presentation xmi:id="-uaVPFq-MQT2YRkSwXmpQlg" href="uma://-uaVPFq-MQT2YRkSwXmpQlg#-uaVPFq-MQT2YRkSwXmpQlg"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

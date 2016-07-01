@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_4E4UwR6WEea3Ls5mGiaxNw" guid="_4E4UwR6WEea3Ls5mGiaxNw">
+    <resourceDescriptors xmi:id="_4E4Uwh6WEea3Ls5mGiaxNw" id="-vTcOqOG7gLB1SLzBeQUcUg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_4ESe4B6WEea3Ls5mGiaxNw" name="Customer Testing" guid="_4ESe4B6WEea3Ls5mGiaxNw">
+    <methodElementProperty xmi:id="_4ESe4h6WEea3Ls5mGiaxNw" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_A7uZoB6XEea3Ls5mGiaxNw" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_ePrVwCyWEeaZuL2AGiEn0A" name="Customer Testing Phase" guid="_ePrVwCyWEeaZuL2AGiEn0A">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_L5fr0C8LEeas4r90RCF23Q" name="Revise Customer Test" guid="_L5fr0C8LEeas4r90RCF23Q">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_L5fr0S8LEeas4r90RCF23Q" name="Revise Customer Test" guid="_L5fr0S8LEeas4r90RCF23Q" presentationName="Define Customer Test" superActivities="_ePrVwSyWEeaZuL2AGiEn0A" breakdownElements="_VR3JYC8LEeas4r90RCF23Q _VR3JYS8LEeas4r90RCF23Q _VR3JYi8LEeas4r90RCF23Q">
+          <methodElementProperty xmi:id="_OV9HMS8LEeas4r90RCF23Q" name="wbe_GlobalPresentedAfter" value="_ePrVwSyWEeaZuL2AGiEn0A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_VR3JYC8LEeas4r90RCF23Q" name="define_customer_test" guid="_VR3JYC8LEeas4r90RCF23Q" presentationName="Define Customer Test" superActivities="_L5fr0S8LEeas4r90RCF23Q" optionalInput="_VR3JYi8LEeas4r90RCF23Q" performedPrimarilyBy="_VR3JYS8LEeas4r90RCF23Q">
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{DCDB57BE-4233-4CF8-90CE-70D6808F92B0}"/>
+          <selectedSteps href="uma://-WgE0oiE2yddCOMnfzL25Gw#_oGorMGE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-WgE0oiE2yddCOMnfzL25Gw#_oGorMWE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_VR3JYS8LEeas4r90RCF23Q" name="xp_customer" guid="_VR3JYS8LEeas4r90RCF23Q" presentationName="XP Customer" isPlanned="false" superActivities="_L5fr0S8LEeas4r90RCF23Q" responsibleFor="_VR3JYi8LEeas4r90RCF23Q">
+          <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_VR3JYi8LEeas4r90RCF23Q" name="xp_user_story" guid="_VR3JYi8LEeas4r90RCF23Q" presentationName="User Story" isPlanned="false" superActivities="_L5fr0S8LEeas4r90RCF23Q">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+        </processElements>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_I-j-ACyVEeaZuL2AGiEn0A" name="Automate Customer  Test" guid="_I-j-ACyVEeaZuL2AGiEn0A">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_I-j-ASyVEeaZuL2AGiEn0A" name="Automate Customer  Test" guid="_I-j-ASyVEeaZuL2AGiEn0A" presentationName="Automate Customer  Test Activity" superActivities="_ePrVwSyWEeaZuL2AGiEn0A" breakdownElements="_TtXqECyVEeaZuL2AGiEn0A _Ttg0ACyVEeaZuL2AGiEn0A _Ttg0ASyVEeaZuL2AGiEn0A _lluLsCyVEeaZuL2AGiEn0A">
+          <methodElementProperty xmi:id="_NKyG0CyVEeaZuL2AGiEn0A" name="wbe_GlobalPresentedAfter" value="_L5fr0S8LEeas4r90RCF23Q"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_TtXqECyVEeaZuL2AGiEn0A" name="automate_acceptance_test" guid="_TtXqECyVEeaZuL2AGiEn0A" presentationName="Automate Customer Test" superActivities="_I-j-ASyVEeaZuL2AGiEn0A" mandatoryInput="_lluLsCyVEeaZuL2AGiEn0A" output="_Ttg0ASyVEeaZuL2AGiEn0A" performedPrimarilyBy="_Ttg0ACyVEeaZuL2AGiEn0A">
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{E614ED93-AE72-4FD1-B459-C508CE1C536F}"/>
+          <selectedSteps href="uma://-fm-gBePbdl_WMsE5NxEreQ#_oNCOIGE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_Ttg0ACyVEeaZuL2AGiEn0A" name="xp_tester" guid="_Ttg0ACyVEeaZuL2AGiEn0A" presentationName="XP Tester" isPlanned="false" superActivities="_I-j-ASyVEeaZuL2AGiEn0A" modifies="_Ttg0ASyVEeaZuL2AGiEn0A">
+          <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{FB65D00B-8304-4CF7-9969-52CE82F503DC}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Ttg0ASyVEeaZuL2AGiEn0A" name="xp_customer_test" guid="_Ttg0ASyVEeaZuL2AGiEn0A" presentationName="XP Customer Test" isPlanned="false" superActivities="_I-j-ASyVEeaZuL2AGiEn0A">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{DF0EDBC7-4AAD-438D-89AA-64ECFE2416F5}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_lluLsCyVEeaZuL2AGiEn0A" name="xp_user_story" guid="_lluLsCyVEeaZuL2AGiEn0A" presentationName="User Story" isPlanned="false" superActivities="_I-j-ASyVEeaZuL2AGiEn0A">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+        </processElements>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_wSXsAC2PEeadNdxfTHAycw" name="Execute Customer Test Activity" guid="_wSXsAC2PEeadNdxfTHAycw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_wSXsAS2PEeadNdxfTHAycw" name="Execute Customer Test Activity" guid="_wSXsAS2PEeadNdxfTHAycw" presentationName="Execute Customer Test Activity" superActivities="_ePrVwSyWEeaZuL2AGiEn0A" breakdownElements="_7IoD4C2PEeadNdxfTHAycw _2r29oC2PEeadNdxfTHAycw _2r29oS2PEeadNdxfTHAycw _2r29oi2PEeadNdxfTHAycw _4nF7QC2PEeadNdxfTHAycw _4nF7QS2PEeadNdxfTHAycw">
+          <methodElementProperty xmi:id="_OV9HMC8LEeas4r90RCF23Q" name="wbe_GlobalPresentedAfter" value="_I-j-ASyVEeaZuL2AGiEn0A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_2r29oC2PEeadNdxfTHAycw" name="run_acceptance_test" guid="_2r29oC2PEeadNdxfTHAycw" presentationName="Run Customer Test" superActivities="_wSXsAS2PEeadNdxfTHAycw" linkToPredecessor="__DRUgS2PEeadNdxfTHAycw" optionalInput="_2r29oi2PEeadNdxfTHAycw" performedPrimarilyBy="_2r29oS2PEeadNdxfTHAycw">
+          <methodElementProperty xmi:id="_720moC2PEeadNdxfTHAycw" name="wbe_GlobalPresentedAfter" value="_7IoD4C2PEeadNdxfTHAycw"/>
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{D4E30732-30D3-4C75-8C69-D2F15313F1A9}"/>
+          <selectedSteps href="uma://-6RyabSc-ZUEtoEKb90BCbg#_oNI70GE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_2r29oS2PEeadNdxfTHAycw" name="xp_tester" guid="_2r29oS2PEeadNdxfTHAycw" presentationName="XP Tester" isPlanned="false" superActivities="_wSXsAS2PEeadNdxfTHAycw">
+          <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{FB65D00B-8304-4CF7-9969-52CE82F503DC}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2r29oi2PEeadNdxfTHAycw" name="xp_customer_test" guid="_2r29oi2PEeadNdxfTHAycw" presentationName="XP Customer Test" isPlanned="false" superActivities="_wSXsAS2PEeadNdxfTHAycw">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{DF0EDBC7-4AAD-438D-89AA-64ECFE2416F5}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_4nF7QC2PEeadNdxfTHAycw" name="report_acceptance_test_result" guid="_4nF7QC2PEeadNdxfTHAycw" presentationName="Report Customer Test Result" superActivities="_wSXsAS2PEeadNdxfTHAycw" linkToPredecessor="__baHsS2PEeadNdxfTHAycw" mandatoryInput="_2r29oi2PEeadNdxfTHAycw" performedPrimarilyBy="_4nF7QS2PEeadNdxfTHAycw">
+          <methodElementProperty xmi:id="_7lPHYC2PEeadNdxfTHAycw" name="wbe_GlobalPresentedAfter" value="_2r29oC2PEeadNdxfTHAycw"/>
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{52D6E875-C46B-454B-A39C-CEC21603AF5C}"/>
+          <selectedSteps href="uma://-p0GGwGNG5O8Dn6O6ZzivIw#_oH6dkGE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_4nF7QS2PEeadNdxfTHAycw" name="xp_customer" guid="_4nF7QS2PEeadNdxfTHAycw" presentationName="XP Customer" isPlanned="false" superActivities="_wSXsAS2PEeadNdxfTHAycw" responsibleFor="_2r29oi2PEeadNdxfTHAycw">
+          <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_7IoD4C2PEeadNdxfTHAycw" name="setup_tester_environment" guid="_7IoD4C2PEeadNdxfTHAycw" presentationName="Setup Tester Environment" superActivities="_wSXsAS2PEeadNdxfTHAycw" performedPrimarilyBy="_2r29oS2PEeadNdxfTHAycw">
+          <methodElementProperty xmi:id="_7lPHYS2PEeadNdxfTHAycw" name="wbe_GlobalPresentedAfter" value="_wSXsAS2PEeadNdxfTHAycw"/>
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{B4F9BDCC-629E-485B-9EFA-318F8D5A37BC}"/>
+          <selectedSteps href="uma://-OPKuXnenD910fJyGKA99aw#_oNI70WE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="__DRUgS2PEeadNdxfTHAycw" guid="__DRUgS2PEeadNdxfTHAycw" pred="_7IoD4C2PEeadNdxfTHAycw"/>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="__baHsS2PEeadNdxfTHAycw" guid="__baHsS2PEeadNdxfTHAycw" pred="_2r29oC2PEeadNdxfTHAycw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_ePrVwSyWEeaZuL2AGiEn0A" name="Customer Testing Phase" guid="_ePrVwSyWEeaZuL2AGiEn0A" presentationName="Customer Testing Phase" superActivities="_4ESe4R6WEea3Ls5mGiaxNw" breakdownElements="_L5fr0S8LEeas4r90RCF23Q _I-j-ASyVEeaZuL2AGiEn0A _wSXsAS2PEeadNdxfTHAycw">
+        <methodElementProperty xmi:id="_f5elICyWEeaZuL2AGiEn0A" name="wbe_GlobalPresentedAfter" value="_4ESe4R6WEea3Ls5mGiaxNw"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_4ESe4R6WEea3Ls5mGiaxNw" name="Customer Testing" guid="_4ESe4R6WEea3Ls5mGiaxNw" presentationName="Customer Testing" breakdownElements="_ePrVwSyWEeaZuL2AGiEn0A">
+      <presentation xmi:id="-vTcOqOG7gLB1SLzBeQUcUg" href="uma://-vTcOqOG7gLB1SLzBeQUcUg#-vTcOqOG7gLB1SLzBeQUcUg"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

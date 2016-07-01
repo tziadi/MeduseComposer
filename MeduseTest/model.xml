@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_2ldVwTk3EeaVbM3aAnITyg" guid="_2ldVwTk3EeaVbM3aAnITyg">
+    <resourceDescriptors xmi:id="_2ldVwjk3EeaVbM3aAnITyg" id="-CgHRGNVp7uoL4Omm6L_c0Q" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_2kaz8Dk3EeaVbM3aAnITyg" name="TZ" guid="_2kaz8Dk3EeaVbM3aAnITyg">
+    <methodElementProperty xmi:id="_2kaz8jk3EeaVbM3aAnITyg" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_cukf8DnqEeaVbM3aAnITyg" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Zg5qEDnqEeaVbM3aAnITyg" name="Write Story Phase" guid="_Zg5qEDnqEeaVbM3aAnITyg">
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_Zg5qETnqEeaVbM3aAnITyg" name="Write Story Phase" guid="_Zg5qETnqEeaVbM3aAnITyg" presentationName="Write Story Phase" superActivities="_2kaz8Tk3EeaVbM3aAnITyg"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_2kaz8Tk3EeaVbM3aAnITyg" name="TZ" guid="_2kaz8Tk3EeaVbM3aAnITyg" presentationName="TZ" breakdownElements="_Zg5qETnqEeaVbM3aAnITyg">
+      <presentation xmi:id="-CgHRGNVp7uoL4Omm6L_c0Q" href="uma://-CgHRGNVp7uoL4Omm6L_c0Q#-CgHRGNVp7uoL4Omm6L_c0Q"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

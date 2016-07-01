@@ -41,6 +41,8 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 		 
 		 String breakDowns="";
 		 
+		 Hashtable<String,List<String>> allDeltas;
+		 
 	
 		 
 		
@@ -203,8 +205,7 @@ import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 				SAXException, IOException, TransformerFactoryConfigurationError {
 			MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
 	    	
-	    	Hashtable<String,List<String>> allDeltas =
-	    								MeduseComposerUtils.parseDeltaProcesses(deltasFolderPath);
+	    	 allDeltas =MeduseComposerUtils.parseDeltaProcesses(deltasFolderPath);
 	    	
 	    	
 	    	ArrayList<String> selectedPC = new ArrayList<String>();

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_jPVDASNIEeanCJDacJ_BNw" guid="_jPVDASNIEeanCJDacJ_BNw">
+    <resourceDescriptors xmi:id="_jPVDAiNIEeanCJDacJ_BNw" id="-Rr_E-u9_y8L4x2hnBI4PVg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_jOvNICNIEeanCJDacJ_BNw" name="MyProcessVariant" guid="_jOvNICNIEeanCJDacJ_BNw">
+    <methodElementProperty xmi:id="_jOvNIiNIEeanCJDacJ_BNw" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_Es0GcCNJEeanCJDacJ_BNw" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_kTlVUCNIEeanCJDacJ_BNw" name="Analysys Phase" guid="_kTlVUCNIEeanCJDacJ_BNw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_nNVJoCNIEeanCJDacJ_BNw" name="Gather Requirement" guid="_nNVJoCNIEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_nNVJoSNIEeanCJDacJ_BNw" name="Gather Requirement" guid="_nNVJoSNIEeanCJDacJ_BNw" presentationName="Gather Requirement" superActivities="_kTlVUSNIEeanCJDacJ_BNw"/>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_LAcnsCNJEeanCJDacJ_BNw" name="Develop Test Cases" guid="_LAcnsCNJEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_LAcnsSNJEeanCJDacJ_BNw" name="Develop Test Cases" guid="_LAcnsSNJEeanCJDacJ_BNw" presentationName="Develop Test Cases" superActivities="_kTlVUSNIEeanCJDacJ_BNw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_kTlVUSNIEeanCJDacJ_BNw" name="Analysys Phase" guid="_kTlVUSNIEeanCJDacJ_BNw" presentationName="Analysys Phase" superActivities="_jOvNISNIEeanCJDacJ_BNw" breakdownElements="_nNVJoSNIEeanCJDacJ_BNw _LAcnsSNJEeanCJDacJ_BNw"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0nfBoCNIEeanCJDacJ_BNw" name="Implementation Phase" guid="_0nfBoCNIEeanCJDacJ_BNw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_4rozkCNIEeanCJDacJ_BNw" name="Develop Source Code" guid="_4rozkCNIEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_4rozkSNIEeanCJDacJ_BNw" name="Develop Source Code" guid="_4rozkSNIEeanCJDacJ_BNw" presentationName="Develop Source Code" superActivities="_0nfBoSNIEeanCJDacJ_BNw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_0nfBoSNIEeanCJDacJ_BNw" name="Implementation Phase" guid="_0nfBoSNIEeanCJDacJ_BNw" presentationName="Implementation Phase" superActivities="_jOvNISNIEeanCJDacJ_BNw" breakdownElements="_4rozkSNIEeanCJDacJ_BNw"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_QoKeICNJEeanCJDacJ_BNw" name="Test Phase" guid="_QoKeICNJEeanCJDacJ_BNw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_SEjjoCNJEeanCJDacJ_BNw" name="Execute Tests" guid="_SEjjoCNJEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_SEjjoSNJEeanCJDacJ_BNw" name="Execute Tests" guid="_SEjjoSNJEeanCJDacJ_BNw" presentationName="Execute Tests" superActivities="_QoKeISNJEeanCJDacJ_BNw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_QoKeISNJEeanCJDacJ_BNw" name="Test Phase" guid="_QoKeISNJEeanCJDacJ_BNw" presentationName="Test Phase" superActivities="_jOvNISNIEeanCJDacJ_BNw" breakdownElements="_SEjjoSNJEeanCJDacJ_BNw"/>
+    </childPackages>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_KpRoYCNKEeanCJDacJ_BNw" name="Final Milestone" guid="_KpRoYCNKEeanCJDacJ_BNw" presentationName="Final Milestone" superActivities="_jOvNISNIEeanCJDacJ_BNw"/>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_jOvNISNIEeanCJDacJ_BNw" name="MyProcessVariant" guid="_jOvNISNIEeanCJDacJ_BNw" presentationName="MyProcessVariant" breakdownElements="_kTlVUSNIEeanCJDacJ_BNw _0nfBoSNIEeanCJDacJ_BNw _QoKeISNJEeanCJDacJ_BNw _KpRoYCNKEeanCJDacJ_BNw">
+      <presentation xmi:id="-Rr_E-u9_y8L4x2hnBI4PVg" href="uma://-Rr_E-u9_y8L4x2hnBI4PVg#-Rr_E-u9_y8L4x2hnBI4PVg"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

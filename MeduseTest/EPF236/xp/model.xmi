@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_RzVqQTIPEeawQ_rrC6sOqQ" guid="_RzVqQTIPEeawQ_rrC6sOqQ">
+    <resourceDescriptors xmi:id="_RzVqQjIPEeawQ_rrC6sOqQ" id="-4_ap96bFSeK2-_3MnnO77A" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_RxjhkDIPEeawQ_rrC6sOqQ" name="teste" guid="_RxjhkDIPEeawQ_rrC6sOqQ">
+    <methodElementProperty xmi:id="_RxjhkjIPEeawQ_rrC6sOqQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_gO24oDIPEeawQ_rrC6sOqQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_i4okADIfEeawQ_rrC6sOqQ" name="Write Code" guid="_i4okADIfEeawQ_rrC6sOqQ">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_kuy0YDIfEeawQ_rrC6sOqQ" name="Develop and Test Code Activity" guid="_kuy0YDIfEeawQ_rrC6sOqQ">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_kuy0YTIfEeawQ_rrC6sOqQ" name="Develop and Test Code Activity" guid="_kuy0YTIfEeawQ_rrC6sOqQ" superActivities="_i4okATIfEeawQ_rrC6sOqQ" variabilityType="extends">
+          <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Activity" href="uma://_YGvWgB3NEeakwMHbkQwdXQ#_Y5aJkR3NEeakwMHbkQwdXQ"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_i4okATIfEeawQ_rrC6sOqQ" name="Write Code" guid="_i4okATIfEeawQ_rrC6sOqQ" superActivities="_RxjhkTIPEeawQ_rrC6sOqQ" variabilityType="extends" breakdownElements="_kuy0YTIfEeawQ_rrC6sOqQ">
+        <variabilityBasedOnElement xsi:type="org.eclipse.epf.uma:Phase" href="uma://_wgj-0B6CEeauwPzXxc7Y9Q#_AJolcR6DEeauwPzXxc7Y9Q"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_RxjhkTIPEeawQ_rrC6sOqQ" name="teste" guid="_RxjhkTIPEeawQ_rrC6sOqQ" presentationName="teste" breakdownElements="_i4okATIfEeawQ_rrC6sOqQ">
+      <presentation xmi:id="-4_ap96bFSeK2-_3MnnO77A" href="uma://-4_ap96bFSeK2-_3MnnO77A#-4_ap96bFSeK2-_3MnnO77A"/>
+      <includesPatterns href="uma://_wgj-0B6CEeauwPzXxc7Y9Q#_wgj-0R6CEeauwPzXxc7Y9Q"/>
+      <includesPatterns href="uma://_YGvWgB3NEeakwMHbkQwdXQ#_YGvWgR3NEeakwMHbkQwdXQ"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

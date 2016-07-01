@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_scfSwSgBEeaAgKvJlokz4A" guid="_scfSwSgBEeaAgKvJlokz4A">
+    <resourceDescriptors xmi:id="_scfSwigBEeaAgKvJlokz4A" id="-orFCJCcoVidiMRYLc888Hw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_sbvr4CgBEeaAgKvJlokz4A" name="MyProcessVariant" guid="_sbvr4CgBEeaAgKvJlokz4A">
+    <methodElementProperty xmi:id="_sbvr4igBEeaAgKvJlokz4A" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_UKEbQCgCEeaAgKvJlokz4A" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_192UQCgBEeaAgKvJlokz4A" name="Implementation Phase" guid="_192UQCgBEeaAgKvJlokz4A">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_-1JFECgBEeaAgKvJlokz4A" name="Develop Source Code" guid="_-1JFECgBEeaAgKvJlokz4A">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_-1JFESgBEeaAgKvJlokz4A" name="Develop Source Code" guid="_-1JFESgBEeaAgKvJlokz4A" presentationName="Develop Source Code Activity" superActivities="_192UQSgBEeaAgKvJlokz4A" breakdownElements="_-1JFEigBEeaAgKvJlokz4A _-1JFEygBEeaAgKvJlokz4A _-1JFFCgBEeaAgKvJlokz4A _-1JFFSgBEeaAgKvJlokz4A"/>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_-1JFEigBEeaAgKvJlokz4A" name="develop_souce_code" guid="_-1JFEigBEeaAgKvJlokz4A" presentationName="Write Souce Code Activity" superActivities="_-1JFESgBEeaAgKvJlokz4A" isSynchronizedWithSource="false" output="_-1JFFSgBEeaAgKvJlokz4A" performedPrimarilyBy="_-1JFFCgBEeaAgKvJlokz4A">
+          <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_WENeoCgAEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_-1JFEygBEeaAgKvJlokz4A" name="revise_source_code" guid="_-1JFEygBEeaAgKvJlokz4A" presentationName="Revise Source Code Activity" superActivities="_-1JFESgBEeaAgKvJlokz4A" isSynchronizedWithSource="false" mandatoryInput="_-1JFFSgBEeaAgKvJlokz4A" output="_-1JFFSgBEeaAgKvJlokz4A" performedPrimarilyBy="_-1JFFCgBEeaAgKvJlokz4A">
+          <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_twkmQCgAEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_-1JFFCgBEeaAgKvJlokz4A" name="developer" guid="_-1JFFCgBEeaAgKvJlokz4A" presentationName="Developer" isPlanned="false" superActivities="_-1JFESgBEeaAgKvJlokz4A" modifies="_-1JFFSgBEeaAgKvJlokz4A">
+          <Role href="uma://_QUqh4CgAEeaAgKvJlokz4A#_IdFsMCgBEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_-1JFFSgBEeaAgKvJlokz4A" name="souce_code" guid="_-1JFFSgBEeaAgKvJlokz4A" presentationName="Souce Code" isPlanned="false" superActivities="_-1JFESgBEeaAgKvJlokz4A">
+          <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_EVCRsCgBEeaAgKvJlokz4A"/>
+        </processElements>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_Dm2gkCgCEeaAgKvJlokz4A" name="Execute Unit Test" guid="_Dm2gkCgCEeaAgKvJlokz4A">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_DnARkCgCEeaAgKvJlokz4A" name="Execute Unit Test" guid="_DnARkCgCEeaAgKvJlokz4A" presentationName="Execute Unit Test Activity" superActivities="_192UQSgBEeaAgKvJlokz4A" breakdownElements="_DnARkSgCEeaAgKvJlokz4A _DnARkigCEeaAgKvJlokz4A _DnARkygCEeaAgKvJlokz4A _DnARlSgCEeaAgKvJlokz4A _DnARligCEeaAgKvJlokz4A _DnARlygCEeaAgKvJlokz4A">
+          <methodElementProperty xmi:id="_HkZt4DR8Eeatk4wwg-jrJg" name="wbe_GlobalPresentedAfter" value="_F0fPcTR8Eeatk4wwg-jrJg"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_DnARkSgCEeaAgKvJlokz4A" name="create_test_case" guid="_DnARkSgCEeaAgKvJlokz4A" presentationName="Create Unit Test Case Task" superActivities="_DnARkCgCEeaAgKvJlokz4A" isSynchronizedWithSource="false" mandatoryInput="_DnARligCEeaAgKvJlokz4A" output="_DnARlSgCEeaAgKvJlokz4A" performedPrimarilyBy="_DnARkygCEeaAgKvJlokz4A">
+          <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_gmWAoCgAEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_DnARkigCEeaAgKvJlokz4A" name="run_unit_test" guid="_DnARkigCEeaAgKvJlokz4A" presentationName="Run Unit Test Task" superActivities="_DnARkCgCEeaAgKvJlokz4A" isSynchronizedWithSource="false" mandatoryInput="_DnARligCEeaAgKvJlokz4A _DnARlSgCEeaAgKvJlokz4A" output="_DnARlygCEeaAgKvJlokz4A" performedPrimarilyBy="_DnARkygCEeaAgKvJlokz4A">
+          <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_m0NRECgAEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_DnARkygCEeaAgKvJlokz4A" name="developer" guid="_DnARkygCEeaAgKvJlokz4A" presentationName="Developer" isPlanned="false" superActivities="_DnARkCgCEeaAgKvJlokz4A" modifies="_DnARlSgCEeaAgKvJlokz4A _DnARlygCEeaAgKvJlokz4A">
+          <Role href="uma://_QUqh4CgAEeaAgKvJlokz4A#_IdFsMCgBEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_DnARlSgCEeaAgKvJlokz4A" name="test_cases" guid="_DnARlSgCEeaAgKvJlokz4A" presentationName="Test Cases" isPlanned="false" superActivities="_DnARkCgCEeaAgKvJlokz4A">
+          <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_GeIsMCgBEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_DnARligCEeaAgKvJlokz4A" name="souce_code" guid="_DnARligCEeaAgKvJlokz4A" presentationName="Souce Code" isPlanned="false" superActivities="_DnARkCgCEeaAgKvJlokz4A">
+          <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_EVCRsCgBEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_DnARlygCEeaAgKvJlokz4A" name="tested_code" guid="_DnARlygCEeaAgKvJlokz4A" presentationName="Tested Code" isPlanned="false" superActivities="_DnARkCgCEeaAgKvJlokz4A">
+          <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_BmscICgBEeaAgKvJlokz4A"/>
+        </processElements>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_F0fPcDR8Eeatk4wwg-jrJg" name="Set Environment Test" guid="_F0fPcDR8Eeatk4wwg-jrJg">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_F0fPcTR8Eeatk4wwg-jrJg" name="Set Environment Test" guid="_F0fPcTR8Eeatk4wwg-jrJg" presentationName="Set Environment Test Activity" superActivities="_192UQSgBEeaAgKvJlokz4A" breakdownElements="_37Mu8DR8Eeatk4wwg-jrJg">
+          <methodElementProperty xmi:id="_HkZt4TR8Eeatk4wwg-jrJg" name="wbe_GlobalPresentedAfter" value="_-1JFESgBEeaAgKvJlokz4A"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_37Mu8DR8Eeatk4wwg-jrJg" name="Set Linus Environment" guid="_37Mu8DR8Eeatk4wwg-jrJg" presentationName="Set Linus Environment" superActivities="_F0fPcTR8Eeatk4wwg-jrJg" isSynchronizedWithSource="false"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_192UQSgBEeaAgKvJlokz4A" name="Implementation Phase" guid="_192UQSgBEeaAgKvJlokz4A" presentationName="Building Cycle Phase" superActivities="_sbvr4SgBEeaAgKvJlokz4A" breakdownElements="_-1JFESgBEeaAgKvJlokz4A _F0fPcTR8Eeatk4wwg-jrJg _DnARkCgCEeaAgKvJlokz4A"/>
+    </childPackages>
+    <processElements xsi:type="org.eclipse.epf.uma:Milestone" xmi:id="_MrJlQDR8Eeatk4wwg-jrJg" name="Final Milestone" guid="_MrJlQDR8Eeatk4wwg-jrJg" presentationName="Final Milestone" superActivities="_sbvr4SgBEeaAgKvJlokz4A"/>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_sbvr4SgBEeaAgKvJlokz4A" name="MyProcessVariant" guid="_sbvr4SgBEeaAgKvJlokz4A" presentationName="MyProcessVariant" breakdownElements="_192UQSgBEeaAgKvJlokz4A _MrJlQDR8Eeatk4wwg-jrJg">
+      <presentation xmi:id="-orFCJCcoVidiMRYLc888Hw" href="uma://-orFCJCcoVidiMRYLc888Hw#-orFCJCcoVidiMRYLc888Hw"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

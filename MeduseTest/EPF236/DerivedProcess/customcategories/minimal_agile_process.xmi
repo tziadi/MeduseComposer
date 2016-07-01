@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-atqpci5HQvBEfLvYrsZ-4Q" name="new_custom_category,_x4kOcC7nEeaIyrspelW6Sw" guid="-atqpci5HQvBEfLvYrsZ-4Q" changeDate="2016-06-10T10:49:36.737+0200">
+  <mainDescription>&lt;p>&#xD;
+    This agile process variant was derivated from the minimal feature configuration, which is depicted in the figure&#xD;
+    bellow.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img alt=&quot;&quot; src=&quot;resources/XPMinimalFeatureConfiguration.png&quot; width=&quot;368&quot; height=&quot;344&quot; />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

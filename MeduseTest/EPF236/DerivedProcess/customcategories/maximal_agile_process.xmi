@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-gHc5YEF84XDa4SEaSmjLcw" name="new_custom_category,_uKlg0C7nEeaIyrspelW6Sw" guid="-gHc5YEF84XDa4SEaSmjLcw" changeDate="2016-06-10T10:48:59.518+0200">
+  <mainDescription>&lt;p>&#xD;
+    This agile process variant was derivated from the maximal feature configuration, which is depicted in the figure&#xD;
+    bellow.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;img alt=&quot;&quot; src=&quot;resources/XPMaximalFeatureConfiguration.png&quot; width=&quot;285&quot; height=&quot;342&quot; />&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

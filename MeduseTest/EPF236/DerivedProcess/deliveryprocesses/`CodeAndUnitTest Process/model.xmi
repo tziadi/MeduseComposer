@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_wL-ZQCNAEeanCJDacJ_BNw" guid="_wL-ZQCNAEeanCJDacJ_BNw">
+    <resourceDescriptors xmi:id="_wL-ZQSNAEeanCJDacJ_BNw" id="-Q49rX52Fg9VadzRg9_jDAw" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_wJSRoCNAEeanCJDacJ_BNw" name="`CodeAndUnitTest Process" guid="_wJSRoCNAEeanCJDacJ_BNw">
+    <methodElementProperty xmi:id="_wJlzoSNAEeanCJDacJ_BNw" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_6nf88CNAEeanCJDacJ_BNw" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_adYT8CNCEeanCJDacJ_BNw" name="Implementation Phase" guid="_adYT8CNCEeanCJDacJ_BNw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_qpxqECNCEeanCJDacJ_BNw" name="Develop Source Code" guid="_qpxqECNCEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_qpxqESNCEeanCJDacJ_BNw" name="Develop Source Code" guid="_qpxqESNCEeanCJDacJ_BNw" presentationName="Develop Source Code" superActivities="_adYT8SNCEeanCJDacJ_BNw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_adYT8SNCEeanCJDacJ_BNw" name="Implementation Phase" guid="_adYT8SNCEeanCJDacJ_BNw" presentationName="Implementation Phase" superActivities="_wJlzoCNAEeanCJDacJ_BNw" breakdownElements="_qpxqESNCEeanCJDacJ_BNw">
+        <methodElementProperty xmi:id="_WczLsCNIEeanCJDacJ_BNw" name="wbe_GlobalPresentedAfter"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dulTECNPEeanCJDacJ_BNw" name="Test Phase" guid="_dulTECNPEeanCJDacJ_BNw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_jFnCICNPEeanCJDacJ_BNw" name="Execute Unit Test" guid="_jFnCICNPEeanCJDacJ_BNw">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_jFnCISNPEeanCJDacJ_BNw" name="Execute Unit Test" guid="_jFnCISNPEeanCJDacJ_BNw" presentationName="Execute Unit Test" superActivities="_dulTESNPEeanCJDacJ_BNw"/>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_dulTESNPEeanCJDacJ_BNw" name="Test Phase" guid="_dulTESNPEeanCJDacJ_BNw" presentationName="Test Phase" superActivities="_wJlzoCNAEeanCJDacJ_BNw" linkToPredecessor="_wbPxESNQEeanCJDacJ_BNw" breakdownElements="_jFnCISNPEeanCJDacJ_BNw">
+        <methodElementProperty xmi:id="_kFr_ECNPEeanCJDacJ_BNw" name="wbe_GlobalPresentedAfter" value="_adYT8SNCEeanCJDacJ_BNw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_wbPxESNQEeanCJDacJ_BNw" guid="_wbPxESNQEeanCJDacJ_BNw" pred="_adYT8SNCEeanCJDacJ_BNw"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_wJlzoCNAEeanCJDacJ_BNw" name="`CodeAndUnitTest Process" guid="_wJlzoCNAEeanCJDacJ_BNw" presentationName="CodeAndUnitTest Process" breakdownElements="_adYT8SNCEeanCJDacJ_BNw _dulTESNPEeanCJDacJ_BNw">
+      <presentation xmi:id="-Q49rX52Fg9VadzRg9_jDAw" href="uma://-Q49rX52Fg9VadzRg9_jDAw#-Q49rX52Fg9VadzRg9_jDAw"/>
+      <includesPatterns href="uma://_wgj-0B6CEeauwPzXxc7Y9Q#_wgj-0R6CEeauwPzXxc7Y9Q"/>
+      <includesPatterns href="uma://_esCaEB3OEeakwMHbkQwdXQ#_esCaER3OEeakwMHbkQwdXQ"/>
+      <includesPatterns href="uma://_YGvWgB3NEeakwMHbkQwdXQ#_YGvWgR3NEeakwMHbkQwdXQ"/>
+      <includesPatterns href="uma://_Mj9aYB3OEeakwMHbkQwdXQ#_Mj9aYR3OEeakwMHbkQwdXQ"/>
+      <includesPatterns href="uma://_jPrLAB6XEea3Ls5mGiaxNw#_jPrLAR6XEea3Ls5mGiaxNw"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

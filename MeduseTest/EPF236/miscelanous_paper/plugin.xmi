@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_QUzr0SgAEeaAgKvJlokz4A" guid="_QUzr0SgAEeaAgKvJlokz4A">
+    <subManagers xmi:id="_1Go04SgAEeaAgKvJlokz4A" href="uma://_1F5OACgAEeaAgKvJlokz4A#_1Go04SgAEeaAgKvJlokz4A"/>
+    <subManagers xmi:id="_8uW0MSgAEeaAgKvJlokz4A" href="uma://_8teDYCgAEeaAgKvJlokz4A#_8uW0MSgAEeaAgKvJlokz4A"/>
+    <subManagers xmi:id="_scfSwSgBEeaAgKvJlokz4A" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_scfSwSgBEeaAgKvJlokz4A"/>
+    <resourceDescriptors xmi:id="_1F5OBCgAEeaAgKvJlokz4A" id="_1F5OACgAEeaAgKvJlokz4A" uri="capabilitypatterns/Develop%20Source%20Code/model.xmi"/>
+    <resourceDescriptors xmi:id="_8tw-UCgAEeaAgKvJlokz4A" id="_8teDYCgAEeaAgKvJlokz4A" uri="capabilitypatterns/Execute%20Unit%20Test/model.xmi"/>
+    <resourceDescriptors xmi:id="_sbvr5CgBEeaAgKvJlokz4A" id="_sbvr4CgBEeaAgKvJlokz4A" uri="deliveryprocesses/MyProcessVariant/model.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:MethodPlugin xmi:id="_QUqh4CgAEeaAgKvJlokz4A" name="miscelanous_paper" guid="_QUqh4CgAEeaAgKvJlokz4A">
+    <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh4SgAEeaAgKvJlokz4A" name="Content" guid="_QUqh4SgAEeaAgKvJlokz4A">
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh4igAEeaAgKvJlokz4A" name="Categories" guid="_QUqh4igAEeaAgKvJlokz4A">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh4ygAEeaAgKvJlokz4A" name="Domains" guid="_QUqh4ygAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh5CgAEeaAgKvJlokz4A" name="Disciplines" guid="_QUqh5CgAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh5SgAEeaAgKvJlokz4A" name="RoleSets" guid="_QUqh5SgAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh5igAEeaAgKvJlokz4A" name="WP Types" guid="_QUqh5igAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh5ygAEeaAgKvJlokz4A" name="Tools" guid="_QUqh5ygAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh6CgAEeaAgKvJlokz4A" name="StandardCategories" guid="_QUqh6CgAEeaAgKvJlokz4A"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh6SgAEeaAgKvJlokz4A" name="CustomCategories" guid="_QUqh6SgAEeaAgKvJlokz4A">
+          <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh6igAEeaAgKvJlokz4A" name="Hidden" guid="_QUqh6igAEeaAgKvJlokz4A">
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_QUqh6ygAEeaAgKvJlokz4A" name="Custom Categories" guid="_QUqh6ygAEeaAgKvJlokz4A" categorizedElements="_GXli0CgCEeaAgKvJlokz4A"/>
+          </childPackages>
+          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_GXli0CgCEeaAgKvJlokz4A" name="view" guid="_GXli0CgCEeaAgKvJlokz4A" presentationName="View">
+            <methodElementProperty xmi:id="_JdoGsCgCEeaAgKvJlokz4A" name="me_edited" value="true"/>
+            <categorizedElements xsi:type="org.eclipse.epf.uma:DeliveryProcess" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_sbvr4SgBEeaAgKvJlokz4A"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_QUqh7CgAEeaAgKvJlokz4A" name="CoreContent" guid="_QUqh7CgAEeaAgKvJlokz4A">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_SlzeECgAEeaAgKvJlokz4A" name="new_content_package" guid="_SlzeECgAEeaAgKvJlokz4A">
+          <methodElementProperty xmi:id="_SlzeESgAEeaAgKvJlokz4A" name="pkg_loadCheck" value="true"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_WENeoCgAEeaAgKvJlokz4A" name="develop_souce_code" guid="_WENeoCgAEeaAgKvJlokz4A" presentationName="Write Souce Code" performedBy="_IdFsMCgBEeaAgKvJlokz4A" output="_EVCRsCgBEeaAgKvJlokz4A">
+            <methodElementProperty xmi:id="_aBiP0CgAEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_gmWAoCgAEeaAgKvJlokz4A" name="create_test_case" guid="_gmWAoCgAEeaAgKvJlokz4A" presentationName="Create Unit Test Case" performedBy="_IdFsMCgBEeaAgKvJlokz4A" mandatoryInput="_EVCRsCgBEeaAgKvJlokz4A" output="_GeIsMCgBEeaAgKvJlokz4A">
+            <methodElementProperty xmi:id="_l8CS8CgAEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_m0NRECgAEeaAgKvJlokz4A" name="run_unit_test" guid="_m0NRECgAEeaAgKvJlokz4A" presentationName="Run Unit Test" performedBy="_IdFsMCgBEeaAgKvJlokz4A" mandatoryInput="_GeIsMCgBEeaAgKvJlokz4A" output="_BmscICgBEeaAgKvJlokz4A">
+            <methodElementProperty xmi:id="_oPaDwCgAEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_twkmQCgAEeaAgKvJlokz4A" name="revise_source_code" guid="_twkmQCgAEeaAgKvJlokz4A" presentationName="Revise Source Code" performedBy="_IdFsMCgBEeaAgKvJlokz4A" mandatoryInput="_EVCRsCgBEeaAgKvJlokz4A" output="_EVCRsCgBEeaAgKvJlokz4A">
+            <methodElementProperty xmi:id="_vGB9UCgAEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_BmscICgBEeaAgKvJlokz4A" name="tested_code" guid="_BmscICgBEeaAgKvJlokz4A" presentationName="TestedSourceCode">
+            <methodElementProperty xmi:id="_D8J3oCgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_EVCRsCgBEeaAgKvJlokz4A" name="souce_code" guid="_EVCRsCgBEeaAgKvJlokz4A" presentationName="SourceCode">
+            <methodElementProperty xmi:id="_Fn5AsCgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_GeIsMCgBEeaAgKvJlokz4A" name="test_cases" guid="_GeIsMCgBEeaAgKvJlokz4A" presentationName="TestCase">
+            <methodElementProperty xmi:id="_HlD4ACgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_IdFsMCgBEeaAgKvJlokz4A" name="developer" guid="_IdFsMCgBEeaAgKvJlokz4A" presentationName="Developer">
+            <methodElementProperty xmi:id="_KVRV0CgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_dXZi8CgBEeaAgKvJlokz4A" name="design_models" guid="_dXZi8CgBEeaAgKvJlokz4A" presentationName="Design Models">
+            <methodElementProperty xmi:id="_hFYQkCgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_QUqh7SgAEeaAgKvJlokz4A" name="CapabilityPatterns" guid="_QUqh7SgAEeaAgKvJlokz4A">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_x9eEgCgAEeaAgKvJlokz4A" name="PaperICECCS" guid="_x9eEgCgAEeaAgKvJlokz4A">
+          <methodElementProperty xmi:id="_x9eEgSgAEeaAgKvJlokz4A" name="pkg_loadCheck" value="true"/>
+          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_1F5OACgAEeaAgKvJlokz4A" href="uma://_1F5OACgAEeaAgKvJlokz4A#_1F5OACgAEeaAgKvJlokz4A"/>
+          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_8teDYCgAEeaAgKvJlokz4A" href="uma://_8teDYCgAEeaAgKvJlokz4A#_8teDYCgAEeaAgKvJlokz4A"/>
+        </childPackages>
+      </childPackages>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_QUqh7igAEeaAgKvJlokz4A" name="DeliveryProcesses" guid="_QUqh7igAEeaAgKvJlokz4A">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_sbvr4CgBEeaAgKvJlokz4A" href="uma://_sbvr4CgBEeaAgKvJlokz4A#_sbvr4CgBEeaAgKvJlokz4A"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_QUqh7ygAEeaAgKvJlokz4A" name="ProcessContributions" guid="_QUqh7ygAEeaAgKvJlokz4A"/>
+  </org.eclipse.epf.uma:MethodPlugin>
+</xmi:XMI>

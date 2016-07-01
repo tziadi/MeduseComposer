@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_whJ0sR6CEeauwPzXxc7Y9Q" guid="_whJ0sR6CEeauwPzXxc7Y9Q">
+    <resourceDescriptors xmi:id="_whJ0sh6CEeauwPzXxc7Y9Q" id="-cpkaVL8SKW6eI8Lm7C2aFg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_wgj-0B6CEeauwPzXxc7Y9Q" name="Project Phase" guid="_wgj-0B6CEeauwPzXxc7Y9Q">
+    <methodElementProperty xmi:id="_wgj-0h6CEeauwPzXxc7Y9Q" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_LP6WUB6DEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_yIRjgB6CEeauwPzXxc7Y9Q" name="Write Story Phase" guid="_yIRjgB6CEeauwPzXxc7Y9Q">
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_yIRjgR6CEeauwPzXxc7Y9Q" name="Write Story Phase" guid="_yIRjgR6CEeauwPzXxc7Y9Q" presentationName="Write Story Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_5qVmwB6CEeauwPzXxc7Y9Q" name="Define Release Phase" guid="_5qVmwB6CEeauwPzXxc7Y9Q">
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_5qVmwR6CEeauwPzXxc7Y9Q" name="Define Release Phase" guid="_5qVmwR6CEeauwPzXxc7Y9Q" presentationName="Define Release Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_AJolcB6DEeauwPzXxc7Y9Q" name="Write Code Phase" guid="_AJolcB6DEeauwPzXxc7Y9Q">
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_AJolcR6DEeauwPzXxc7Y9Q" name="Write Code Phase" guid="_AJolcR6DEeauwPzXxc7Y9Q" presentationName="Write Code Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_wgj-0R6CEeauwPzXxc7Y9Q" name="Project Phase" guid="_wgj-0R6CEeauwPzXxc7Y9Q" presentationName="Project Phase" breakdownElements="_yIRjgR6CEeauwPzXxc7Y9Q _5qVmwR6CEeauwPzXxc7Y9Q _AJolcR6DEeauwPzXxc7Y9Q">
+      <presentation xmi:id="-cpkaVL8SKW6eI8Lm7C2aFg" href="uma://-cpkaVL8SKW6eI8Lm7C2aFg#-cpkaVL8SKW6eI8Lm7C2aFg"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

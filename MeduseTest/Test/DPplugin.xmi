@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_NX-R8TxyEea9IvQ-PgnUFw" guid="_NX-R8TxyEea9IvQ-PgnUFw"/>
+  <org.eclipse.epf.uma:MethodPlugin xmi:id="_NXE6EDxyEea9IvQ-PgnUFw" name="NewEmptyPlugin" guid="_NXE6EDxyEea9IvQ-PgnUFw">
+    <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6ETxyEea9IvQ-PgnUFw" name="Content" guid="_NXE6ETxyEea9IvQ-PgnUFw">
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6EjxyEea9IvQ-PgnUFw" name="Categories" guid="_NXE6EjxyEea9IvQ-PgnUFw">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6EzxyEea9IvQ-PgnUFw" name="Domains" guid="_NXE6EzxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6FDxyEea9IvQ-PgnUFw" name="Disciplines" guid="_NXE6FDxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6FTxyEea9IvQ-PgnUFw" name="RoleSets" guid="_NXE6FTxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6FjxyEea9IvQ-PgnUFw" name="WP Types" guid="_NXE6FjxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6FzxyEea9IvQ-PgnUFw" name="Tools" guid="_NXE6FzxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6GDxyEea9IvQ-PgnUFw" name="StandardCategories" guid="_NXE6GDxyEea9IvQ-PgnUFw"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6GTxyEea9IvQ-PgnUFw" name="CustomCategories" guid="_NXE6GTxyEea9IvQ-PgnUFw">
+          <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6GjxyEea9IvQ-PgnUFw" name="Hidden" guid="_NXE6GjxyEea9IvQ-PgnUFw">
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_NXE6GzxyEea9IvQ-PgnUFw" name="Custom Categories" guid="_NXE6GzxyEea9IvQ-PgnUFw"/>
+          </childPackages>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_NXE6HDxyEea9IvQ-PgnUFw" name="CoreContent" guid="_NXE6HDxyEea9IvQ-PgnUFw"/>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_NXE6HTxyEea9IvQ-PgnUFw" name="CapabilityPatterns" guid="_NXE6HTxyEea9IvQ-PgnUFw"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_NXE6HjxyEea9IvQ-PgnUFw" name="DeliveryProcesses" guid="_NXE6HjxyEea9IvQ-PgnUFw"/>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_NXE6HzxyEea9IvQ-PgnUFw" name="ProcessContributions" guid="_NXE6HzxyEea9IvQ-PgnUFw"/>
+    <bases href="uma://_vUmBYB3GEeakwMHbkQwdXQ#_vUmBYB3GEeakwMHbkQwdXQ"/>
+    <bases href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{35DCB3E1-2766-423E-A849-57ECD4F41A40}"/>
+    <bases href="uma://_ros-cB3GEeakwMHbkQwdXQ#_ros-cB3GEeakwMHbkQwdXQ"/>
+  </org.eclipse.epf.uma:MethodPlugin>
+</xmi:XMI>

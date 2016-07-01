@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_MkaGUR3OEeakwMHbkQwdXQ" guid="_MkaGUR3OEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_MkaGUh3OEeakwMHbkQwdXQ" id="-7-DGA-_PGXlHtRrlH2X8HQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_Mj9aYB3OEeakwMHbkQwdXQ" name="Refactor Code" guid="_Mj9aYB3OEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_Mj9aYh3OEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_PtIx0B3OEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_UeKQ0B3OEeakwMHbkQwdXQ" name="Refactor Code" guid="_UeKQ0B3OEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_UeKQ0R3OEeakwMHbkQwdXQ" name="Refactor Code" guid="_UeKQ0R3OEeakwMHbkQwdXQ" presentationName="Refactor Code Activity" superActivities="_Mj9aYR3OEeakwMHbkQwdXQ" breakdownElements="_Xb2xAB3OEeakwMHbkQwdXQ _Xb2xAR3OEeakwMHbkQwdXQ _Xb2xAh3OEeakwMHbkQwdXQ _Xb2xAx3OEeakwMHbkQwdXQ _Xb2xBB3OEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_Xb2xAB3OEeakwMHbkQwdXQ" name="refactor_code" guid="_Xb2xAB3OEeakwMHbkQwdXQ" presentationName="Refactor Code" superActivities="_UeKQ0R3OEeakwMHbkQwdXQ" mandatoryInput="_Xb2xAh3OEeakwMHbkQwdXQ" optionalInput="_Xb2xAx3OEeakwMHbkQwdXQ _Xb2xBB3OEeakwMHbkQwdXQ" output="_Xb2xAh3OEeakwMHbkQwdXQ _Xb2xBB3OEeakwMHbkQwdXQ" performedPrimarilyBy="_Xb2xAR3OEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3DD335BB-45F6-49C7-B17A-90652C73A485}"/>
+        <selectedSteps href="uma://-IoT5LZUu3vnNFp-pwPUMHA#_oCr_UGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-IoT5LZUu3vnNFp-pwPUMHA#_oCr_UWE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_Xb2xAR3OEeakwMHbkQwdXQ" name="xp_programmer" guid="_Xb2xAR3OEeakwMHbkQwdXQ" presentationName="XP Programmer" isPlanned="false" superActivities="_UeKQ0R3OEeakwMHbkQwdXQ" modifies="_Xb2xAh3OEeakwMHbkQwdXQ _Xb2xBB3OEeakwMHbkQwdXQ" responsibleFor="_Xb2xBB3OEeakwMHbkQwdXQ _Xb2xAx3OEeakwMHbkQwdXQ _Xb2xAh3OEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{08A6AF28-69B1-42DC-A957-2E6CDCB436C1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Xb2xAh3OEeakwMHbkQwdXQ" name="xp_production_code" guid="_Xb2xAh3OEeakwMHbkQwdXQ" presentationName="Production Code" isPlanned="false" superActivities="_UeKQ0R3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3EDA30A8-932C-4EC2-B9AB-A840304C5BC1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Xb2xAx3OEeakwMHbkQwdXQ" name="xp_metaphor" guid="_Xb2xAx3OEeakwMHbkQwdXQ" presentationName="Metaphor (System of Names)" isPlanned="false" superActivities="_UeKQ0R3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{7C34EE96-C3EA-49FD-A53C-7C113B86AE01}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_Xb2xBB3OEeakwMHbkQwdXQ" name="xp_unit_test" guid="_Xb2xBB3OEeakwMHbkQwdXQ" presentationName="XP Unit Test" isPlanned="false" superActivities="_UeKQ0R3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{D156652E-7C52-4EBD-8F23-F38169877A57}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_Mj9aYR3OEeakwMHbkQwdXQ" name="Refactor Code" guid="_Mj9aYR3OEeakwMHbkQwdXQ" presentationName="Refactor Code" breakdownElements="_UeKQ0R3OEeakwMHbkQwdXQ">
+      <presentation xmi:id="-7-DGA-_PGXlHtRrlH2X8HQ" href="uma://-7-DGA-_PGXlHtRrlH2X8HQ#-7-DGA-_PGXlHtRrlH2X8HQ"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

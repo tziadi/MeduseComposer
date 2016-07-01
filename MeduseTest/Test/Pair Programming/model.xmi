@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_OC4Z8R6TEea3Ls5mGiaxNw" guid="_OC4Z8R6TEea3Ls5mGiaxNw">
+    <resourceDescriptors xmi:id="_OC4Z8h6TEea3Ls5mGiaxNw" id="-s1Sphw9XPNGoh0P1ltgs4A" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_OCSkEB6TEea3Ls5mGiaxNw" name="Pair Programming" guid="_OCSkEB6TEea3Ls5mGiaxNw">
+    <methodElementProperty xmi:id="_OCSkEh6TEea3Ls5mGiaxNw" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_SK70cB6TEea3Ls5mGiaxNw" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_PB61EB6TEea3Ls5mGiaxNw" name="Pair Programming" guid="_PB61EB6TEea3Ls5mGiaxNw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_PB61ER6TEea3Ls5mGiaxNw" name="Pair Programming" guid="_PB61ER6TEea3Ls5mGiaxNw" presentationName="Pair Programming Activity" superActivities="_OCSkER6TEea3Ls5mGiaxNw" breakdownElements="_RrWVcB6TEea3Ls5mGiaxNw _RrWVcR6TEea3Ls5mGiaxNw _RrffYB6TEea3Ls5mGiaxNw _RrffYR6TEea3Ls5mGiaxNw _RrffYh6TEea3Ls5mGiaxNw _RrffYx6TEea3Ls5mGiaxNw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_RrWVcB6TEea3Ls5mGiaxNw" name="pair_programming" guid="_RrWVcB6TEea3Ls5mGiaxNw" presentationName="Pair Programming" superActivities="_PB61ER6TEea3Ls5mGiaxNw" optionalInput="_RrffYB6TEea3Ls5mGiaxNw _RrffYR6TEea3Ls5mGiaxNw _RrffYh6TEea3Ls5mGiaxNw" output="_RrffYx6TEea3Ls5mGiaxNw" performedPrimarilyBy="_RrWVcR6TEea3Ls5mGiaxNw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#_RMJXYB3XEear7OvqOQNzmw"/>
+        <selectedSteps href="uma://-U1NDyQ__yd_sq4IAXMdGsg#_RMJXYR3XEear7OvqOQNzmw"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_RrWVcR6TEea3Ls5mGiaxNw" name="xp_programmer" guid="_RrWVcR6TEea3Ls5mGiaxNw" presentationName="XP Programmer" isPlanned="false" superActivities="_PB61ER6TEea3Ls5mGiaxNw" modifies="_RrffYx6TEea3Ls5mGiaxNw" responsibleFor="_RrffYx6TEea3Ls5mGiaxNw _RrffYh6TEea3Ls5mGiaxNw _RrffYB6TEea3Ls5mGiaxNw">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{08A6AF28-69B1-42DC-A957-2E6CDCB436C1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_RrffYB6TEea3Ls5mGiaxNw" name="xp_coding_standard" guid="_RrffYB6TEea3Ls5mGiaxNw" presentationName="Coding Standard" isPlanned="false" superActivities="_PB61ER6TEea3Ls5mGiaxNw">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{1D7E042C-B29E-4169-8DF3-37DE0A5F64ED}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_RrffYR6TEea3Ls5mGiaxNw" name="xp_iteration_plan" guid="_RrffYR6TEea3Ls5mGiaxNw" presentationName="XP Iteration Plan" isPlanned="false" superActivities="_PB61ER6TEea3Ls5mGiaxNw">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{DC18E34B-70C1-403D-84CC-1BF117A7473D}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_RrffYh6TEea3Ls5mGiaxNw" name="xp_metaphor" guid="_RrffYh6TEea3Ls5mGiaxNw" presentationName="Metaphor (System of Names)" isPlanned="false" superActivities="_PB61ER6TEea3Ls5mGiaxNw">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{7C34EE96-C3EA-49FD-A53C-7C113B86AE01}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_RrffYx6TEea3Ls5mGiaxNw" name="xp_production_code" guid="_RrffYx6TEea3Ls5mGiaxNw" presentationName="Production Code" isPlanned="false" superActivities="_PB61ER6TEea3Ls5mGiaxNw">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3EDA30A8-932C-4EC2-B9AB-A840304C5BC1}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_OCSkER6TEea3Ls5mGiaxNw" name="Pair Programming" guid="_OCSkER6TEea3Ls5mGiaxNw" presentationName="Pair Programming" breakdownElements="_PB61ER6TEea3Ls5mGiaxNw">
+      <presentation xmi:id="-s1Sphw9XPNGoh0P1ltgs4A" href="uma://-s1Sphw9XPNGoh0P1ltgs4A#-s1Sphw9XPNGoh0P1ltgs4A"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

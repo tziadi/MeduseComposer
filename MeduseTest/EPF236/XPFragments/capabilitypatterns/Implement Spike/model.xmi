@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_esfGAR3OEeakwMHbkQwdXQ" guid="_esfGAR3OEeakwMHbkQwdXQ">
+    <resourceDescriptors xmi:id="_esfGAh3OEeakwMHbkQwdXQ" id="-oLx-bgJKIkrDRoZkdC2Rcg" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_esCaEB3OEeakwMHbkQwdXQ" name="Implement Spike" guid="_esCaEB3OEeakwMHbkQwdXQ">
+    <methodElementProperty xmi:id="_esCaEh3OEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_lKrRcB3OEeakwMHbkQwdXQ" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_fuNBsB3OEeakwMHbkQwdXQ" name="Implement Spike" guid="_fuNBsB3OEeakwMHbkQwdXQ">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_fuNBsR3OEeakwMHbkQwdXQ" name="Implement Spike" guid="_fuNBsR3OEeakwMHbkQwdXQ" presentationName="Implement Spike Activity" superActivities="_esCaER3OEeakwMHbkQwdXQ" breakdownElements="_hw4rIB3OEeakwMHbkQwdXQ _hw4rIR3OEeakwMHbkQwdXQ _hxB1EB3OEeakwMHbkQwdXQ _hxB1ER3OEeakwMHbkQwdXQ _hxB1Eh3OEeakwMHbkQwdXQ _hxB1Ex3OEeakwMHbkQwdXQ"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_hw4rIB3OEeakwMHbkQwdXQ" name="implement_spike" guid="_hw4rIB3OEeakwMHbkQwdXQ" presentationName="Implement Spike" superActivities="_fuNBsR3OEeakwMHbkQwdXQ" optionalInput="_hxB1EB3OEeakwMHbkQwdXQ _hxB1ER3OEeakwMHbkQwdXQ" output="_hxB1Eh3OEeakwMHbkQwdXQ _hxB1Ex3OEeakwMHbkQwdXQ" performedPrimarilyBy="_hw4rIR3OEeakwMHbkQwdXQ">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{85BE1C0E-F389-4246-BB22-9A52988018B7}"/>
+        <selectedSteps href="uma://-DbsgXRUjLhsnnpioGI2b3g#_oCl4sGE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_hw4rIR3OEeakwMHbkQwdXQ" name="xp_programmer" guid="_hw4rIR3OEeakwMHbkQwdXQ" presentationName="XP Programmer" isPlanned="false" superActivities="_fuNBsR3OEeakwMHbkQwdXQ" modifies="_hxB1Eh3OEeakwMHbkQwdXQ _hxB1Ex3OEeakwMHbkQwdXQ" responsibleFor="_hxB1Ex3OEeakwMHbkQwdXQ _hxB1Eh3OEeakwMHbkQwdXQ _hxB1EB3OEeakwMHbkQwdXQ">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{08A6AF28-69B1-42DC-A957-2E6CDCB436C1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_hxB1EB3OEeakwMHbkQwdXQ" name="xp_metaphor" guid="_hxB1EB3OEeakwMHbkQwdXQ" presentationName="Metaphor (System of Names)" isPlanned="false" superActivities="_fuNBsR3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{7C34EE96-C3EA-49FD-A53C-7C113B86AE01}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_hxB1ER3OEeakwMHbkQwdXQ" name="xp_user_story" guid="_hxB1ER3OEeakwMHbkQwdXQ" presentationName="User Story" isPlanned="false" superActivities="_fuNBsR3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_hxB1Eh3OEeakwMHbkQwdXQ" name="xp_production_code" guid="_hxB1Eh3OEeakwMHbkQwdXQ" presentationName="Production Code" isPlanned="false" superActivities="_fuNBsR3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3EDA30A8-932C-4EC2-B9AB-A840304C5BC1}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_hxB1Ex3OEeakwMHbkQwdXQ" name="xp_unit_test" guid="_hxB1Ex3OEeakwMHbkQwdXQ" presentationName="XP Unit Test" isPlanned="false" superActivities="_fuNBsR3OEeakwMHbkQwdXQ">
+        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{D156652E-7C52-4EBD-8F23-F38169877A57}"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_esCaER3OEeakwMHbkQwdXQ" name="Implement Spike" guid="_esCaER3OEeakwMHbkQwdXQ" presentationName="Implement Spike" breakdownElements="_fuNBsR3OEeakwMHbkQwdXQ">
+      <presentation xmi:id="-oLx-bgJKIkrDRoZkdC2Rcg" href="uma://-oLx-bgJKIkrDRoZkdC2Rcg#-oLx-bgJKIkrDRoZkdC2Rcg"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

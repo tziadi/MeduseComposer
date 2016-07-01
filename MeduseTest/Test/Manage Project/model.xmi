@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_E3HRIR6XEea3Ls5mGiaxNw" guid="_E3HRIR6XEea3Ls5mGiaxNw">
+    <resourceDescriptors xmi:id="_E3HRIh6XEea3Ls5mGiaxNw" id="-nDvdba16tnRc5TQdl3AncQ" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_E2qlMB6XEea3Ls5mGiaxNw" name="Manage Project" guid="_E2qlMB6XEea3Ls5mGiaxNw">
+    <methodElementProperty xmi:id="_E2qlMh6XEea3Ls5mGiaxNw" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_PBpLcB6XEea3Ls5mGiaxNw" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_F1GjYB6XEea3Ls5mGiaxNw" name="Manage Project Plan  Activity" guid="_F1GjYB6XEea3Ls5mGiaxNw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_F1GjYR6XEea3Ls5mGiaxNw" name="Manage Project Plan  Activity" guid="_F1GjYR6XEea3Ls5mGiaxNw" presentationName="Manage Project Plan  Activity" superActivities="_E2qlMR6XEea3Ls5mGiaxNw" breakdownElements="_IzPvgB6XEea3Ls5mGiaxNw _IzPvgR6XEea3Ls5mGiaxNw _JuZwMB6XEea3Ls5mGiaxNw _JuZwMR6XEea3Ls5mGiaxNw _OdR6IB6XEea3Ls5mGiaxNw"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_IzPvgB6XEea3Ls5mGiaxNw" name="keep_process_on_track" guid="_IzPvgB6XEea3Ls5mGiaxNw" presentationName="Keep Process On Track" superActivities="_F1GjYR6XEea3Ls5mGiaxNw" performedPrimarilyBy="_IzPvgR6XEea3Ls5mGiaxNw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{80725BC3-E2BA-4860-8F07-4A34B96FBB2A}"/>
+        <selectedSteps href="uma://-SH3UFVsPViLT3hOalbaxgA#_oN04UGE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_IzPvgR6XEea3Ls5mGiaxNw" name="xp_coach" guid="_IzPvgR6XEea3Ls5mGiaxNw" presentationName="XP Coach" isPlanned="false" superActivities="_F1GjYR6XEea3Ls5mGiaxNw">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{9C440605-FF0E-4D37-A774-BBF8B5F47AB6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_JuZwMB6XEea3Ls5mGiaxNw" name="report_project_status" guid="_JuZwMB6XEea3Ls5mGiaxNw" presentationName="Report Project Status" superActivities="_F1GjYR6XEea3Ls5mGiaxNw" performedPrimarilyBy="_JuZwMR6XEea3Ls5mGiaxNw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{ED94150E-EE14-47BF-97F5-F1EC7130EEEC}"/>
+        <selectedSteps href="uma://-WOPGmKUuYbvVeVHp0sgEgw#_oOzvwGE-EdqnIZeW8YpHcA"/>
+        <selectedSteps href="uma://-WOPGmKUuYbvVeVHp0sgEgw#_oOzvwWE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_JuZwMR6XEea3Ls5mGiaxNw" name="xp_customer" guid="_JuZwMR6XEea3Ls5mGiaxNw" presentationName="XP Customer" isPlanned="false" superActivities="_F1GjYR6XEea3Ls5mGiaxNw">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_OdR6IB6XEea3Ls5mGiaxNw" name="resolve_conflicts" guid="_OdR6IB6XEea3Ls5mGiaxNw" presentationName="Resolve Conflicts" superActivities="_F1GjYR6XEea3Ls5mGiaxNw" performedPrimarilyBy="_IzPvgR6XEea3Ls5mGiaxNw">
+        <methodElementProperty xmi:id="_3hlZgC70EeaIyrspelW6Sw" name="wbe_GlobalPresentedAfter" value="_MZ_zwB6XEea3Ls5mGiaxNw"/>
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{1B23700D-02B0-476F-A3DE-6F63A5407151}"/>
+      </processElements>
+    </childPackages>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_wQgYkC70EeaIyrspelW6Sw" name="Manage Project Team Activity" guid="_wQgYkC70EeaIyrspelW6Sw">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_wQgYkS70EeaIyrspelW6Sw" name="Manage Project Team Activity" guid="_wQgYkS70EeaIyrspelW6Sw" presentationName="Manage Project Team Activity" superActivities="_E2qlMR6XEea3Ls5mGiaxNw" breakdownElements="_8KtgwC70EeaIyrspelW6Sw _8K3RwC70EeaIyrspelW6Sw _VhjNMC71Eeas4r90RCF23Q _gfgIgC71Eeas4r90RCF23Q"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_8KtgwC70EeaIyrspelW6Sw" name="improve_team_skills" guid="_8KtgwC70EeaIyrspelW6Sw" presentationName="Improve Team Skills" superActivities="_wQgYkS70EeaIyrspelW6Sw" performedPrimarilyBy="_8K3RwC70EeaIyrspelW6Sw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{1C4325AC-17DE-4CD0-8AA0-4B210570579F}"/>
+        <selectedSteps href="uma://-32JWpciwfc2e7HgQavJDkw#_oNuxsWE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_8K3RwC70EeaIyrspelW6Sw" name="xp_coach" guid="_8K3RwC70EeaIyrspelW6Sw" presentationName="XP Coach" isPlanned="false" superActivities="_wQgYkS70EeaIyrspelW6Sw">
+        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{9C440605-FF0E-4D37-A774-BBF8B5F47AB6}"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_VhjNMC71Eeas4r90RCF23Q" name="explain_process" guid="_VhjNMC71Eeas4r90RCF23Q" presentationName="Explain Process" superActivities="_wQgYkS70EeaIyrspelW6Sw" performedPrimarilyBy="_8K3RwC70EeaIyrspelW6Sw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{1FA31F30-1F90-4BD3-9F0D-57DF66FC6727}"/>
+        <selectedSteps href="uma://-I3yOxhkbTu3OCbzQ0sUsyA#_oNuxsGE-EdqnIZeW8YpHcA"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_gfgIgC71Eeas4r90RCF23Q" name="adapt_and_improve_process" guid="_gfgIgC71Eeas4r90RCF23Q" presentationName="Adapt and Improve Process" superActivities="_wQgYkS70EeaIyrspelW6Sw" performedPrimarilyBy="_8K3RwC70EeaIyrspelW6Sw">
+        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{F0D4C205-4A38-42AF-BE87-9A6C0C173E65}"/>
+        <selectedSteps href="uma://-u-Svthjtn1xLK2IwVUpk5Q#_oNoEAGE-EdqnIZeW8YpHcA"/>
+      </processElements>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_E2qlMR6XEea3Ls5mGiaxNw" name="Manage Project" guid="_E2qlMR6XEea3Ls5mGiaxNw" presentationName="Manage Project" breakdownElements="_F1GjYR6XEea3Ls5mGiaxNw _wQgYkS70EeaIyrspelW6Sw">
+      <presentation xmi:id="-nDvdba16tnRc5TQdl3AncQ" href="uma://-nDvdba16tnRc5TQdl3AncQ#-nDvdba16tnRc5TQdl3AncQ"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

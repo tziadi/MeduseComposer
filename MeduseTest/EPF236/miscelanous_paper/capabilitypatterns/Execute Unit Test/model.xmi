@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_8uW0MSgAEeaAgKvJlokz4A" guid="_8uW0MSgAEeaAgKvJlokz4A">
+    <resourceDescriptors xmi:id="_8uW0MigAEeaAgKvJlokz4A" id="-Myp2UG3KBoCjwM7k5bnbxA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_8teDYCgAEeaAgKvJlokz4A" name="Execute Unit Test" guid="_8teDYCgAEeaAgKvJlokz4A">
+    <methodElementProperty xmi:id="_8teDYigAEeaAgKvJlokz4A" name="pkg_loadCheck" value="true"/>
+    <methodElementProperty xmi:id="_AebMgCgBEeaAgKvJlokz4A" name="me_edited" value="true"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_9vx08CgAEeaAgKvJlokz4A" name="Execute Unit Test" guid="_9vx08CgAEeaAgKvJlokz4A">
+      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_9vx08SgAEeaAgKvJlokz4A" name="Execute Unit Test" guid="_9vx08SgAEeaAgKvJlokz4A" presentationName="Execute Unit Test Process Fragment" superActivities="_8teDYSgAEeaAgKvJlokz4A" breakdownElements="__bqH8CgAEeaAgKvJlokz4A __xa8kCgAEeaAgKvJlokz4A _olbhoCgBEeaAgKvJlokz4A _olbhoigBEeaAgKvJlokz4A _olbhoygBEeaAgKvJlokz4A _olbhpCgBEeaAgKvJlokz4A"/>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="__bqH8CgAEeaAgKvJlokz4A" name="create_test_case" guid="__bqH8CgAEeaAgKvJlokz4A" presentationName="Create Unit Test Case" superActivities="_9vx08SgAEeaAgKvJlokz4A" mandatoryInput="_olbhoygBEeaAgKvJlokz4A" output="_olbhoigBEeaAgKvJlokz4A" performedPrimarilyBy="_olbhoCgBEeaAgKvJlokz4A">
+        <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_gmWAoCgAEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="__xa8kCgAEeaAgKvJlokz4A" name="run_unit_test" guid="__xa8kCgAEeaAgKvJlokz4A" presentationName="Run Unit Test" superActivities="_9vx08SgAEeaAgKvJlokz4A" linkToPredecessor="_AgZ3kSgDEeaAgKvJlokz4A" mandatoryInput="_olbhoigBEeaAgKvJlokz4A" output="_olbhpCgBEeaAgKvJlokz4A" performedPrimarilyBy="_olbhoCgBEeaAgKvJlokz4A">
+        <Task href="uma://_QUqh4CgAEeaAgKvJlokz4A#_m0NRECgAEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_olbhoCgBEeaAgKvJlokz4A" name="developer" guid="_olbhoCgBEeaAgKvJlokz4A" presentationName="Developer" isPlanned="false" superActivities="_9vx08SgAEeaAgKvJlokz4A" modifies="_olbhoigBEeaAgKvJlokz4A _olbhpCgBEeaAgKvJlokz4A">
+        <Role href="uma://_QUqh4CgAEeaAgKvJlokz4A#_IdFsMCgBEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_olbhoigBEeaAgKvJlokz4A" name="test_cases" guid="_olbhoigBEeaAgKvJlokz4A" presentationName="TestCase" isPlanned="false" superActivities="_9vx08SgAEeaAgKvJlokz4A">
+        <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_GeIsMCgBEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_olbhoygBEeaAgKvJlokz4A" name="souce_code" guid="_olbhoygBEeaAgKvJlokz4A" presentationName="SourceCode" isPlanned="false" superActivities="_9vx08SgAEeaAgKvJlokz4A">
+        <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_EVCRsCgBEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_olbhpCgBEeaAgKvJlokz4A" name="tested_code" guid="_olbhpCgBEeaAgKvJlokz4A" presentationName="TestedSourceCode" isPlanned="false" superActivities="_9vx08SgAEeaAgKvJlokz4A">
+        <WorkProduct href="uma://_QUqh4CgAEeaAgKvJlokz4A#_BmscICgBEeaAgKvJlokz4A"/>
+      </processElements>
+      <processElements xsi:type="org.eclipse.epf.uma:WorkOrder" xmi:id="_AgZ3kSgDEeaAgKvJlokz4A" guid="_AgZ3kSgDEeaAgKvJlokz4A" pred="__bqH8CgAEeaAgKvJlokz4A"/>
+    </childPackages>
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_8teDYSgAEeaAgKvJlokz4A" name="Execute Unit Test" guid="_8teDYSgAEeaAgKvJlokz4A" presentationName="Execute Unit Test" breakdownElements="_9vx08SgAEeaAgKvJlokz4A">
+      <presentation xmi:id="-Myp2UG3KBoCjwM7k5bnbxA" href="uma://-Myp2UG3KBoCjwM7k5bnbxA#-Myp2UG3KBoCjwM7k5bnbxA"/>
+      <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+      <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

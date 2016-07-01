@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_0y0cAB5zEeafpuecKFyt3w" guid="_0y0cAB5zEeafpuecKFyt3w">
+    <resourceDescriptors xmi:id="_xCwqwB5zEeafpuecKFyt3w" id="-FCSstEc0MqePsWmv7PxKFA" uri="workproducts/crc_cards.xmi"/>
+    <resourceDescriptors xmi:id="_vtBKYR50EeafpuecKFyt3w" id="-roxa8-KSLFSJqCQpu7AdAg" uri="tasks/scratch_crc_cards.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:MethodPlugin xmi:id="_0yrSEB5zEeafpuecKFyt3w" name="agile_additionals" guid="_0yrSEB5zEeafpuecKFyt3w" presentationName="Agile Additionals" changeDate="2016-05-20T12:16:05.238+0200">
+    <methodElementProperty xmi:id="_3JexYB5zEeafpuecKFyt3w" name="me_edited" value="true"/>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSER5zEeafpuecKFyt3w" name="Content" guid="_0yrSER5zEeafpuecKFyt3w">
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSEh5zEeafpuecKFyt3w" name="Categories" guid="_0yrSEh5zEeafpuecKFyt3w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSEx5zEeafpuecKFyt3w" name="Domains" guid="_0yrSEx5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSFB5zEeafpuecKFyt3w" name="Disciplines" guid="_0yrSFB5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSFR5zEeafpuecKFyt3w" name="RoleSets" guid="_0yrSFR5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSFh5zEeafpuecKFyt3w" name="WP Types" guid="_0yrSFh5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSFx5zEeafpuecKFyt3w" name="Tools" guid="_0yrSFx5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSGB5zEeafpuecKFyt3w" name="StandardCategories" guid="_0yrSGB5zEeafpuecKFyt3w"/>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSGR5zEeafpuecKFyt3w" name="CustomCategories" guid="_0yrSGR5zEeafpuecKFyt3w">
+          <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSGh5zEeafpuecKFyt3w" name="Hidden" guid="_0yrSGh5zEeafpuecKFyt3w">
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_0yrSGx5zEeafpuecKFyt3w" name="Custom Categories" guid="_0yrSGx5zEeafpuecKFyt3w"/>
+          </childPackages>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_0yrSHB5zEeafpuecKFyt3w" name="CoreContent" guid="_0yrSHB5zEeafpuecKFyt3w">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_aMA8gB5zEeafpuecKFyt3w" name="additionaltasks" guid="_aMA8gB5zEeafpuecKFyt3w" presentationName="AdditionalTasks">
+          <methodElementProperty xmi:id="_aMA8gR5zEeafpuecKFyt3w" name="pkg_loadCheck" value="true"/>
+          <methodElementProperty xmi:id="_cN8_EB5zEeafpuecKFyt3w" name="me_edited" value="true"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_dd-cgB5zEeafpuecKFyt3w" name="scratch_crc_cards" guid="_dd-cgB5zEeafpuecKFyt3w" presentationName="Scratch CRC Cards" output="_p_CwYB5zEeafpuecKFyt3w">
+            <methodElementProperty xmi:id="_pEVboB5zEeafpuecKFyt3w" name="me_edited" value="true"/>
+            <presentation xmi:id="-roxa8-KSLFSJqCQpu7AdAg" href="uma://-roxa8-KSLFSJqCQpu7AdAg#-roxa8-KSLFSJqCQpu7AdAg"/>
+            <performedBy href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{AB49377E-B734-45D9-A8AE-906AE216CBC7}"/>
+            <mandatoryInput href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{21946731-4F5C-4862-8B4D-868629952B92}"/>
+          </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_p_CwYB5zEeafpuecKFyt3w" name="crc_cards" guid="_p_CwYB5zEeafpuecKFyt3w" presentationName="CRC Cards">
+            <methodElementProperty xmi:id="_xCK04B5zEeafpuecKFyt3w" name="me_edited" value="true"/>
+            <presentation xmi:id="-FCSstEc0MqePsWmv7PxKFA" href="uma://-FCSstEc0MqePsWmv7PxKFA#-FCSstEc0MqePsWmv7PxKFA"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0yrSHR5zEeafpuecKFyt3w" name="CapabilityPatterns" guid="_0yrSHR5zEeafpuecKFyt3w"/>
+    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0yrSHh5zEeafpuecKFyt3w" name="DeliveryProcesses" guid="_0yrSHh5zEeafpuecKFyt3w"/>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_0yrSHx5zEeafpuecKFyt3w" name="ProcessContributions" guid="_0yrSHx5zEeafpuecKFyt3w"/>
+    <bases href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{35DCB3E1-2766-423E-A849-57ECD4F41A40}"/>
+  </org.eclipse.epf.uma:MethodPlugin>
+</xmi:XMI>
