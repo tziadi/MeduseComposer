@@ -54,10 +54,11 @@ public class MeduseComposerUtils {
 		
 		List<String> dirs = readProcessFragmentDirectories(processesFolderPath);
 		
-		
+		System.out.println("TESTRINGGGGGGG "+dirs);
 		
 		for (String d: dirs){
 			
+		 if (!d.equals("ProcessDelta")){
 			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
@@ -83,7 +84,7 @@ public class MeduseComposerUtils {
 			
 		       }
 			}
-			
+		 }
 		}
 		
 		for (String key:processComponentNames.keySet()){

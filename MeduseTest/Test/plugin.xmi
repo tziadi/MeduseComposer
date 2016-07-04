@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
   <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_vUmBcR3GEeakwMHbkQwdXQ" guid="_vUmBcR3GEeakwMHbkQwdXQ">
-    <subManagers xmi:id="_tnM1AB3SEeakwMHbkQwdXQ" href="uma://_tmmYEB3SEeakwMHbkQwdXQ#_tnM1AB3SEeakwMHbkQwdXQ"/>
-    <subManagers xmi:id="_1bftgSijEeaZ0O0CwukIVw" href="uma://_1V-7YCijEeaZ0O0CwukIVw#_1bftgSijEeaZ0O0CwukIVw"/>
     <resourceDescriptors xmi:id="_2iknwh6GEeauwPzXxc7Y9Q" id="-ez2kPRAbbq8yqrgb8B77rw" uri="customcategories/agile_delta_process_modules.xmi"/>
-    <resourceDescriptors xmi:id="_tmmYFB3SEeakwMHbkQwdXQ" id="_tmmYEB3SEeakwMHbkQwdXQ" uri="deliveryprocesses/FULL%20XP%20Process/model.xmi"/>
-    <resourceDescriptors xmi:id="_1awGoCijEeaZ0O0CwukIVw" id="_1V-7YCijEeaZ0O0CwukIVw" uri="deliveryprocesses/Core-Process/model.xmi"/>
     <resourceDescriptors xmi:id="_W7SssSyXEeaZuL2AGiEn0A" id="-81waB9cLRjqUDF3NzFEXWw" uri="customcategories/pd_customertestphase.xmi"/>
   </org.eclipse.epf.uma.resourcemanager:ResourceManager>
   <org.eclipse.epf.uma:MethodPlugin xmi:id="_vUmBYB3GEeakwMHbkQwdXQ" name="ProcessDelta" guid="_vUmBYB3GEeakwMHbkQwdXQ" changeDate="2016-05-20T14:11:25.978+0200">
@@ -20,7 +16,7 @@
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_vUmBaB3GEeakwMHbkQwdXQ" name="StandardCategories" guid="_vUmBaB3GEeakwMHbkQwdXQ"/>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_vUmBaR3GEeakwMHbkQwdXQ" name="CustomCategories" guid="_vUmBaR3GEeakwMHbkQwdXQ">
           <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_vUmBah3GEeakwMHbkQwdXQ" name="Hidden" guid="_vUmBah3GEeakwMHbkQwdXQ">
-            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_vUmBax3GEeakwMHbkQwdXQ" name="Custom Categories" guid="_vUmBax3GEeakwMHbkQwdXQ" categorizedElements="_ZxTOEB6BEeauwPzXxc7Y9Q _lEpfgCNAEeanCJDacJ_BNw _Vgwu4CimEeaZ0O0CwukIVw"/>
+            <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_vUmBax3GEeakwMHbkQwdXQ" name="Custom Categories" guid="_vUmBax3GEeakwMHbkQwdXQ" categorizedElements="_ZxTOEB6BEeauwPzXxc7Y9Q"/>
           </childPackages>
           <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_ZxTOEB6BEeauwPzXxc7Y9Q" name="agile_delta_process_modules" guid="_ZxTOEB6BEeauwPzXxc7Y9Q" presentationName="List Agile Process Delta Mod. &amp; Appl. Cond." briefDescription="List of Agile Process Delta Modules and Application Conditions" categorizedElements="_iME1cB6WEea3Ls5mGiaxNw _h6UuMB6CEeauwPzXxc7Y9Q __4Ha0B6GEeauwPzXxc7Y9Q _4ye8QB6DEeauwPzXxc7Y9Q _-sq-kB6KEeauwPzXxc7Y9Q _Eo-vgB6MEeauwPzXxc7Y9Q _NeQU0B6REea3Ls5mGiaxNw _YvQboCjcEea065OoV--APw _qb5ogB6UEea3Ls5mGiaxNw _y3VjwB6UEea3Ls5mGiaxNw _G8WxQB6VEea3Ls5mGiaxNw _PJXZgB6WEea3Ls5mGiaxNw _XUVP0B6WEea3Ls5mGiaxNw">
             <methodElementProperty xmi:id="_vw4q0B6BEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
@@ -40,8 +36,7 @@
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_-sq-kB6KEeauwPzXxc7Y9Q" name="pd_definerelease_phase" guid="_-sq-kB6KEeauwPzXxc7Y9Q" presentationName="PD_DefineReleasePhase">
             <methodElementProperty xmi:id="_DgAxwB6LEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
-            <categorizedElements xsi:type="org.eclipse.epf.uma:Phase" href="uma://_wgj-0B6CEeauwPzXxc7Y9Q#_5qVmwR6CEeauwPzXxc7Y9Q"/>
-            <categorizedElements xsi:type="org.eclipse.epf.uma:Activity" href="uma://_xB9iEB6KEeauwPzXxc7Y9Q#_x89xwR6KEeauwPzXxc7Y9Q"/>
+            <categorizedElements xsi:type="org.eclipse.epf.uma:Phase" href="uma://_xB9iEB6KEeauwPzXxc7Y9Q#_IOuCQT9pEeaHk7dF4UKlbA"/>
           </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_Eo-vgB6MEeauwPzXxc7Y9Q" name="pd_defineiteration_phase" guid="_Eo-vgB6MEeauwPzXxc7Y9Q" presentationName="PD_DefineIterationPhase">
             <methodElementProperty xmi:id="_IHmygB6MEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
@@ -85,13 +80,6 @@
             <categorizedElements xsi:type="org.eclipse.epf.uma:Activity" href="uma://_E2qlMB6XEea3Ls5mGiaxNw#_F1GjYR6XEea3Ls5mGiaxNw"/>
             <categorizedElements xsi:type="org.eclipse.epf.uma:Activity" href="uma://_E2qlMB6XEea3Ls5mGiaxNw#_wQgYkS70EeaIyrspelW6Sw"/>
           </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_lEpfgCNAEeanCJDacJ_BNw" name="full_xp" guid="_lEpfgCNAEeanCJDacJ_BNw" presentationName="Full XP">
-            <methodElementProperty xmi:id="_Oi2RECNBEeanCJDacJ_BNw" name="me_edited" value="true"/>
-          </contentElements>
-          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_Vgwu4CimEeaZ0O0CwukIVw" name="tewfik_view" guid="_Vgwu4CimEeaZ0O0CwukIVw" presentationName="Tewfik view">
-            <methodElementProperty xmi:id="_ymfu8CimEeaZ0O0CwukIVw" name="me_edited" value="true"/>
-            <categorizedElements xsi:type="org.eclipse.epf.uma:DeliveryProcess" href="uma://_1V-7YCijEeaZ0O0CwukIVw#_1V-7YSijEeaZ0O0CwukIVw"/>
-          </contentElements>
           <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_YvQboCjcEea065OoV--APw" name="pdp_definestandardpairprogramming" guid="_YvQboCjcEea065OoV--APw" presentationName="Partition DP_DefineStandard&amp;PairProgramming" categorizedElements="_SxDHUB6VEea3Ls5mGiaxNw _VmAXsB6UEea3Ls5mGiaxNw">
             <methodElementProperty xmi:id="_pbdTMCjcEea065OoV--APw" name="me_edited" value="true"/>
           </contentElements>
@@ -100,13 +88,7 @@
       <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_vUmBbB3GEeakwMHbkQwdXQ" name="CoreContent" guid="_vUmBbB3GEeakwMHbkQwdXQ"/>
       <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vUmBbR3GEeakwMHbkQwdXQ" name="CapabilityPatterns" guid="_vUmBbR3GEeakwMHbkQwdXQ"/>
     </methodPackages>
-    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vUmBbh3GEeakwMHbkQwdXQ" name="DeliveryProcesses" guid="_vUmBbh3GEeakwMHbkQwdXQ">
-      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_quHvEB3SEeakwMHbkQwdXQ" name="FullProcess" guid="_quHvEB3SEeakwMHbkQwdXQ">
-        <methodElementProperty xmi:id="_quHvER3SEeakwMHbkQwdXQ" name="pkg_loadCheck" value="true"/>
-        <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_tmmYEB3SEeakwMHbkQwdXQ" href="uma://_tmmYEB3SEeakwMHbkQwdXQ#_tmmYEB3SEeakwMHbkQwdXQ"/>
-      </childPackages>
-      <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_1V-7YCijEeaZ0O0CwukIVw" href="uma://_1V-7YCijEeaZ0O0CwukIVw#_1V-7YCijEeaZ0O0CwukIVw"/>
-    </methodPackages>
+    <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vUmBbh3GEeakwMHbkQwdXQ" name="DeliveryProcesses" guid="_vUmBbh3GEeakwMHbkQwdXQ"/>
     <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_vUmBbx3GEeakwMHbkQwdXQ" name="ProcessContributions" guid="_vUmBbx3GEeakwMHbkQwdXQ"/>
     <bases href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{35DCB3E1-2766-423E-A849-57ECD4F41A40}"/>
     <bases href="uma://_ros-cB3GEeakwMHbkQwdXQ#_ros-cB3GEeakwMHbkQwdXQ"/>

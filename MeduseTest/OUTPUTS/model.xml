@@ -54,7 +54,7 @@
       </childPackages>
     </childPackages>
     <childPackages guid="_ALLuwCyTEeaZuL2AGiEn0A" name="Integration Test Phase" xmi:id="_ALLuwCyTEeaZuL2AGiEn0A" xsi:type="org.eclipse.epf.uma:ProcessPackage">
-      <processElements breakdownElements="_kFeKkR6XEea3Ls5mGiaxNw" guid="_ALLuwSyTEeaZuL2AGiEn0A" name="Integration Test Phase" presentationName="Integration Test Phase" superActivities="_1ZbXUS2NEeadNdxfTHAycw" xmi:id="_ALLuwSyTEeaZuL2AGiEn0A" xsi:type="org.eclipse.epf.uma:Phase">
+      <processElements guid="_ALLuwSyTEeaZuL2AGiEn0A" name="Integration Test Phase" presentationName="Integration Test Phase" superActivities="_1ZbXUS2NEeadNdxfTHAycw" xmi:id="_ALLuwSyTEeaZuL2AGiEn0A" xsi:type="org.eclipse.epf.uma:Phase">
         <methodElementProperty name="wbe_GlobalPresentedAfter" value="_jPrLAR6XEea3Ls5mGiaxNw" xmi:id="_Cceb8SyTEeaZuL2AGiEn0A"/>
       </processElements>
     </childPackages>

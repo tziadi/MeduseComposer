@@ -22,6 +22,7 @@ import de.ovgu.featureide.fm.core.configuration.Configuration;
 import de.ovgu.featureide.fm.core.io.manager.ConfigurationManager;
 import de.ovgu.featureide.fm.core.io.manager.FileHandler;
 import fr.lip6.move.meduse.utils.MeduseComposerUtils;
+import fr.lip6.move.meduse.utils.MeduseProcessVariantGenerator;
 
 /**
  * Meduse composer
@@ -39,7 +40,7 @@ public class MeduseComposer extends ComposerExtensionClass {
 		List<String> selectedFeatures = getSelectedNonAbstractFeatures(config);
 		List<String> selecteddelta = getSelectedDeltas(selectedFeatures);
 
-		MeduseProcessVariantGenerator generator = new MeduseProcessVariantGenerator();
+		Generator generator = new Generator();
 		
 		IFolder deltasF = featureProject.getProject().getFolder("DeltaProcesses");
 		File deltasFolder = deltasF.getRawLocation().makeAbsolute().toFile();

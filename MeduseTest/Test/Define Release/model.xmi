@@ -6,32 +6,39 @@
   <org.eclipse.epf.uma:ProcessComponent xmi:id="_xB9iEB6KEeauwPzXxc7Y9Q" name="Define Release" guid="_xB9iEB6KEeauwPzXxc7Y9Q">
     <methodElementProperty xmi:id="_xB9iEh6KEeauwPzXxc7Y9Q" name="pkg_loadCheck" value="true"/>
     <methodElementProperty xmi:id="_4hLssB6KEeauwPzXxc7Y9Q" name="me_edited" value="true"/>
-    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_x89xwB6KEeauwPzXxc7Y9Q" name="Define Release" guid="_x89xwB6KEeauwPzXxc7Y9Q">
-      <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_x89xwR6KEeauwPzXxc7Y9Q" name="Define Release" guid="_x89xwR6KEeauwPzXxc7Y9Q" presentationName="Define Release Activity" superActivities="_xB9iER6KEeauwPzXxc7Y9Q" breakdownElements="_2gb88B6KEeauwPzXxc7Y9Q _2gb88R6KEeauwPzXxc7Y9Q _2glt8B6KEeauwPzXxc7Y9Q _2glt8R6KEeauwPzXxc7Y9Q _3QuKYB6KEeauwPzXxc7Y9Q"/>
-      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_2gb88B6KEeauwPzXxc7Y9Q" name="define_release_plan" guid="_2gb88B6KEeauwPzXxc7Y9Q" presentationName="Define Release" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" optionalInput="_2glt8B6KEeauwPzXxc7Y9Q" output="_2glt8R6KEeauwPzXxc7Y9Q" performedPrimarilyBy="_2gb88R6KEeauwPzXxc7Y9Q">
-        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{D755C076-8E63-4A24-89AA-A7D64E368B90}"/>
-        <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMGE-EdqnIZeW8YpHcA"/>
-        <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMWE-EdqnIZeW8YpHcA"/>
-        <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMmE-EdqnIZeW8YpHcA"/>
-        <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOg00GE-EdqnIZeW8YpHcA"/>
-      </processElements>
-      <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_2gb88R6KEeauwPzXxc7Y9Q" name="xp_customer" guid="_2gb88R6KEeauwPzXxc7Y9Q" presentationName="XP Customer" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" modifies="_2glt8R6KEeauwPzXxc7Y9Q" responsibleFor="_2glt8R6KEeauwPzXxc7Y9Q _2glt8B6KEeauwPzXxc7Y9Q">
-        <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
-      </processElements>
-      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2glt8B6KEeauwPzXxc7Y9Q" name="xp_vision" guid="_2glt8B6KEeauwPzXxc7Y9Q" presentationName="XP Vision" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q">
-        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{2300FB25-7249-4481-A1BD-978240906832}"/>
-      </processElements>
-      <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2glt8R6KEeauwPzXxc7Y9Q" name="xp_release_plan" guid="_2glt8R6KEeauwPzXxc7Y9Q" presentationName="XP Release Plan" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q">
-        <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{CA77FBD2-04DD-4010-B2AA-03E1E7C66B0B}"/>
-      </processElements>
-      <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_3QuKYB6KEeauwPzXxc7Y9Q" name="update_release_plan" guid="_3QuKYB6KEeauwPzXxc7Y9Q" presentationName="Revise Release Plan" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" optionalInput="_2glt8R6KEeauwPzXxc7Y9Q" output="_2glt8R6KEeauwPzXxc7Y9Q" performedPrimarilyBy="_2gb88R6KEeauwPzXxc7Y9Q">
-        <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{18BF87E6-5849-4091-AFE2-FC4F0C3887B1}"/>
-        <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcGE-EdqnIZeW8YpHcA"/>
-        <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcWE-EdqnIZeW8YpHcA"/>
-        <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcmE-EdqnIZeW8YpHcA"/>
+    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_IOuCQD9pEeaHk7dF4UKlbA" name="Define Release Phase" guid="_IOuCQD9pEeaHk7dF4UKlbA">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_x89xwB6KEeauwPzXxc7Y9Q" name="Define Release" guid="_x89xwB6KEeauwPzXxc7Y9Q">
+        <processElements xsi:type="org.eclipse.epf.uma:Activity" xmi:id="_x89xwR6KEeauwPzXxc7Y9Q" name="Define Release" guid="_x89xwR6KEeauwPzXxc7Y9Q" presentationName="Define Release Activity" superActivities="_IOuCQT9pEeaHk7dF4UKlbA" breakdownElements="_2gb88B6KEeauwPzXxc7Y9Q _2gb88R6KEeauwPzXxc7Y9Q _2glt8B6KEeauwPzXxc7Y9Q _2glt8R6KEeauwPzXxc7Y9Q _3QuKYB6KEeauwPzXxc7Y9Q">
+          <methodElementProperty xmi:id="_JwnS0D9pEeaHk7dF4UKlbA" name="wbe_GlobalPresentedAfter" value="_IOuCQT9pEeaHk7dF4UKlbA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_2gb88B6KEeauwPzXxc7Y9Q" name="define_release_plan" guid="_2gb88B6KEeauwPzXxc7Y9Q" presentationName="Define Release" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" optionalInput="_2glt8B6KEeauwPzXxc7Y9Q" output="_2glt8R6KEeauwPzXxc7Y9Q" performedPrimarilyBy="_2gb88R6KEeauwPzXxc7Y9Q">
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{D755C076-8E63-4A24-89AA-A7D64E368B90}"/>
+          <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMGE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMWE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOauMmE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-7gEOFFavlkSqwIoTNrvfJA#_oOg00GE-EdqnIZeW8YpHcA"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:RoleDescriptor" xmi:id="_2gb88R6KEeauwPzXxc7Y9Q" name="xp_customer" guid="_2gb88R6KEeauwPzXxc7Y9Q" presentationName="XP Customer" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" modifies="_2glt8R6KEeauwPzXxc7Y9Q" responsibleFor="_2glt8R6KEeauwPzXxc7Y9Q _2glt8B6KEeauwPzXxc7Y9Q">
+          <Role href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{3C90DD4F-CFDB-4111-922D-3B840B8942DE}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2glt8B6KEeauwPzXxc7Y9Q" name="xp_vision" guid="_2glt8B6KEeauwPzXxc7Y9Q" presentationName="XP Vision" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{2300FB25-7249-4481-A1BD-978240906832}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:WorkProductDescriptor" xmi:id="_2glt8R6KEeauwPzXxc7Y9Q" name="xp_release_plan" guid="_2glt8R6KEeauwPzXxc7Y9Q" presentationName="XP Release Plan" isPlanned="false" superActivities="_x89xwR6KEeauwPzXxc7Y9Q">
+          <WorkProduct href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{CA77FBD2-04DD-4010-B2AA-03E1E7C66B0B}"/>
+        </processElements>
+        <processElements xsi:type="org.eclipse.epf.uma:TaskDescriptor" xmi:id="_3QuKYB6KEeauwPzXxc7Y9Q" name="update_release_plan" guid="_3QuKYB6KEeauwPzXxc7Y9Q" presentationName="Revise Release Plan" superActivities="_x89xwR6KEeauwPzXxc7Y9Q" optionalInput="_2glt8R6KEeauwPzXxc7Y9Q" output="_2glt8R6KEeauwPzXxc7Y9Q" performedPrimarilyBy="_2gb88R6KEeauwPzXxc7Y9Q">
+          <Task href="uma://{35DCB3E1-2766-423E-A849-57ECD4F41A40}#{18BF87E6-5849-4091-AFE2-FC4F0C3887B1}"/>
+          <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcGE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcWE-EdqnIZeW8YpHcA"/>
+          <selectedSteps href="uma://-YO16TebjP7U0gkcYg7OY_A#_oO6dcmE-EdqnIZeW8YpHcA"/>
+        </processElements>
+      </childPackages>
+      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_IOuCQT9pEeaHk7dF4UKlbA" name="Define Release Phase" guid="_IOuCQT9pEeaHk7dF4UKlbA" presentationName="Define Release Phase" superActivities="_xB9iER6KEeauwPzXxc7Y9Q" breakdownElements="_x89xwR6KEeauwPzXxc7Y9Q">
+        <methodElementProperty xmi:id="_JwnS0T9pEeaHk7dF4UKlbA" name="wbe_GlobalPresentedAfter" value="_xB9iER6KEeauwPzXxc7Y9Q"/>
       </processElements>
     </childPackages>
-    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_xB9iER6KEeauwPzXxc7Y9Q" name="Define Release" guid="_xB9iER6KEeauwPzXxc7Y9Q" presentationName="Define Release" breakdownElements="_x89xwR6KEeauwPzXxc7Y9Q">
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_xB9iER6KEeauwPzXxc7Y9Q" name="Define Release" guid="_xB9iER6KEeauwPzXxc7Y9Q" presentationName="Define Release" breakdownElements="_IOuCQT9pEeaHk7dF4UKlbA">
       <presentation xmi:id="-E1KFtD2q73m7Il5IMiJWug" href="uma://-E1KFtD2q73m7Il5IMiJWug#-E1KFtD2q73m7Il5IMiJWug"/>
       <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
       <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>

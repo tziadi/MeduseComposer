@@ -16,10 +16,14 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import fr.lip6.move.meduse.core.KeyProcessFragment;
+
 public class MeduseComposerUtils {
 
 
-	public static Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
+	public static Hashtable<String,List<KeyProcessFragment>> deltasFragments = new Hashtable<String,List<KeyProcessFragment>>();
+	
+	 
 
     public static Hashtable<String, String> processComponentNames = new Hashtable<String, String>();
 	
@@ -36,7 +40,7 @@ public class MeduseComposerUtils {
                  for (int i = 0; i < files.length; i++) {
                      if (files[i].isDirectory() == true) {
                     	 
-                    	 System.out.println("Find process :"+files[i].getName());
+                    	 //System.out.println("Find process :"+files[i].getName());
                     	 
                     	 result.add(files[i].getName());
                      }
@@ -50,10 +54,11 @@ public class MeduseComposerUtils {
 		
 		List<String> dirs = readProcessFragmentDirectories(processesFolderPath);
 		
-		
+		System.out.println("TESTRINGGGGGGG "+dirs);
 		
 		for (String d: dirs){
 			
+		 if (!d.equals("ProcessDelta")){
 			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
@@ -79,7 +84,7 @@ public class MeduseComposerUtils {
 			
 		       }
 			}
-			
+		 }
 		}
 		
 		for (String key:processComponentNames.keySet()){
@@ -93,10 +98,10 @@ public class MeduseComposerUtils {
 	
 	
 
-	public static Hashtable<String,List<String>> parseDeltaProcesses(String deltasFolderPath) throws ParserConfigurationException,
+	public static Hashtable<String,List<KeyProcessFragment>> parseDeltaProcesses(String deltasFolderPath) throws ParserConfigurationException,
 	SAXException, IOException {
 
-		Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
+		//Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
 
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
@@ -177,10 +182,29 @@ public class MeduseComposerUtils {
 																String refs = a.getAttributes().getNamedItem("href").getNodeValue();
 																//System.out.println(refs.substring(6, 29));
 																//System.out.println(refs.substring(30));
-																List<String> cle = new ArrayList<String>();
-																cle.add(refs.substring(6, 29));
-																cle.add(refs.substring(30));
-																deltasFragments.put(name, cle);
+																
+																
+																KeyProcessFragment  kpf = new KeyProcessFragment(refs.substring(6, 29),
+																		refs.substring(30));
+																
+																//List<String> cle = new ArrayList<String>();
+																//cle.add(refs.substring(6, 29));
+																//cle.add(refs.substring(30));
+																
+																if (deltasFragments.containsKey(name)) {
+																	 List<KeyProcessFragment> liste = deltasFragments.get(name);
+																	if (!liste.contains(kpf)) 
+																		liste.add(kpf);
+																	deltasFragments.put(name, liste);
+																}
+																else {
+																	
+																	List<KeyProcessFragment> liste = new ArrayList<KeyProcessFragment>();
+																	liste.add(kpf);
+																	deltasFragments.put(name, liste);
+														
+																}
+																
 
 															}
 
@@ -209,6 +233,7 @@ public class MeduseComposerUtils {
 
 		for (String delta : deltasFragments.keySet())
 			System.out.println(delta + " " +deltasFragments.get(delta));
+		
 		return deltasFragments;
 	}
 
