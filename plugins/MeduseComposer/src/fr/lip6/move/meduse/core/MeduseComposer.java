@@ -70,7 +70,16 @@ public class MeduseComposer extends ComposerExtensionClass {
 		}
 	
 		
+		MeduseComposerUtils.parseDeltaProcesses("Test");
+		MeduseComposerUtils.initialiseProcessFragments("Test");
+		List<String> deltas = new ArrayList<>();
+		//deltas.add("PD RequirementPhase");
+		deltas.add("PD_WriteCodePhase");
+		deltas.add("PD_WriteCodeUnitTest");
+		deltas.add("PD_IntegrationTestPhase");
+		//deltas.add("PD_DefineReleasePhase");
 		
+		Generator generator = new Generator();
 		
 		
 		
