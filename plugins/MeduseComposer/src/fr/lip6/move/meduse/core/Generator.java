@@ -80,7 +80,7 @@ String breakDonwsOfDeliveryProcesses = "";
 
 	}
 	
-	private void generateModelFile(List<String> deltas,
+	public void generateModelFile(List<String> deltas,
 			String deltasFolderPath, String processesFolderPath,
 			String variantFolderPath) throws ParserConfigurationException,
 			SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {

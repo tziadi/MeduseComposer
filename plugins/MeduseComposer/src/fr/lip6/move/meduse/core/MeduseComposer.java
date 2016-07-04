@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactoryConfigurationError;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
@@ -22,7 +24,7 @@ import de.ovgu.featureide.fm.core.configuration.Configuration;
 import de.ovgu.featureide.fm.core.io.manager.ConfigurationManager;
 import de.ovgu.featureide.fm.core.io.manager.FileHandler;
 import fr.lip6.move.meduse.utils.MeduseComposerUtils;
-import fr.lip6.move.meduse.utils.MeduseProcessVariantGenerator;
+
 
 /**
  * Meduse composer
@@ -61,25 +63,20 @@ public class MeduseComposer extends ComposerExtensionClass {
 		if (deltasFolderPath!=null && processesFolderPath !=null){
 			
 			try {
-				generator.generate(selecteddelta, deltasFolderPath,processesFolderPath, variantFolderPath, pluginFolderPath  );
+				generator.generateModelFile(selecteddelta, deltasFolderPath,processesFolderPath, variantFolderPath  );
 			} catch (ParserConfigurationException | SAXException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TransformerFactoryConfigurationError e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TransformerException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
 		}
 	
-		
-		MeduseComposerUtils.parseDeltaProcesses("Test");
-		MeduseComposerUtils.initialiseProcessFragments("Test");
-		List<String> deltas = new ArrayList<>();
-		//deltas.add("PD RequirementPhase");
-		deltas.add("PD_WriteCodePhase");
-		deltas.add("PD_WriteCodeUnitTest");
-		deltas.add("PD_IntegrationTestPhase");
-		//deltas.add("PD_DefineReleasePhase");
-		
-		Generator generator = new Generator();
 		
 		
 		
