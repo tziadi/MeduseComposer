@@ -40,9 +40,15 @@ public class MeduseComposer extends ComposerExtensionClass {
 
 		// Get the selected features and order them
 		List<String> selectedFeatures = getSelectedNonAbstractFeatures(config);
+		String configN = config.getName();
+		//StringBuffer strb = new StringBuffer(configN);
+		int in = configN.indexOf(".");
+		System.out.println("\nin = " + in);
+		String nameOfConfig = (String) configN.subSequence(0, in);
+		
 		List<String> selecteddelta = getSelectedDeltas(selectedFeatures);
 
-		Generator generator = new Generator();
+		MeduseGenerator generator = new MeduseGenerator();
 		
 		IFolder deltasF = featureProject.getProject().getFolder("DeltaProcesses");
 		File deltasFolder = deltasF.getRawLocation().makeAbsolute().toFile();
@@ -56,14 +62,23 @@ public class MeduseComposer extends ComposerExtensionClass {
 		File variantFolder = variantF.getRawLocation().makeAbsolute().toFile();
 		String variantFolderPath = variantFolder.getAbsolutePath();
 		
-		IFolder pluginF = featureProject.getProject().getFolder("DerivedProduct");
-		File pluginFolder = pluginF.getRawLocation().makeAbsolute().toFile();
-		String pluginFolderPath = deltasFolder.getAbsolutePath();
+	
+		
+		File out_rep=new File(variantFolderPath+"/"+nameOfConfig);
+		out_rep.mkdirs();
+		variantFolderPath=variantFolderPath+"/"+nameOfConfig;
+		
+		IFolder DPsF = featureProject.getProject().getFolder("DPs");
+		File DPsFolder = DPsF.getRawLocation().makeAbsolute().toFile();
+		String DPsFolderPath = DPsFolder.getAbsolutePath();
 		
 		if (deltasFolderPath!=null && processesFolderPath !=null){
 			
 			try {
-				generator.generateModelFile(selecteddelta, deltasFolderPath,processesFolderPath, variantFolderPath  );
+				
+				MeduseComposerUtils.parseDeltaProcesses(deltasFolderPath);
+				MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
+				generator.generateModelFile(selecteddelta, deltasFolderPath,processesFolderPath, variantFolderPath, DPsFolder,  nameOfConfig );
 			} catch (ParserConfigurationException | SAXException | IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

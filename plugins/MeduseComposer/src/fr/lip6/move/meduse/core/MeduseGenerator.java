@@ -26,7 +26,7 @@ import org.xml.sax.SAXException;
 
 import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 
-public class Generator {
+public class MeduseGenerator {
 
 	private Hashtable<String, Node> childpackages = new Hashtable<String, Node>();
 	
@@ -59,30 +59,11 @@ String breakDonwsOfDeliveryProcesses = "";
 	
 	
 	
-	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException{
-
-
-		MeduseComposerUtils.parseDeltaProcesses("Test");
-		MeduseComposerUtils.initialiseProcessFragments("Test");
-		List<String> deltas = new ArrayList<>();
-		//deltas.add("PD RequirementPhase");
-		deltas.add("PD_WriteCodePhase");
-		deltas.add("PD_WriteCodeUnitTest");
-		deltas.add("PD_IntegrationTestPhase");
-		//deltas.add("PD_DefineReleasePhase");
-		
-		Generator generator = new Generator();
-		
-		
-
-		generator.generateModelFile(deltas, "Test", "Test","OUTPUTS");
-
-
-	}
+	
 	
 	public void generateModelFile(List<String> deltas,
 			String deltasFolderPath, String processesFolderPath,
-			String variantFolderPath) throws ParserConfigurationException,
+			String variantFolderPath, File dPsFolder, String nameOfConfig) throws ParserConfigurationException,
 			SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		
 		MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
@@ -96,14 +77,15 @@ String breakDonwsOfDeliveryProcesses = "";
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 
-		// Load the input XML document, parse it and return an instance of the
-		// Document class.
-		System.out.println("PARSING : "+processesFolderPath+"/"+"DP5.xmi");
 		
-		documentVariant = builder.parse(new File(processesFolderPath+"/"+"DP5.xmi"));
+		
+		documentVariant = builder.parse(new File(dPsFolder+"/"+nameOfConfig+"/model.xmi"));
+		
+		
 
 		for (String delta : deltas){
 		
+			//System.out.println("TESTING : "+delta + " ===>" +allDeltas.get(delta));
 			List<KeyProcessFragment> liste = allDeltas.get(delta);
 			for (KeyProcessFragment kpf:liste )
 			selectedPC.add(kpf.getProcessComponentKey());
@@ -122,11 +104,11 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			Node processComponentNode = nodeList.item(i);
 			
-			System.out.println("SUITE :"+ i+  "   "+processComponentNode.getNodeName());
+	
 		
 			if (processComponentNode.getNodeName().contains("ProcessComponent")) {
 				PCNode = processComponentNode;
-				System.out.println("RENTRE :"+i);
+		
 				
 				Element processComponent = (Element) processComponentNode;
 
@@ -169,14 +151,23 @@ String breakDonwsOfDeliveryProcesses = "";
 		
 		
 		}
+		
+		
+		
+		List<String> alreadyHandled = new ArrayList<String>();
+		
 		for (String pcName: selectedPC){
 
 			//fin directory
+			if (!alreadyHandled.contains(pcName)){
+				String dirPC = MeduseComposerUtils.processComponentDirectories.get(pcName);
 
-			String dirPC = MeduseComposerUtils.processComponentDirectories.get(pcName);
-
-			System.out.println("Handling ===="+dirPC);
-			handleFragments2(dirPC, processesFolderPath, deltas); 	
+				//System.out.println("Handling ===="+dirPC);
+				handleFragments2(dirPC, processesFolderPath, deltas); 	
+				alreadyHandled.add(pcName);
+				
+			}
+			
 		}
 		
 		// 
@@ -187,7 +178,7 @@ String breakDonwsOfDeliveryProcesses = "";
 		final Transformer transformer = transformerFactory.newTransformer();
 		final DOMSource source = new DOMSource(documentVariant);
 
-		final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/NEWDP5.xml"));
+		final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/model.xmi"));
 		//final StreamResult result = new StreamResult(System.out);
 
 		//prologue
@@ -238,7 +229,8 @@ String breakDonwsOfDeliveryProcesses = "";
 					
 					if (node.getNodeName().contains("ProcessComponent")) {
 						Element elem = (Element) node;
-
+						Hashtable<String, Node> alreadyAddedPackage = new Hashtable<String, Node>();
+   			   			
 						NodeList methodNodes = elem.getChildNodes();
 						String processComponentID = elem.getAttribute("xmi:id");
 						
@@ -318,10 +310,6 @@ String breakDonwsOfDeliveryProcesses = "";
 												allActivities.put(key, childPackage);
 												activitiesPhases.put(key,superActivitePhase);
 												
-												
-												
-												
-												
 												}
 											}
 				       			   			
@@ -330,7 +318,22 @@ String breakDonwsOfDeliveryProcesses = "";
 				       			   		    
 				       			   		
 				       			   			childPackage.appendChild(processElement);
-				       			   		PCNode.insertBefore(childPackage, processNode);
+				       			   			
+				       			   			//System.out.println("Doublons =====> " + alreadyAddedPackage);
+				       			   			
+				       			   			
+				       			   			if (!alreadyAddedPackage.contains(keyCP)){
+				       			   			
+				       			   				
+				       			   				//System.out.println("PAS TROUVE :"+keyCP);
+				       			   			
+				       			   				PCNode.insertBefore(childPackage, processNode);
+				       			   		    
+				       			   		    
+				       			   		        alreadyAddedPackage.put(keyCP, childPackage);
+				       			   		    
+				       			   		    
+				       			   			}
 				       			   			
 				       			   			//PCNode.appendChild(childPackage);
 				       			   			
@@ -391,7 +394,7 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			NodeList childPackageFils = ownerPhase.getChildNodes();
 			   
-			   		   
+			 //ID   		   
 		    NodeList childOdActivity = ownerActivity.getChildNodes();
 		    Node processEAct = childOdActivity.item(0);
 		    Element ac = (Element) processEAct;
@@ -402,15 +405,16 @@ String breakDonwsOfDeliveryProcesses = "";
 			String keyToRemove;
 			
 			//System.out.println("PHASE NODE :"+phase.getAttribute("name")+" ===>" +processElementNode);
-			Element processElement = (Element)processElementNode;
+			Element processElement = (Element) processElementNode;
 			
-			 Node parent = processElement.getParentNode();
-			  Element parentElement = (Element) parent;
-			  keyToRemove = parentElement.getAttribute("xmi:id");
-		      System.out.println ("TO REMOVE :"+keyToRemove);
+			// Node parent = processElement.getParentNode();
+			 // Element parentElement = (Element) parent;
+			  //keyToRemove = parentElement.getAttribute("xmi:id");
+		    
+			  // System.out.println ("TO REMOVE :"+keyToRemove);
 		      
-			//System.out.println("PHASE ELE:"+phase.getAttribute("name")+" ===>" +processElement);
-			if (processElement!=null){
+			  //System.out.println("PHASE ELE:"+phase.getAttribute("name")+" ===>" +processElement);
+			
 				
 			 
 			if (!createdAttributes.contains(keyPhase)){
@@ -421,18 +425,17 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			else {
 				
-				String breakD= phase.getAttribute("breakdownElements");
+				
+				String breakD= processElement.getAttribute("breakdownElements");
 				processElement.setAttribute("breakdownElements", " "+breakD+ " "+actKey);
 			}
-			}
 			
-			System.out.println("OWNER PHASE :"+ownerPhase);
-			System.out.println("OWNER ACTIVITY :"+ownerActivity);
+			
 			
 			if (ownerPhase!=null) {
 				
-				System.out.println("EXIST CHECK :"+allActivities.get(keyToRemove));
-				System.out.println("REMOVE ======= "+keyToRemove);
+				//System.out.println("EXIST CHECK :"+allActivities.get(keyToRemove));
+				//System.out.println("REMOVE ======= "+keyToRemove);
 				ownerPhase.appendChild(ownerActivity);
 				
 				
