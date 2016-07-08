@@ -26,7 +26,7 @@ import org.xml.sax.SAXException;
 
 import fr.lip6.move.meduse.utils.MeduseComposerUtils;
 
-public class Generator {
+public class MeduseGenerator {
 
 	private Hashtable<String, Node> childpackages = new Hashtable<String, Node>();
 	
@@ -51,6 +51,8 @@ public class Generator {
 	
 	Hashtable<String, Node> allPhases = new Hashtable<String, Node>();
 	Hashtable<String, Node> allActivities= new Hashtable<String, Node>();
+	Hashtable<String, Integer> rangOfActivities= new Hashtable<String, Integer>();
+	
 	Hashtable<String, String> activitiesPhases = new Hashtable<String, String>();
 	
 String breakDonwsOfDeliveryProcesses = "";
@@ -62,51 +64,63 @@ String breakDonwsOfDeliveryProcesses = "";
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException{
 
 
-		MeduseComposerUtils.parseDeltaProcesses("Test");
-		MeduseComposerUtils.initialiseProcessFragments("Test");
+		//MeduseComposerUtils.parseDeltaProcesses("Test");
+		//MeduseComposerUtils.initialiseProcessFragments("Test");
 		List<String> deltas = new ArrayList<>();
-		//deltas.add("PD RequirementPhase");
+	//deltas.add("PD_ManageProjectPhase");
+		deltas.add("PD_ManageProjectPhase");
+		deltas.add("PD_RequirementPhase");
+		deltas.add("PD_WriteUserVision");
+	    deltas.add("PD_WriteStory");
+	    deltas.add("PD_DefineReleasePhase");
+	    deltas.add("PD_DefineIterationPhase");
 		deltas.add("PD_WriteCodePhase");
-		deltas.add("PD_WriteCodeUnitTest");
-		deltas.add("PD_IntegrationTestPhase");
-		//deltas.add("PD_DefineReleasePhase");
-		
-		Generator generator = new Generator();
-		
-		
+		deltas.add("PD_DefineCodeStandard");
+		deltas.add("PD_PairProgramming");
+		deltas.add("PD_ImplementSpike");
+        deltas.add("PD_WriteCodeUnitTest");
+        deltas.add("PD_RefactorCode");
+        deltas.add("PD_IntegrationTestPhase");
+        deltas.add("PD_CustomerTestPhase");
 
+        
+        MeduseGenerator generator = new MeduseGenerator();
+
+		
+		
 		generator.generateModelFile(deltas, "Test", "Test","OUTPUTS");
 
 
 	}
 	
-	private void generateModelFile(List<String> deltas,
+	public void generateModelFile(List<String> deltas,
 			String deltasFolderPath, String processesFolderPath,
 			String variantFolderPath) throws ParserConfigurationException,
 			SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
-		
-		MeduseComposerUtils.initialiseProcessFragments(processesFolderPath);
+		MeduseComposerUtils util = new MeduseComposerUtils();
+		util.initialiseProcessFragments(processesFolderPath);
 
 		allDeltas =
-				MeduseComposerUtils.parseDeltaProcesses(deltasFolderPath);
+				util.parseDeltaProcesses(deltasFolderPath);
 
-
-		List<String> selectedPC = new ArrayList<String>();
+		List<String> orderOfAllDelta = util.OrderOfDeltas;
+		Hashtable<String, Integer> selectedPC = new Hashtable<String, Integer>();
 		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 
-		// Load the input XML document, parse it and return an instance of the
-		// Document class.
-		System.out.println("PARSING : "+processesFolderPath+"/"+"DP5.xmi");
 		
-		documentVariant = builder.parse(new File(processesFolderPath+"/"+"DP5.xmi"));
+		
+		documentVariant = builder.parse(new File(processesFolderPath+"/"+"model.xmi"));
+		
+		
 
 		for (String delta : deltas){
-		
+		      int rang = orderOfAllDelta.indexOf(delta);
+			//System.out.println("TESTING : "+delta + " ===>" +allDeltas.get(delta));
 			List<KeyProcessFragment> liste = allDeltas.get(delta);
 			for (KeyProcessFragment kpf:liste )
-			selectedPC.add(kpf.getProcessComponentKey());
+			selectedPC.put(kpf.getProcessComponentKey(), rang);
 
 		}
 		
@@ -122,11 +136,11 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			Node processComponentNode = nodeList.item(i);
 			
-			System.out.println("SUITE :"+ i+  "   "+processComponentNode.getNodeName());
+	
 		
 			if (processComponentNode.getNodeName().contains("ProcessComponent")) {
 				PCNode = processComponentNode;
-				System.out.println("RENTRE :"+i);
+		
 				
 				Element processComponent = (Element) processComponentNode;
 
@@ -169,14 +183,23 @@ String breakDonwsOfDeliveryProcesses = "";
 		
 		
 		}
-		for (String pcName: selectedPC){
-
+		
+		
+		
+		List<String> alreadyHandled = new ArrayList<String>();
+		
+		for (String pcName: selectedPC.keySet()){
+            int rang = selectedPC.get(pcName);
 			//fin directory
+			if (!alreadyHandled.contains(pcName)){
+				String dirPC = util.processComponentDirectories.get(pcName);
 
-			String dirPC = MeduseComposerUtils.processComponentDirectories.get(pcName);
-
-			System.out.println("Handling ===="+dirPC);
-			handleFragments2(dirPC, processesFolderPath, deltas); 	
+				//System.out.println("Handling ===="+dirPC);
+				handleFragments2(dirPC, processesFolderPath, deltas, rang); 	
+				alreadyHandled.add(pcName);
+				
+			}
+			
 		}
 		
 		// 
@@ -187,7 +210,7 @@ String breakDonwsOfDeliveryProcesses = "";
 		final Transformer transformer = transformerFactory.newTransformer();
 		final DOMSource source = new DOMSource(documentVariant);
 
-		final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/NEWDP5.xml"));
+		final StreamResult sortie = new StreamResult(new File(variantFolderPath+"/model.xmi"));
 		//final StreamResult result = new StreamResult(System.out);
 
 		//prologue
@@ -209,7 +232,7 @@ String breakDonwsOfDeliveryProcesses = "";
 	
 
 
-	private void handleFragments2(String pcName,  String processesFolderPath, List<String> deltas2) 
+	private void handleFragments2(String pcName,  String processesFolderPath, List<String> deltas2, int rang) 
 			throws ParserConfigurationException, SAXException, IOException {
 		
 		
@@ -238,7 +261,8 @@ String breakDonwsOfDeliveryProcesses = "";
 					
 					if (node.getNodeName().contains("ProcessComponent")) {
 						Element elem = (Element) node;
-
+						Hashtable<String, Node> alreadyAddedPackage = new Hashtable<String, Node>();
+   			   			
 						NodeList methodNodes = elem.getChildNodes();
 						String processComponentID = elem.getAttribute("xmi:id");
 						
@@ -287,6 +311,7 @@ String breakDonwsOfDeliveryProcesses = "";
                                            // process.setAttribute("breakdownElements", breakDowns);
 
                                             allPhases.put(key, childPackage);
+                                           
                                             superActivitePhase= process.getAttribute("xmi:id") ;
                                             
                                             
@@ -317,10 +342,7 @@ String breakDonwsOfDeliveryProcesses = "";
 												
 												allActivities.put(key, childPackage);
 												activitiesPhases.put(key,superActivitePhase);
-												
-												
-												
-												
+												 rangOfActivities.put(key, rang);
 												
 												}
 											}
@@ -330,7 +352,22 @@ String breakDonwsOfDeliveryProcesses = "";
 				       			   		    
 				       			   		
 				       			   			childPackage.appendChild(processElement);
-				       			   		PCNode.insertBefore(childPackage, processNode);
+				       			   			
+				       			   			//System.out.println("Doublons =====> " + alreadyAddedPackage);
+				       			   			
+				       			   			
+				       			   			if (!alreadyAddedPackage.contains(keyCP)){
+				       			   			
+				       			   				
+				       			   				//System.out.println("PAS TROUVE :"+keyCP);
+				       			   			
+				       			   				PCNode.insertBefore(childPackage, processNode);
+				       			   		    
+				       			   		    
+				       			   		        alreadyAddedPackage.put(keyCP, childPackage);
+				       			   		    
+				       			   		    
+				       			   			}
 				       			   			
 				       			   			//PCNode.appendChild(childPackage);
 				       			   			
@@ -376,6 +413,8 @@ String breakDonwsOfDeliveryProcesses = "";
 		
 		List<String> createdAttributes = new ArrayList<String>();
 		
+		int lastRang=20000000;
+		Node  lastActivity=null;
 		
 		
 		for(String keyActivities:activitiesPhases.keySet()){
@@ -391,7 +430,7 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			NodeList childPackageFils = ownerPhase.getChildNodes();
 			   
-			   		   
+			 //ID   		   
 		    NodeList childOdActivity = ownerActivity.getChildNodes();
 		    Node processEAct = childOdActivity.item(0);
 		    Element ac = (Element) processEAct;
@@ -399,19 +438,20 @@ String breakDonwsOfDeliveryProcesses = "";
 		    String actKey = ac.getAttribute("xmi:id");
 			
 			Node processElementNode = childPackageFils.item(0);
-			String keyToRemove;
+			
 			
 			//System.out.println("PHASE NODE :"+phase.getAttribute("name")+" ===>" +processElementNode);
-			Element processElement = (Element)processElementNode;
+			Element processElement = (Element) processElementNode;
 			
-			 Node parent = processElement.getParentNode();
-			  Element parentElement = (Element) parent;
-			  keyToRemove = parentElement.getAttribute("xmi:id");
-		      System.out.println ("TO REMOVE :"+keyToRemove);
+			// Node parent = processElement.getParentNode();
+			 // Element parentElement = (Element) parent;
+			  //keyToRemove = parentElement.getAttribute("xmi:id");
+		    
+			  // System.out.println ("TO REMOVE :"+keyToRemove);
 		      
-			//System.out.println("PHASE ELE:"+phase.getAttribute("name")+" ===>" +processElement);
-			if (processElement!=null){
-				
+			  //System.out.println("PHASE ELE:"+phase.getAttribute("name")+" ===>" +processElement);
+			
+
 			 
 			if (!createdAttributes.contains(keyPhase)){
 				
@@ -421,19 +461,43 @@ String breakDonwsOfDeliveryProcesses = "";
 			
 			else {
 				
-				String breakD= phase.getAttribute("breakdownElements");
+				
+				///WE need to consider the order.
+				
+				
+				String breakD= processElement.getAttribute("breakdownElements");
 				processElement.setAttribute("breakdownElements", " "+breakD+ " "+actKey);
 			}
-			}
 			
-			System.out.println("OWNER PHASE :"+ownerPhase);
-			System.out.println("OWNER ACTIVITY :"+ownerActivity);
 			
 			if (ownerPhase!=null) {
 				
-				System.out.println("EXIST CHECK :"+allActivities.get(keyToRemove));
-				System.out.println("REMOVE ======= "+keyToRemove);
-				ownerPhase.appendChild(ownerActivity);
+				//System.out.println("EXIST CHECK :"+allActivities.get(keyToRemove));
+				//System.out.println("REMOVE ======= "+keyToRemove);
+				
+				if (lastActivity==null){
+					
+					
+					ownerPhase.appendChild(ownerActivity);
+					
+					
+				}
+				else{
+					
+							
+					int currentRang =  rangOfActivities.get(actKey);
+					if (currentRang<lastRang){
+						ownerPhase.insertBefore(ownerActivity, lastActivity);
+						
+					}
+					
+				}
+				
+				lastActivity=ownerActivity;
+				lastRang=rangOfActivities.get(actKey);
+				
+				
+				
 				
 				
 				//childpackages.remove(keyToRemove);
@@ -442,7 +506,36 @@ String breakDonwsOfDeliveryProcesses = "";
 		}
 		
 	}
+	
+	private void sortActivitiesInPhase(){
 		
+		
+		for (String phaseId : allPhases.keySet()){
+			
+
+			Node ownerPhase = allPhases.get(phaseId);
+			Element phase = (Element)ownerPhase;
+			
+			NodeList childsOhPhases = ownerPhase.getChildNodes();
+			
+			
+			
+			for (int j = 0; j < childsOhPhases.getLength(); j++) {
+				
+		       	  Node child = childsOhPhases.item(j);
+		       	   
+		       	  if (child.getNodeName().contains("childPackages") ){
+		       		   
+		       		Element eChild = (Element)child;
+		       		   
+		       		String keyCP = eChild.getAttribute("xmi:id");  
+		           	
+			
+		      }
+			}
+		
+	     }
+	}		
 	
 	
 	private boolean existProcessFragments(String key, List<String> deltas2) {

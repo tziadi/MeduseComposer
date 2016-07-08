@@ -9,13 +9,10 @@
     <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_yIRjgB6CEeauwPzXxc7Y9Q" name="Write Story Phase" guid="_yIRjgB6CEeauwPzXxc7Y9Q">
       <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_yIRjgR6CEeauwPzXxc7Y9Q" name="Write Story Phase" guid="_yIRjgR6CEeauwPzXxc7Y9Q" presentationName="Write Story Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
     </childPackages>
-    <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_5qVmwB6CEeauwPzXxc7Y9Q" name="Define Release Phase" guid="_5qVmwB6CEeauwPzXxc7Y9Q">
-      <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_5qVmwR6CEeauwPzXxc7Y9Q" name="Define Release Phase" guid="_5qVmwR6CEeauwPzXxc7Y9Q" presentationName="Define Release Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
-    </childPackages>
     <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_AJolcB6DEeauwPzXxc7Y9Q" name="Write Code Phase" guid="_AJolcB6DEeauwPzXxc7Y9Q">
       <processElements xsi:type="org.eclipse.epf.uma:Phase" xmi:id="_AJolcR6DEeauwPzXxc7Y9Q" name="Write Code Phase" guid="_AJolcR6DEeauwPzXxc7Y9Q" presentationName="Write Code Phase" superActivities="_wgj-0R6CEeauwPzXxc7Y9Q"/>
     </childPackages>
-    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_wgj-0R6CEeauwPzXxc7Y9Q" name="Project Phase" guid="_wgj-0R6CEeauwPzXxc7Y9Q" presentationName="Project Phase" breakdownElements="_yIRjgR6CEeauwPzXxc7Y9Q _5qVmwR6CEeauwPzXxc7Y9Q _AJolcR6DEeauwPzXxc7Y9Q">
+    <process xsi:type="org.eclipse.epf.uma:CapabilityPattern" xmi:id="_wgj-0R6CEeauwPzXxc7Y9Q" name="Project Phase" guid="_wgj-0R6CEeauwPzXxc7Y9Q" presentationName="Project Phase" breakdownElements="_yIRjgR6CEeauwPzXxc7Y9Q _AJolcR6DEeauwPzXxc7Y9Q">
       <presentation xmi:id="-cpkaVL8SKW6eI8Lm7C2aFg" href="uma://-cpkaVL8SKW6eI8Lm7C2aFg#-cpkaVL8SKW6eI8Lm7C2aFg"/>
       <defaultContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>
       <validContext href="uma://_hmtlAG96EdupM6itjmYdSQ#_59JiMB3LEeakwMHbkQwdXQ"/>

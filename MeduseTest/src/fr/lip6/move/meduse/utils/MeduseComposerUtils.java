@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,16 +22,17 @@ import fr.lip6.move.meduse.core.KeyProcessFragment;
 public class MeduseComposerUtils {
 
 
-	public static Hashtable<String,List<KeyProcessFragment>> deltasFragments = new Hashtable<String,List<KeyProcessFragment>>();
+	public  Hashtable<String,List<KeyProcessFragment>> deltasFragments = new Hashtable<String,List<KeyProcessFragment>>();
 	
+	public List<String> OrderOfDeltas = new ArrayList<String>();;
 	 
 
-    public static Hashtable<String, String> processComponentNames = new Hashtable<String, String>();
+    public  Hashtable<String, String> processComponentNames = new Hashtable<String, String>();
 	
 
-    public static Hashtable<String, String> processComponentDirectories = new Hashtable<String, String>();
+    public  Hashtable<String, String> processComponentDirectories = new Hashtable<String, String>();
 
-	public static List<String> readProcessFragmentDirectories(String processesFolderPath){
+	public  List<String> readProcessFragmentDirectories(String processesFolderPath){
 		
 		List<String> result = new ArrayList<String>(); 
 		File file = new File(processesFolderPath);
@@ -50,7 +52,7 @@ public class MeduseComposerUtils {
 	}
 	
 	
-	public static void initialiseProcessFragments(String processesFolderPath ) throws ParserConfigurationException, SAXException, IOException{
+	public  void initialiseProcessFragments(String processesFolderPath ) throws ParserConfigurationException, SAXException, IOException{
 		
 		List<String> dirs = readProcessFragmentDirectories(processesFolderPath);
 		
@@ -98,7 +100,7 @@ public class MeduseComposerUtils {
 	
 	
 
-	public static Hashtable<String,List<KeyProcessFragment>> parseDeltaProcesses(String deltasFolderPath) throws ParserConfigurationException,
+	public  Hashtable<String,List<KeyProcessFragment>> parseDeltaProcesses(String deltasFolderPath) throws ParserConfigurationException,
 	SAXException, IOException {
 
 		//Hashtable<String,List<String>> deltasFragments = new Hashtable<String, List<String>>();
@@ -162,16 +164,32 @@ public class MeduseComposerUtils {
 											for (int f = 0; f < contents.getLength(); f++) {
 
 												Node cont = contents.item(f);
+												
 
 												if (cont.getNodeName().contains("contentElements")) {
+													Element contElement = (Element) cont;
 
-
+                                                  Node ct = contElement.getAttributeNode("categorizedElements");
+                                                  if (ct!=null) {
+                                                	   String OrderDelta = contElement.getAttribute("categorizedElements");
+                                                	    
+                                                	   StringTokenizer st = new StringTokenizer(OrderDelta);
+                                                		while (st.hasMoreTokens()) {
+                                                			OrderOfDeltas.add(st.nextToken());
+                                                			
+                                                		}
+                                                  }
+                                                	  
+													//String name = cont.getAttributes().getNamedItem("presentationName").getNodeValue();
 													String name = cont.getAttributes().getNamedItem("presentationName").getNodeValue();
+                                                   
 
 
 													if (name.contains("PD")){
-
+														
 														Element c = (Element) cont;
+														int deltaOrder = OrderOfDeltas.indexOf(c.getAttribute("xmi:id"));
+														System.out.println("Order of :"+ name + "EST ="+deltaOrder);
 														NodeList atts= c.getChildNodes();
 														for (int e = 0; e < atts.getLength(); e++) {
 
@@ -185,7 +203,7 @@ public class MeduseComposerUtils {
 																
 																
 																KeyProcessFragment  kpf = new KeyProcessFragment(refs.substring(6, 29),
-																		refs.substring(30));
+																		refs.substring(30), name);
 																
 																//List<String> cle = new ArrayList<String>();
 																//cle.add(refs.substring(6, 29));
@@ -238,7 +256,7 @@ public class MeduseComposerUtils {
 	}
 
 
-	public static void parseProcessFragments(String pComponent) throws ParserConfigurationException,
+	public  void parseProcessFragments(String pComponent) throws ParserConfigurationException,
 	SAXException, IOException {
 
 
